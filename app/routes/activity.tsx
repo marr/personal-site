@@ -7,21 +7,19 @@ import { getActivity, GithubStar } from "~/api/activity";
 import _emojis from '~/assets/emojis.json';
 import React from "react";
 
-type GithubEmoji = {
-    [key: string]: string
-};
+type GithubEmojis = typeof _emojis;
 
-const emojis: GithubEmoji = _emojis as any;
-const replaceGithubShortcodes = (str: string) => str.replaceAll(/:(\w*):/g, (_, key: string) => {
+const emojis: GithubEmojis = _emojis;
+const replaceGithubShortcodes = (str: string) => str.replaceAll(/:(\w*):/g, (_, key: keyof GithubEmojis) => {
     return `<img src=${emojis[key]} style="width: 20px; height: 20px;" />`;
 });
 
 const sanitizeHTML = (str: string) => str.replaceAll("<", "&lt;").replaceAll(">", "&gt;");
 
-export const loader = async () => {
+export const loader: LoaderFunction = async () => {
     const items = await getActivity();
     return {
-        items,
+        items
     };
 };
 
