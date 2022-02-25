@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+
+body {
+    background-color: rgb(30, 10, 80);
+    margin: 0;
+}
+
+header::before {
+    content: "";
+    display: block;
+    position: relative;
+    height: 4px;
+    background: linear-gradient(116deg, cyan 0%, rebeccapurple 40%, deeppink 90%);
+}
+
+main {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr minmax(0, 600px) 1fr;
+}
+
+main section {
+    grid-area: 1 / 2 / 1 / 3;
+}
+
+main section.full {
+    grid-area: 1 / 1 / 1 / 4;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+a {
+    color: white;
+    font-family: Monaco, sans-serif;
+}
+
+p, li {
+    font-family: Monaco, sans-serif;
+}
+
+blockquote {
+    border-left: 2px solid white;
+    margin: 0;
+    padding-left: 20px;
+}
+
+#hero {
+    display: grid;
+    place-content: center;
+    height: 30em;
+}
+
+.timestamp {
+    /* margin-left: -50px; */
+}
+
+.github-starred-item {
+    background-color: rgba(230,230,230,0.2);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-left: 40px;
+    position: relative;
+}
+
+.github-starred-item + .github-starred-item {
+    margin-top: 20px;
+}
+
+.github-starred-item::before {
+    content: "⭐️";
+    position: absolute;
+    left: -36px;
+    top: 50%;
+    transform: translateY(-50%);
+}

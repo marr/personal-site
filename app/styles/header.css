@@ -1,0 +1,45 @@
+[data-header] {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+[data-header] h1 {
+    color: white;
+    flex-shrink: 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: normal;
+}
+
+[data-header] nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+[data-header] nav a {
+    margin: 16px;
+    padding-bottom: 3px;
+    position: relative;
+    text-decoration: none;
+}
+
+[data-header] nav a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+[data-header] nav a:hover::before,
+[data-header] nav a.active::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
