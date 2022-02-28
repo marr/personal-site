@@ -18,11 +18,11 @@ export default function Admin() {
     return (
         <div className="admin">
             <nav>
-                <h1>Admin</h1>
+                <h2>Admin</h2>
                 <ul>
                     {posts.map((post) => (
                         <li key={post.slug}>
-                            <Link to={`/posts/${post.slug}`}>{post.title}</Link>
+                            <Link reloadDocument to={`edit?slug=${post.slug}`}>{post.title}</Link>
                         </li>
                     ))}
                 </ul>

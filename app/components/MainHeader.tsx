@@ -7,7 +7,7 @@ export function links() {
 
 export default () => (
     <div data-header>
-        <h1>David Marr</h1>
+        <h1><a href="/">David Marr</a></h1>
         <nav>
             <NavLink to="/">Home</NavLink>
             <NavLink to="/posts">Posts</NavLink>

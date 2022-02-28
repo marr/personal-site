@@ -1,7 +1,9 @@
 import {
     Form,
+    LoaderFunction,
     redirect,
     useActionData,
+    useLoaderData,
     useTransition,
 } from "remix";
 import type { ActionFunction } from "remix";
@@ -9,11 +11,10 @@ import invariant from "tiny-invariant";
 
 type PostError = {
   title?: boolean;
-  slug?: boolean;
   markdown?: boolean;
 };
 
-import { createPost } from "~/post";
+import { createPost, editPost, getPost } from "~/post";
 
 export const action: ActionFunction = async ({ request }) => {
     const formData = await request.formData();
@@ -22,9 +23,10 @@ export const action: ActionFunction = async ({ request }) => {
     const slug = formData.get("slug");
     const markdown = formData.get("markdown");
 
+    invariant(typeof slug === "string");
+
     const errors:PostError = {};
     if (!title) errors.title = true;
-    if (!slug) errors.slug = true;
     if (!markdown) errors.markdown = true;
 
     if (Object.keys(errors).length) {
@@ -32,32 +34,33 @@ export const action: ActionFunction = async ({ request }) => {
     }
 
     invariant(typeof title === "string");
-    invariant(typeof slug === "string");
     invariant(typeof markdown === "string");
-    await createPost({ title, slug, markdown });
+    await editPost({ title, slug, markdown });
 
     return redirect("/admin");
 };
 
-export default function NewPost() {
+export const loader: LoaderFunction = async ({ request }) => {
+    const url = new URL(request.url);
+    const slug = url.searchParams.get('slug');
+    const post = getPost(slug);
+    return post;
+}
+
+export default function EditPost() {
+    const data = useLoaderData();
     const errors = useActionData();
     const transition = useTransition();
     return (
         <Form method="post">
+            <input name="slug" type="hidden" value={data.slug} />
             <p>
                 <label>
                     Post Title:{" "}
                     {errors?.title ? (
                         <em>Title is required</em>
                     ) : null}
-                    <input type="text" name="title" />
-                </label>
-            </p>
-            <p>
-                <label>
-                    Post Slug:{" "}
-                    {errors?.slug ? <em>Slug is required</em> : null}
-                    <input type="text" name="slug" />
+                    <input type="text" name="title" defaultValue={data.title}/>
                 </label>
             </p>
             <p>
@@ -66,13 +69,13 @@ export default function NewPost() {
                 <em>Markdown is required</em>
                 ) : null}
                 <br />
-                <textarea id="markdown" rows={20} name="markdown" />
+                <textarea defaultValue={data.markdown} id="markdown" rows={20} name="markdown" />
             </p>
             <p>
                 <button type="submit">
                     {transition.submission
-                        ? "Creating..."
-                        : "Create Post"
+                        ? "Saving..."
+                        : "Save Post"
                     }
                 </button>
             </p>

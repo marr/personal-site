@@ -2,7 +2,7 @@ import { useLoaderData } from "remix";
 import type { LoaderFunction, MetaFunction } from "remix";
 import invariant from "tiny-invariant";
 
-import { getPost } from "~/post";
+import { getPost, Post } from "~/post";
 
 export const loader: LoaderFunction = async ({
     params
@@ -18,9 +18,10 @@ export const meta: MetaFunction = ({ data }) => {
 }
 
 export default function PostSlug() {
-    const post = useLoaderData();
+    const post: Post = useLoaderData();
     return (
         <section>
+            <h3>{post.publishDate}</h3>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </section>
     );

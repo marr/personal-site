@@ -8,7 +8,9 @@ import invariant from "tiny-invariant";
 export type Post = {
     publishDate: string,
     slug: string,
-    title: string;
+    title: string,
+    html: string,
+    markdown: string
 };
 
 export type PostMarkdownAttributes = {
@@ -50,13 +52,19 @@ export async function getPosts() {
 export async function getPost(slug: string) {
     const filepath = path.join(postsPath, slug + ".md");
     const file = await fs.readFile(filepath);
-    const { attributes, body } = parseFrontMatter(file.toString());
+    const { attributes, body,  } = parseFrontMatter(file.toString());
     invariant(
         isValidPostAttributes(attributes),
         `Post ${filepath} is missing attributes`
     );
     const html = marked(body);
-    return { html, publishDate: attributes.date, slug, title: attributes.title };
+    return {
+        html,
+        markdown: body,
+        publishDate: format(new Date(attributes.date), 'PP'),
+        slug,
+        title: attributes.title
+    };
 }
 
 type NewPost = {
@@ -66,7 +74,21 @@ type NewPost = {
 };
 
 export async function createPost(post: NewPost) {
-    const md = `---\ntitle: ${post.title}\n---\n\n${post.markdown}`;
+    const publishDate = format(new Date(), 'MM-dd-yyyy');
+    const md = `---\ntitle: ${post.title}\ndate: ${publishDate}\n---\n\n${post.markdown}`;
+    await fs.writeFile(path.join(postsPath, post.slug + ".md"), md);
+    return getPost(post.slug);
+}
+
+export async function editPost(post: NewPost) {
+    const filepath = path.join(postsPath, post.slug + ".md");
+    const file = await fs.readFile(filepath);
+    const { attributes, body } = parseFrontMatter(file.toString());
+    invariant(
+        isValidPostAttributes(attributes),
+        `Post ${filepath} is missing attributes`
+    );
+    const md = `---\ntitle: ${post.title}\ndate: ${attributes.date}\n---\n\n${post.markdown}`;
     await fs.writeFile(path.join(postsPath, post.slug + ".md"), md);
     return getPost(post.slug);
 }
