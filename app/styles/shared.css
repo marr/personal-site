@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
 
+:root {
+    --font-text: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
 body {
     background-color: rgb(30, 10, 80);
     margin: 0;
@@ -16,10 +20,11 @@ header::before {
 main {
     color: white;
     font-family: "Oswald", sans-serif;
-    grid-area: main;
+    padding: 0 20px;
+    /* grid-area: main;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr minmax(0, 600px) 1fr;
+    grid-template-columns: 1fr minmax(0, 600px) 1fr; */
 }
 
 main section {
@@ -40,11 +45,11 @@ h2 {
 
 a {
     color: white;
-    font-family: Monaco, sans-serif;
+    font-family: var(--font-text);
 }
 
 p, li {
-    font-family: Monaco, sans-serif;
+    font-family: var(--font-text);
 }
 
 blockquote {
@@ -63,7 +68,16 @@ blockquote {
     /* margin-left: -50px; */
 }
 
-.github-starred-item {
+.timestamp-year {
+    font-size: 12px;
+    border: 0.5px solid white;
+    border-radius: 16px;
+    padding: 2px 4px;
+    margin-left: 4px;
+}
+
+.github-starred-item,
+.twitter-liked-item {
     background-color: rgba(230,230,230,0.2);
     padding: 10px 15px;
     border-radius: 10px;
@@ -71,14 +85,19 @@ blockquote {
     position: relative;
 }
 
-.github-starred-item + .github-starred-item {
+.github-starred-item + .github-starred-item,
+.twitter-liked-item + .twitter-liked-item {
     margin-top: 20px;
 }
 
 .github-starred-item::before {
     content: "⭐️";
     position: absolute;
-    left: -36px;
+    left: -22px;
     top: 50%;
     transform: translateY(-50%);
 }
+
+/* .twitter-liked-item {
+
+} */

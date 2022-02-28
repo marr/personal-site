@@ -3,7 +3,8 @@ import { LoaderFunction, useLoaderData } from "remix";
 import isSameDay from 'date-fns/isSameDay';
 import formatDistance from 'date-fns/formatDistance';
 
-import { getActivity, GithubStar } from "~/api/activity";
+import { getActivity as getGithubActivity, GithubStar } from "~/api/github";
+import { getActivity as getTwitterActivity, TwitterLike } from "~/api/twitter";
 import _emojis from '~/assets/emojis.json';
 import React from "react";
 
@@ -17,9 +18,11 @@ const replaceGithubShortcodes = (str: string) => str.replaceAll(/:(\w*):/g, (_, 
 const sanitizeHTML = (str: string) => str.replaceAll("<", "&lt;").replaceAll(">", "&gt;");
 
 export const loader: LoaderFunction = async () => {
-    const items = await getActivity();
+    const items = await getGithubActivity();
+    const likes = await getTwitterActivity();
     return {
-        items
+        items,
+        twitterLikes: likes.data
     };
 };
 
@@ -28,6 +31,15 @@ export default function Activity() {
     let lastStarredAt: Date;
     return (
         <section>
+            <h2>Recent twitter likes</h2>
+            {data.twitterLikes.map((item: TwitterLike) => (
+                <React.Fragment key={item.id}>
+                    <div className="twitter-liked-item">
+                        <p>{item.text}</p>
+                    </div>
+                </React.Fragment>
+            ))}
+            <h2>Recent github starred repos</h2>
             {data.items.map((item: GithubStar) => {
                 let timeStamp;
                 let {
@@ -50,9 +62,11 @@ export default function Activity() {
                         {timeStamp && <p className="timestamp">{timeStamp}</p>}
                         <div className="github-starred-item">
                             <a href={htmlUrl}>{fullName}</a>
-                            <p dangerouslySetInnerHTML={{
-                                __html: replaceGithubShortcodes(sanitizeHTML(description))
-                            }} />
+                            {description && (
+                                <p dangerouslySetInnerHTML={{
+                                    __html: replaceGithubShortcodes(sanitizeHTML(description))
+                                }} />
+                            )}
                         </div>
                     </React.Fragment>
                 );

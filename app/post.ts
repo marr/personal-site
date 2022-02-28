@@ -1,15 +1,18 @@
 import path from "path";
 import fs from "fs/promises";
+import { format } from 'date-fns';
 import parseFrontMatter from "front-matter";
 import { marked } from "marked";
 import invariant from "tiny-invariant";
 
 export type Post = {
-    slug: string;
+    publishDate: string,
+    slug: string,
     title: string;
 };
 
 export type PostMarkdownAttributes = {
+    date: string,
     title: string;
 };
 
@@ -36,6 +39,7 @@ export async function getPosts() {
                 `${filename} has bad meta data!`
             );
             return {
+                publishDate: format(new Date(attributes.date), 'yyyy'),
                 slug: filename.replace(/\.md$/, ""),
                 title: attributes.title
             };
@@ -52,7 +56,7 @@ export async function getPost(slug: string) {
         `Post ${filepath} is missing attributes`
     );
     const html = marked(body);
-    return { slug, html, title: attributes.title };
+    return { html, publishDate: attributes.date, slug, title: attributes.title };
 }
 
 type NewPost = {

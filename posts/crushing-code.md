@@ -1,5 +1,6 @@
 ---
 title: Crushing Code
+date: 02-22-2022
 ---
 
 # What was old is new again ♻️

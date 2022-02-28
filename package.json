@@ -9,6 +9,7 @@
     "@types/marked": "^4.0.2",
     "cross-env": "^7.0.3",
     "date-fns": "^2.28.0",
+    "dotenv": "^16.0.0",
     "front-matter": "^4.0.2",
     "hast-util-to-string": "^2.0.0",
     "marked": "^4.0.12",
@@ -38,7 +39,7 @@
   "scripts": {
     "postinstall": "remix setup node",
     "build": "cross-env NODE_ENV=production remix build",
-    "dev": "cross-env NODE_ENV=development remix dev",
+    "dev": "node -r dotenv/config node_modules/.bin/remix dev",
     "start": "cross-env NODE_ENV=production remix-serve build"
   }
 }
