@@ -43,6 +43,7 @@ export const action: ActionFunction = async ({ request }) => {
 export const loader: LoaderFunction = async ({ request }) => {
     const url = new URL(request.url);
     const slug = url.searchParams.get('slug');
+    invariant(slug, 'slug is required')
     const post = getPost(slug);
     return post;
 }
@@ -52,7 +53,7 @@ export default function EditPost() {
     const errors = useActionData();
     const transition = useTransition();
     return (
-        <Form method="post">
+        <Form action={`?slug=${data.slug}`} method="post" >
             <input name="slug" type="hidden" value={data.slug} />
             <p>
                 <label>
