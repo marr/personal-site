@@ -22,7 +22,7 @@ export default function Admin() {
                 <ul>
                     {posts.map((post) => (
                         <li key={post.slug}>
-                            <Link reloadDocument to={`edit?slug=${post.slug}`}>{post.title}</Link>
+                            <Link reloadDocument to={`${post.slug}/edit`}>{post.title}</Link>
                         </li>
                     ))}
                 </ul>

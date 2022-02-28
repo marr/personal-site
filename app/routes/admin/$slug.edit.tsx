@@ -40,11 +40,9 @@ export const action: ActionFunction = async ({ request }) => {
     return redirect("/admin");
 };
 
-export const loader: LoaderFunction = async ({ request }) => {
-    const url = new URL(request.url);
-    const slug = url.searchParams.get('slug');
-    invariant(slug, 'slug is required')
-    const post = getPost(slug);
+export const loader: LoaderFunction = async ({ params }) => {
+    invariant(params.slug, "slug is required");
+    const post = getPost(params.slug);
     return post;
 }
 
@@ -53,7 +51,7 @@ export default function EditPost() {
     const errors = useActionData();
     const transition = useTransition();
     return (
-        <Form action={`?slug=${data.slug}`} method="post" >
+        <Form method="post" >
             <input name="slug" type="hidden" value={data.slug} />
             <p>
                 <label>
