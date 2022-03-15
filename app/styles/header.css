@@ -8,7 +8,6 @@
 [data-header] h1 {
     color: white;
     flex-shrink: 0;
-    font-family: var(--font-text);
     font-size: 14px;
     font-weight: normal;
     margin: 0;

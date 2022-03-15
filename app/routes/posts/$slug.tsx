@@ -1,4 +1,4 @@
-import { useLoaderData } from "remix";
+import { Link, useLoaderData } from "remix";
 import type { LoaderFunction, MetaFunction } from "remix";
 import invariant from "tiny-invariant";
 
@@ -23,6 +23,7 @@ export default function PostSlug() {
         <section>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
             <p className="publishDate">Published on: {post.publishDate}</p>
+            <Link to="/posts">View all posts</Link>
         </section>
     );
 }
