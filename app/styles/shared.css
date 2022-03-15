@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
 
 :root {
-    --font-text: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    --font-text: serif;
+    --color-bright: rgb(253, 109, 109);
 }
 
 body {
@@ -14,19 +15,17 @@ header::before {
     display: block;
     position: relative;
     height: 4px;
-    background: linear-gradient(116deg, cyan 0%, rebeccapurple 40%, deeppink 90%);
+    background: linear-gradient(116deg, cyan 0%, rebeccapurple 40%, var(--color-bright) 90%);
 }
 
 main {
     color: white;
-    padding: 0 20px;
-    grid-area: main;
     display: grid;
+    grid-area: main;
     grid-template-columns: 1fr min(65ch, calc(100% - 64px)) 1fr;
 }
 
 main section {
-    font-family: "Oswald", sans-serif;
     grid-column: 2;
 }
 
@@ -44,27 +43,23 @@ h2 {
 
 a {
     color: white;
-    font-family: var(--font-text);
 }
 
 p, li {
     font-family: var(--font-text);
+    line-height: 1.15rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 blockquote {
     border-left: 2px solid white;
     margin: 0;
     padding-left: 20px;
-}
-
-#hero {
-    display: grid;
-    place-content: center;
-    height: 30em;
-}
-
-.timestamp {
-    /* margin-left: -50px; */
 }
 
 .timestamp-year {
@@ -92,7 +87,7 @@ blockquote {
 .github-starred-item::before {
     content: "⭐️";
     position: absolute;
-    left: -22px;
+    left: -30px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -100,3 +95,8 @@ blockquote {
 /* .twitter-liked-item {
 
 } */
+
+.publishDate {
+    font-size: 12px;
+    font-style: oblique;
+}

@@ -11,7 +11,7 @@ export default function Posts() {
     const posts = useLoaderData<Post[]>();
     return (
         <section>
-            <h2>My writings</h2>
+            <h2>On productivity, coding, and life.</h2>
             <ul>
                 {posts.map(post => (
                     <li key={post.slug}>

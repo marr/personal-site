@@ -3,11 +3,7 @@
  */
 module.exports = {
   ignoredRouteFiles: [".*"],
-  serverDependenciesToBundle: [
-    /^remark.*/,
-    /^rehype.*/,
-    /^unified.*/
-  ]
+  // serverDependenciesToBundle: [],
   // appDirectory: "app",
   // assetsBuildDirectory: "public/build",
   // serverBuildPath: "build/index.js",

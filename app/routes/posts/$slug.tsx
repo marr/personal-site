@@ -21,8 +21,8 @@ export default function PostSlug() {
     const post: Post = useLoaderData();
     return (
         <section>
-            <h3>{post.publishDate}</h3>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            <p className="publishDate">Published on: {post.publishDate}</p>
         </section>
     );
 }

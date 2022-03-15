@@ -1,7 +1,7 @@
 import { LoaderFunction, useLoaderData } from "remix";
 
 import isSameDay from 'date-fns/isSameDay';
-import formatDistance from 'date-fns/formatDistance';
+import format from 'date-fns/format';
 
 import { getActivity as getGithubActivity, GithubStar } from "~/api/github";
 import { getActivity as getTwitterActivity, TwitterLike } from "~/api/twitter";
@@ -53,7 +53,7 @@ export default function Activity() {
                 } = item;
                 starredAt = new Date(starredAt);
                 if (!isSameDay(starredAt, lastStarredAt)) {
-                    timeStamp = formatDistance(starredAt, new Date(), { addSuffix: true });
+                    timeStamp = format(starredAt, 'PP');
                     lastStarredAt = starredAt;
                 } 
  

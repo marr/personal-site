@@ -1,9 +1,8 @@
 import path from "path";
 import fs from "fs/promises";
-import { format } from 'date-fns';
-import parseFrontMatter from "front-matter";
-import { marked } from "marked";
+import { format } from "date-fns";
 import invariant from "tiny-invariant";
+import { markdownToHtml, parseFrontMatter } from "./utils/markdown.server";
 
 export type Post = {
     publishDate: string,
@@ -57,7 +56,7 @@ export async function getPost(slug: string) {
         isValidPostAttributes(attributes),
         `Post ${filepath} is missing attributes`
     );
-    const html = marked(body);
+    const html = await markdownToHtml(body);
     return {
         html,
         markdown: body,

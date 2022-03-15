@@ -9,12 +9,10 @@
     color: white;
     flex-shrink: 0;
     font-family: var(--font-text);
+    font-size: 14px;
     font-weight: normal;
     margin: 0;
-}
-
-[data-header] h1 a {
-    text-decoration: none;
+    text-align: right;
 }
 
 [data-header] nav {
@@ -24,6 +22,7 @@
 }
 
 [data-header] nav a {
+    font-family: sans-serif;
     margin-left: 16px;
     padding-bottom: 4px;
     position: relative;
@@ -47,4 +46,16 @@
 [data-header] nav a.active::before {
     transform-origin: left;
     transform: scaleX(1);
+}
+
+[data-header] nav a.active {
+    margin-top: -4px;
+}
+
+[data-header] svg {
+    width: 206px;
+}
+
+[data-header] svg path {
+    fill: var(--color-bright);
 }

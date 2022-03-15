@@ -1,3 +1,5 @@
+export { default as parseFrontMatter } from "front-matter";
+
 async function markdownToHtml(markdownString: string) {
     const {unified} = await import('unified')
     const {default: markdown} = await import('remark-parse')
