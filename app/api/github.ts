@@ -10,8 +10,8 @@ export type GithubStar = {
     repo: GithubRepo
 };
 
-export const getActivity = async () => {
-    const response = await fetch('https://api.github.com/users/marr/starred', {
+export const getActivity = async (limit = 10) => {
+    const response = await fetch(`https://api.github.com/users/marr/starred?per_page=${limit}`, {
         headers: {
             accept: 'application/vnd.github.v3.star+json'
         }

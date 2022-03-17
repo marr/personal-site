@@ -1,10 +1,11 @@
 :root {
-    --font-text: serif;
+    --font-text: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
     --color-bright: rgb(253, 109, 109);
 }
 
 body {
     background-color: rgb(30, 10, 80);
+    font-family: var(--font-text);
     margin: 0;
 }
 
@@ -68,33 +69,40 @@ blockquote {
     margin-left: 4px;
 }
 
-.github-starred-item,
-.twitter-liked-item {
+.activity-list-item {
     background-color: rgba(230,230,230,0.2);
-    padding: 10px 15px;
     border-radius: 10px;
-    margin-left: 40px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 116px;
+    padding: 10px 15px;
 }
 
-.github-starred-item + .github-starred-item,
-.twitter-liked-item + .twitter-liked-item {
+.activity-list-item + .activity-list-item {
     margin-top: 20px;
 }
 
-.github-starred-item::before {
-    content: "⭐️";
-    position: absolute;
-    left: -30px;
-    top: 50%;
-    transform: translateY(-50%);
+.activity-list-item .timestamp {
+    font-size: 12px;
+    margin: auto 0 0;
 }
-
-/* .twitter-liked-item {
-
-} */
 
 .publishDate {
     font-size: 12px;
     font-style: oblique;
+}
+
+.starred-at::before {
+    content: "⭐️";
+    padding-right: 4px;
+}
+
+.tweeted-at::before {
+    content: "🐦";
+    padding-right: 4px;
+}
+
+.timestamp {
+    margin: 0;
+    text-align: right;
 }

@@ -1,11 +1,11 @@
-import { Outlet, Link, useLoaderData } from "remix";
+import { Outlet, Link, useLoaderData, LinksFunction } from "remix";
 
 import { getPosts } from "~/post";
 import type { Post } from "~/post";
 
 import adminStyles from "~/styles/admin.css";
 
-export const links = () => {
+export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: adminStyles }];
 };
 

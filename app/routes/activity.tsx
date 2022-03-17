@@ -1,12 +1,13 @@
-import { LoaderFunction, useLoaderData } from "remix";
+import { LinksFunction, LoaderFunction, useLoaderData } from "remix";
+import twitter from 'twitter-text';
 
-import isSameDay from 'date-fns/isSameDay';
 import format from 'date-fns/format';
 
 import { getActivity as getGithubActivity, GithubStar } from "~/api/github";
 import { getActivity as getTwitterActivity, TwitterLike } from "~/api/twitter";
 import _emojis from '~/assets/emojis.json';
-import React from "react";
+
+import activityStyles from '~/styles/activity.css';
 
 type GithubEmojis = typeof _emojis;
 
@@ -15,7 +16,12 @@ const replaceGithubShortcodes = (str: string) => str.replaceAll(/:(\w*):/g, (_, 
     return `<img src=${emojis[key]} style="width: 20px; height: 20px;" />`;
 });
 
+const formatDate = (date: string | Date, formatStr: string = 'PP') => format(new Date(date), formatStr);
 const sanitizeHTML = (str: string) => str.replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+
+export const links: LinksFunction = () => [
+    { rel: "stylesheet", href: activityStyles }
+];
 
 export const loader: LoaderFunction = async () => {
     const items = await getGithubActivity();
@@ -28,49 +34,49 @@ export const loader: LoaderFunction = async () => {
 
 export default function Activity() {
     const data = useLoaderData();
-    let lastStarredAt: Date;
     return (
-        <section>
-            <h2>Recent twitter likes</h2>
-            {data.twitterLikes.map((item: TwitterLike) => (
-                <React.Fragment key={item.id}>
-                    <div className="twitter-liked-item">
-                        <p>{item.text}</p>
+        <section className="activity-items">
+            <div>
+                <h2>Recent Twitter likes</h2>
+                {data.twitterLikes.map((item: TwitterLike) => (
+                    <div key={item.id} className="activity-list-item">
+                        <div dangerouslySetInnerHTML={{ __html: twitter.autoLink(item.text) }} />
+                        <p className="timestamp tweeted-at">
+                            <a className="" href={`https://twitter.com/twitter/status/${item.id}`}>
+                                {formatDate(item.created_at)}
+                            </a>
+                        </p>
                     </div>
-                </React.Fragment>
-            ))}
-            <h2>Recent github starred repos</h2>
-            {data.items.map((item: GithubStar) => {
-                let timeStamp;
-                let {
-                    starred_at: starredAt,
-                    repo: {
-                        description,
-                        full_name: fullName,
-                        html_url: htmlUrl,
-                        id
-                    }
-                } = item;
-                starredAt = new Date(starredAt);
-                if (!isSameDay(starredAt, lastStarredAt)) {
-                    timeStamp = format(starredAt, 'PP');
-                    lastStarredAt = starredAt;
-                } 
- 
-                return (
-                    <React.Fragment key={id}>
-                        {timeStamp && <p className="timestamp">{timeStamp}</p>}
-                        <div className="github-starred-item">
+                ))}
+                <p><a href="https://twitter.com/dmarr/likes">See all my Twitter likes</a></p>
+            </div>
+            <div>
+                <h2>Recent Github starred repos</h2>
+                {data.items.map((item: GithubStar) => {
+                    const {
+                        starred_at: starredAt,
+                        repo: {
+                            description,
+                            full_name: fullName,
+                            html_url: htmlUrl,
+                            id
+                        }
+                    } = item;
+    
+                    return (
+                        <div key={id} className="activity-list-item">
                             <a href={htmlUrl}>{fullName}</a>
                             {description && (
                                 <p dangerouslySetInnerHTML={{
                                     __html: replaceGithubShortcodes(sanitizeHTML(description))
                                 }} />
                             )}
+                            <p className="timestamp starred-at">{formatDate(starredAt)}</p>
                         </div>
-                    </React.Fragment>
-                );
-            })}
+                    );
+                })}
+                <p><a href="https://github.com/marr?tab=stars">See all my Github stars</a></p>
+            </div>
         </section>
     );
 }
