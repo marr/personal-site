@@ -14,7 +14,7 @@ type PostError = {
   markdown?: boolean;
 };
 
-import { createPost, editPost, getPost } from "~/post";
+import { editPost, getPost } from "~/api/post";
 
 export const action: ActionFunction = async ({ request }) => {
     const formData = await request.formData();

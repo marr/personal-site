@@ -2,7 +2,7 @@ export type GithubRepo = {
     description: string,
     full_name: string,
     html_url: string,
-    id: string,
+    id: string
 };
 
 export type GithubStar = {

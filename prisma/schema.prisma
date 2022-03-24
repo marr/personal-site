@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Activity {
+  id          Int      @id @default(autoincrement())
+  created_at  DateTime
+  description String?
+  name        String?
+  url         String
+  external_id String
+  provider_id Int
+  scraped_at  DateTime
+  Provider    Provider @relation(fields: [provider_id], references: [id])
+
+  @@unique([external_id, provider_id])
+}
+
+model Provider {
+  id       Int        @id @default(autoincrement())
+  name     String
+  Activity Activity[]
+}

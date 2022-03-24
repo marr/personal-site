@@ -2,7 +2,7 @@ import path from "path";
 import fs from "fs/promises";
 import { format } from "date-fns";
 import invariant from "tiny-invariant";
-import { markdownToHtml, parseFrontMatter } from "./utils/markdown.server";
+import { markdownToHtml, parseFrontMatter } from "../utils/markdown.server";
 
 export type Post = {
     publishDate: string,

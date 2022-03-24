@@ -2,7 +2,7 @@ import { Link, useLoaderData } from "remix";
 import type { LoaderFunction, MetaFunction } from "remix";
 import invariant from "tiny-invariant";
 
-import { getPost, Post } from "~/post";
+import { getPost, Post } from "~/api/post";
 
 export const loader: LoaderFunction = async ({
     params
