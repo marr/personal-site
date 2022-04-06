@@ -1,4 +1,6 @@
+import { useEffect } from 'react';
 import { LinksFunction, LoaderFunction, useLoaderData } from "remix";
+import twemoji from 'twemoji';
 import twitter from 'twitter-text';
 
 import format from 'date-fns/format';
@@ -33,6 +35,9 @@ export const loader: LoaderFunction = async () => {
 };
 
 export default function Activity() {
+    useEffect(() => {
+        twemoji.parse(document.body);
+    }, []);
     const data = useLoaderData();
     return (
         <section className="activity-items">

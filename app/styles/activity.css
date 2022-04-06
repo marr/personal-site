@@ -3,3 +3,8 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
+
+.activity-items .emoji {
+    width: 20px;
+    height: 20px;
+}

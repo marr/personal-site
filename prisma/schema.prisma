@@ -1,28 +1,40 @@
 generator client {
   provider = "prisma-client-js"
+  previewFeatures = ["mongoDb"]
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
 }
 
 model Activity {
-  id          Int      @id @default(autoincrement())
-  created_at  DateTime
-  description String?
-  name        String?
-  url         String
-  external_id String
-  provider_id Int
-  scraped_at  DateTime
-  Provider    Provider @relation(fields: [provider_id], references: [id])
+  id            String      @id @default(auto()) @map("_id") @db.ObjectId
+  created_at    DateTime
+  description   String?
+  name          String?
+  url           String
+  external_id   String
+  provider_id   String      @db.ObjectId
+  scraped_at    DateTime
+  Provider      Provider @relation(fields: [provider_id], references: [id])
 
   @@unique([external_id, provider_id])
 }
 
 model Provider {
-  id       Int        @id @default(autoincrement())
-  name     String
-  Activity Activity[]
+  id            String      @id @default(auto()) @map("_id") @db.ObjectId
+  name          String
+  Activity      Activity[]
+  Author        Author[]
+}
+
+model Author {
+  id            String      @id @default(auto()) @map("_id") @db.ObjectId
+  name          String
+  url           String
+  external_id   String
+  profile_image String?
+  provider_id   String      @db.ObjectId
+  Provider      Provider    @relation(fields: [provider_id], references: [id])
 }

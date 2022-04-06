@@ -106,3 +106,7 @@ blockquote {
     margin: 0;
     text-align: right;
 }
+
+.permalink-icon path {
+    fill: white;
+}

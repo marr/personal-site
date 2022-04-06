@@ -1,14 +1,16 @@
+import { byDate } from '~/utils/date';
+import { deepMerge, sortByField } from '~/utils/general';
+
 export type TwitterLike = {
+    author_id: string,
     id: string,
     created_at: string,
-    text: string
+    text: string,
+    url: string
 };
 
-export const getActivity = async (limit = 10) => {
-    const likesUrl = new URL('https://api.twitter.com/2/users/6685592/liked_tweets');
-    likesUrl.searchParams.set('max_results', String(limit));
-    likesUrl.searchParams.set('tweet.fields', 'author_id,created_at');
-    const response = await fetch(likesUrl.toString(), {
+const getTwitterData = async (url: URL) => {
+    const response = await fetch(url.toString(), {
         headers: {
             authorization: `Bearer ${process.env.TWITTER_AUTH_TOKEN}`
         }
@@ -16,6 +18,32 @@ export const getActivity = async (limit = 10) => {
     if (!response.ok) {
         throw response;
     }
-
     return response.json();
+}
+
+const getTweetsUrl = (path: string) => {
+    const url = new URL(`https://api.twitter.com/2/${path}`);
+    url.searchParams.set('expansions', 'author_id,referenced_tweets.id,referenced_tweets.id.author_id,in_reply_to_user_id,attachments.media_keys');
+    url.searchParams.set('max_results', '10');
+    url.searchParams.set('media.fields', 'preview_image_url,url,width,height,alt_text');
+    url.searchParams.set('tweet.fields', 'created_at,in_reply_to_user_id,public_metrics,referenced_tweets,entities');
+    url.searchParams.set('user.fields', 'name,username,profile_image_url,url,public_metrics,verified,entities');
+    return url;
+}
+
+export const getActivity = async (limit = 10) => {
+    const [likedData, tweetData] = await Promise.all([
+        getTwitterData(getTweetsUrl('users/6685592/liked_tweets')),
+        getTwitterData(getTweetsUrl('users/6685592/tweets'))
+    ]);
+    return {
+        data: [
+            ...likedData.data,
+            ...tweetData.data
+        ].sort(sortByField(
+            ({ created_at }: TwitterLike) => new Date(created_at),
+            byDate()
+        )),
+        includes: deepMerge(likedData.includes, tweetData.includes)
+    };
 }
