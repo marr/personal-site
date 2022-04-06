@@ -15,4 +15,3 @@ General computing tasks feel like errands, as they are usually done in small pie
 
 This made me immediately think: _it would be nice to look back and have some type of professional timeline on record._ Hence, this article. I still plan to maintain my home and health, but for now sharing my personal productivity tips and technical know-how regularly will be a priority. Imagine looking back thirty years from now and having a volume of work that was instrumental to your success. Someone once told me, "Stack good days on good days", and writing is proof that you have accomplished that goal.
 
-

@@ -17,12 +17,14 @@ Today, my time is spent trying to work smarter and focus on technologies that op
 
 - [Remix](https://remix.run/) – Modern approach to building applications that embraces web fundamentals. 
 - [Stately](https://stately.ai/) – Visual modeling for application state logic. 
-- [Xstate](https://xstate.js.org/docs/) – Library for building state machines.
+- [XState](https://xstate.js.org/docs/) – Library for building state machines.
 
 This site is built with Remix. The back-end and front-end are much simpler to reason about with this new framework. If your goal is to keep the web great and restore forgotten dreams like progressive enhancement, do check out Remix.
 
 Their discord is quite active and full of people with new perspectives on building durable web applications. I believe Remix will have a similar reception to React or Node in terms of de-facto standards. It will be around for a long time, and only increase in activity over the next dozen years. You can count on it!
 
-Stately and Xstate are also tech worth exploring. State machines are not a new concept, but the tooling up until now has left much to be desired. When your team is running in circles trying to establish how their user flow should behave, you can create a bulletproof model in minutes.
+Stately and Xstate are also tech worth exploring. State machines are not a new
+concept, but the tooling up until now has left much to be desired. When your
+team is running in circles trying to define their user flow, you could create a bulletproof model in minutes.
 
 To familiarize yourself with Xstate, [check out this demo of the author walking through a video player example](https://www.crowdcast.io/e/modeling-application/1).
