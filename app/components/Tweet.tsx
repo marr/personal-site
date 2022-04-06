@@ -3,21 +3,7 @@ import twitter from 'twitter-text';
 import TwitterVerified from './TwitterVerified';
 import { formatDateTime } from '~/utils/date';
 import PermalinkIcon from './PermalinkIcon';
-
-interface TweetProps {
-    id: string,
-    author_id: string,
-    created_at: string,
-    isReferencedTweet: boolean,
-    text: string,
-    referenced_tweets: any[],
-    attachments: any,
-    authors: any,
-    entities: any,
-    media: any,
-    tweets: any
-};
-
+import type { TweetProps } from '~/api/twitter';
 interface TweetAuthorProps {
     id: string,
     name: string,

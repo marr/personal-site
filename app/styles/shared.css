@@ -69,42 +69,9 @@ blockquote {
     margin-left: 4px;
 }
 
-.activity-list-item {
-    background-color: rgba(230,230,230,0.2);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    min-height: 116px;
-    padding: 10px 15px;
-}
-
-.activity-list-item + .activity-list-item {
-    margin-top: 20px;
-}
-
-.activity-list-item .timestamp {
-    font-size: 12px;
-    margin: auto 0 0;
-}
-
 .publishDate {
     font-size: 12px;
     font-style: oblique;
-}
-
-.starred-at::before {
-    content: "⭐️";
-    padding-right: 4px;
-}
-
-.tweeted-at::before {
-    content: "🐦";
-    padding-right: 4px;
-}
-
-.timestamp {
-    margin: 0;
-    text-align: right;
 }
 
 .permalink-icon path {

@@ -1,12 +1,18 @@
 import { byDate } from '~/utils/date';
 import { deepMerge, sortByField } from '~/utils/general';
 
-export type TwitterLike = {
-    author_id: string,
+export interface TweetProps {
     id: string,
+    author_id: string,
     created_at: string,
+    isReferencedTweet?: boolean,
     text: string,
-    url: string
+    referenced_tweets: any[],
+    attachments: any,
+    authors: any,
+    entities: any,
+    media: any,
+    tweets: any
 };
 
 const getTwitterData = async (url: URL) => {
@@ -31,7 +37,7 @@ const getTweetsUrl = (path: string) => {
     return url;
 }
 
-export const getActivity = async (limit = 10) => {
+export const getActivity = async () => {
     const [likedData, tweetData] = await Promise.all([
         getTwitterData(getTweetsUrl('users/6685592/liked_tweets')),
         getTwitterData(getTweetsUrl('users/6685592/tweets'))
@@ -41,7 +47,7 @@ export const getActivity = async (limit = 10) => {
             ...likedData.data,
             ...tweetData.data
         ].sort(sortByField(
-            ({ created_at }: TwitterLike) => new Date(created_at),
+            ({ created_at }: TweetProps) => new Date(created_at),
             byDate()
         )),
         includes: deepMerge(likedData.includes, tweetData.includes)

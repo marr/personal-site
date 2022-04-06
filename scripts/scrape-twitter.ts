@@ -3,7 +3,7 @@ import { installGlobals } from '@remix-run/node';
 import { PrismaClient } from '@prisma/client'
 import invariant from 'tiny-invariant';
 
-import { getActivity, TwitterLike } from '../app/api/twitter';
+import { getActivity, TweetProps } from '../app/api/twitter';
 
 const prisma = new PrismaClient()
 
@@ -21,8 +21,8 @@ async function main() {
       }
     });
     invariant(provider?.id, 'Twitter provider not found');
-    const response = await getActivity(5);
-    const likes: TwitterLike[] = response.data;
+    const response = await getActivity();
+    const likes: TweetProps[] = response.data;
     const media = response.includes.media.reduce(byId, {}); 
     const tweets = response.includes.tweets.reduce(byId, {});
     const users = response.includes.users.reduce(byId, {});

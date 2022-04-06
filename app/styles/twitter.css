@@ -19,6 +19,10 @@
     margin-top: 10px;
 }
 
+.tweet > .tweet .tweet-footer {
+    display: none;
+}
+
 .tweet > .tweet .tweet-header {
     line-height: 20px;
 }

@@ -12,7 +12,7 @@ import MainHeader, { links as headerLinks } from './components/MainHeader';
 import styles from "~/styles/shared.css";
 
 export const meta: MetaFunction = () => {
-    return { title: "New Remix App" };
+    return { title: "Crushing Code - a blog by David Marr" };
 };
 
 export const links: LinksFunction = () => {
