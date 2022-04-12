@@ -4,15 +4,13 @@ import { PrismaClient } from '@prisma/client'
 import invariant from 'tiny-invariant';
 
 import { getActivity, TweetProps } from '../app/api/twitter';
+import { reduceByField } from '../app/utils/general';
 
 const prisma = new PrismaClient()
 
 installGlobals();
 
-const byId = (acc: any, next: any) => ({
-  ...acc,
-  [next.id]: next
-});
+const byId = reduceByField('id');
 
 async function main() {
     const provider = await prisma.provider.findFirst({
@@ -27,17 +25,21 @@ async function main() {
     const tweets = response.includes.tweets.reduce(byId, {});
     const users = response.includes.users.reduce(byId, {});
 
-    const data = likes.map((like) => ({
-        created_at: like.created_at,
-        description: like.text,
-        external_id: like.id,
-        provider_id: provider?.id as string,
-        scraped_at: new Date(),
-        url: `https://twitter.com/${users[like.author_id].username}/status/${like.id}`
+    // const data = likes.map((like) => ({
+    //     created_at: like.created_at,
+    //     description: like.text,
+    //     external_id: like.id,
+    //     provider_id: provider?.id as string,
+    //     scraped_at: new Date(),
+    //     url: `https://twitter.com/${users[like.author_id].username}/status/${like.id}`
+    // }));
+    // const activity = await prisma.activity.createMany({
+    //   data
+    // });
+    const data = likes.map(like => ({
+      data: like
     }));
-    const activity = await prisma.activity.createMany({
-      data
-    });
+    const activity = await prisma.tweet.createMany({ data: data as any });
     console.log('%d Twitter entries created', activity.count);
 }
 

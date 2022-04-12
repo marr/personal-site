@@ -1,5 +1,5 @@
-import { Link, useLoaderData } from "remix";
-import type { LoaderFunction, MetaFunction } from "remix";
+import { Link, useLoaderData } from "@remix-run/react";
+import type { LoaderFunction, MetaFunction } from "@remix-run/node";
 import invariant from "tiny-invariant";
 
 import { getPost, Post } from "~/api/post";

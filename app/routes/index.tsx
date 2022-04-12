@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
-import { HeadersFunction, json, LinksFunction, LoaderFunction, useLoaderData } from 'remix';
+import { HeadersFunction, json, LinksFunction, LoaderFunction } from '@remix-run/node';
+import { useLoaderData } from '@remix-run/react';
 import { getActivity } from '~/api/twitter';
 import type { TweetProps } from '~/api/twitter';
 import twemoji from 'twemoji';
@@ -42,7 +43,7 @@ export default function Index() {
         twemoji.parse(document.body);
     }, []);
     const authors = includes.users?.reduce(reduceByField('id'), {});
-    const media = includes.media?.reduce(reduceByField('media_key'), {});
+    const media = includes.media?.reduce(reduceByField('mediaKey'), {});
     const tweets = includes.tweets?.reduce(reduceByField('id'), {});
     return (
         <section>

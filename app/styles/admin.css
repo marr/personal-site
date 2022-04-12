@@ -1,17 +1,7 @@
-.admin {
-    display: flex;
+.posts {
+    margin-top: 20px;
 }
 
-.admin > nav {
-    padding-right: 2rem;
-}
-
-.admin > main {
-    flex: 1;
-    border-left: solid 1px #ccc;
-    padding-left: 2rem;
-}
-
-em {
-    color: red;
+#markdown {
+    width: 80ch;
 }

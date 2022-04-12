@@ -1,4 +1,4 @@
-import { NavLink } from 'remix';
+import { NavLink } from '@remix-run/react';
 import styles from '~/styles/header.css';
 
 import Hero from './Hero';

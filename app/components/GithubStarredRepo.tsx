@@ -20,8 +20,8 @@ export default function GithubStarredRepo (props: GithubStarProps) {
   }
 
   return (
-      <div key={id} className="activity-list-item" style={itemStyle}>
-          <a href={htmlUrl}>{fullName}</a>
+      <a className="activity-list-item" href={htmlUrl} style={itemStyle}>
+          <span className="activity-name">{fullName}</span>
           {description && (
               <p className="activity-description" dangerouslySetInnerHTML={{
                   __html: replaceGithubShortcodes(sanitizeHTML(description))
@@ -32,6 +32,6 @@ export default function GithubStarredRepo (props: GithubStarProps) {
                   {formatDateTime(new Date(starredAt))}
               </time>
           )}
-      </div>
+      </a>
   );
 }

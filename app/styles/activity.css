@@ -12,10 +12,15 @@
     background-size: contain;
     background-repeat: no-repeat;
     padding: 52.25% 20px 10px;
+    text-decoration: none;
 }
 
 .activity-list-item + .activity-list-item {
     margin-top: 20px;
+}
+
+.activity-list-item .activity-name {
+    text-decoration: underline;
 }
 
 .activity-list-item .activity-description {
@@ -24,10 +29,14 @@
 
 .starred-at::before {
     content: "⭐️";
-    padding-right: 4px;
+    padding-right: 8px;
 }
 
 .starred-at {
     display: block;
     margin-top: 10px;
+}
+
+.starred-at::not(::before):hover {
+    text-decoration: underline;
 }

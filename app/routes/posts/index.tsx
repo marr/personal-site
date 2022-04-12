@@ -1,9 +1,10 @@
-import { Link, useLoaderData } from "remix";
+import { Link, useLoaderData } from "@remix-run/react";
 
 import { getPosts } from "~/api/post";
 import type { Post } from "~/api/post";
 
 export const loader = async () => {
+    debugger;
     return getPosts();
 };
 

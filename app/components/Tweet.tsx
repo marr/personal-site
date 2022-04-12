@@ -7,7 +7,7 @@ import type { TweetProps } from '~/api/twitter';
 interface TweetAuthorProps {
     id: string,
     name: string,
-    profile_image_url: string,
+    profileImageUrl: string,
     url: string,
     username: string,
     verified: boolean
@@ -36,7 +36,7 @@ const Media = (props: MediaProps) => {
                         key={key}
                         className="tweet-media-image"
                         height={media[key].height}
-                        src={media[key].url || media[key].preview_image_url}
+                        src={media[key].url || media[key].previewImageUrl}
                         width={media[key].width}
                     />
                 );
@@ -49,7 +49,7 @@ const TweetAuthor = (props: TweetAuthorProps) => {
     const authorUrl = `https://twitter.com/${props.username}`;
     return (
         <a className="tweet-author" href={authorUrl}>
-            <img alt={props.username} className="tweet-author-image" src={props.profile_image_url} />
+            <img alt={props.username} className="tweet-author-image" src={props.profileImageUrl} />
             <div className="tweet-author-info">
                 <span>
                     <strong>{props.name}</strong>
@@ -69,20 +69,20 @@ const TweetText = (props: TweetTextProps) => {
 export default function Tweet (props: TweetProps) {
     const {
         attachments,
-        author_id,
+        authorId,
         authors,
-        created_at,
+        createdAt,
         entities,
         id,
         isReferencedTweet,
         media,
-        referenced_tweets = [],
+        referencedTweets = [],
         text,
         tweets
     } = props;
-    const { media_keys } = attachments || {};
+    const { mediaKeys } = attachments || {};
 
-    const parents = referenced_tweets.map(tweet => {
+    const parents = referencedTweets.map(tweet => {
         const ref = tweets[tweet.id];
         if (!ref) {
             return <p key={tweet.id} className="tweet tweet-missing">Tweet not found</p>
@@ -94,24 +94,24 @@ export default function Tweet (props: TweetProps) {
                 isReferencedTweet
                 attachments={{}}
                 authors={authors}
-                referenced_tweets={[]}
+                referencedTweets={[]}
             />
         );
     });
 
-    const author = authors[author_id];
+    const author = authors[authorId];
 
     const url = `https://twitter.com/${author?.username || 'twitter'}/status/${id}`;
     
     let timeStamp = '';
-    if (created_at) {
-        timeStamp = formatDateTime(new Date(created_at));
+    if (createdAt) {
+        timeStamp = formatDateTime(new Date(createdAt));
     }
     
     const permaLink = (
         <a className="tweet-link" href={url}>
             {!isReferencedTweet && <PermalinkIcon />}
-            <time className="tweet-time" dateTime={created_at}>{timeStamp}</time>
+            <time className="tweet-time" dateTime={createdAt}>{timeStamp}</time>
         </a>
     );
 
@@ -126,7 +126,7 @@ export default function Tweet (props: TweetProps) {
                 )}
             </div>
             <TweetText entities={entities?.urls} text={text} />
-            {media_keys && <Media keys={media_keys} media={media} />}
+            {mediaKeys && <Media keys={mediaKeys} media={media} />}
             {parents}
             <div className="tweet-footer">
                 {!isReferencedTweet && timeStamp && url && permaLink}

@@ -1,0 +1,3394 @@
+{
+    "data": [
+        {
+            "public_metrics": { "retweet_count": 9, "reply_count": 4, "like_count": 285, "quote_count": 4 },
+            "text": "@WiiSensorBar @Microsoft Yeah. I wrote it.",
+            "entities": {
+                "mentions": [
+                    { "start": 0, "end": 13, "username": "WiiSensorBar", "id": "1092966160956645376" },
+                    { "start": 14, "end": 24, "username": "Microsoft", "id": "74286565" }
+                ]
+            },
+            "id": "1511937772868698118",
+            "in_reply_to_user_id": "1092966160956645376",
+            "author_id": "13502732",
+            "referenced_tweets": [{ "type": "replied_to", "id": "1511936927792078851" }],
+            "created_at": "2022-04-07T05:23:50.000Z"
+        },
+        {
+            "public_metrics": { "retweet_count": 1, "reply_count": 1, "like_count": 10, "quote_count": 0 },
+            "text": "Shout out to all the devs who spent hours installing MySQL manually using @danbenjamin’s old school instructions.",
+            "entities": { "mentions": [{ "start": 74, "end": 86, "username": "danbenjamin", "id": "5905672" }] },
+            "id": "1509183051502272512",
+            "author_id": "18884269",
+            "created_at": "2022-03-30T14:57:33.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 165,
+                        "end": 188,
+                        "url": "https://t.co/Ll4JaEVM9c",
+                        "expanded_url": "https://github.com/Meandmybadself/zip2state",
+                        "display_url": "github.com/Meandmybadself…",
+                        "images": [
+                            {
+                                "url": "https://pbs.twimg.com/news_img/1509158582180323338/tKMfx9st?format=jpg&name=orig",
+                                "width": 1200,
+                                "height": 600
+                            },
+                            {
+                                "url": "https://pbs.twimg.com/news_img/1509158582180323338/tKMfx9st?format=jpg&name=150x150",
+                                "width": 150,
+                                "height": 150
+                            }
+                        ],
+                        "status": 200,
+                        "title": "GitHub - Meandmybadself/zip2state: Automatically & reliably derive US states from postal zip codes (~3k zipped).",
+                        "description": "Automatically & reliably derive US states from postal zip codes (~3k zipped). - GitHub - Meandmybadself/zip2state: Automatically & reliably derive US states from postal zip codes (~3k zipped).",
+                        "unwound_url": "https://github.com/Meandmybadself/zip2state"
+                    }
+                ]
+            },
+            "public_metrics": { "retweet_count": 1, "reply_count": 0, "like_count": 4, "quote_count": 0 },
+            "text": "JS devs: I've made a JS library that reliably maps US zip codes to states for &lt;3k.  \n\nYour users should never need to enter their state into a form field again.\n\nhttps://t.co/Ll4JaEVM9c",
+            "id": "1509158579529469964",
+            "author_id": "1797691",
+            "created_at": "2022-03-30T13:20:18.000Z"
+        },
+        {
+            "public_metrics": { "retweet_count": 0, "reply_count": 0, "like_count": 3, "quote_count": 0 },
+            "text": "@anthonygore Remix, probably",
+            "entities": { "mentions": [{ "start": 0, "end": 12, "username": "anthonygore", "id": "13802782" }] },
+            "id": "1509005294063403014",
+            "in_reply_to_user_id": "13802782",
+            "author_id": "995546167",
+            "referenced_tweets": [{ "type": "replied_to", "id": "1508963137693052929" }],
+            "created_at": "2022-03-30T03:11:12.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 163,
+                        "end": 186,
+                        "url": "https://t.co/fhWfuMHh5y",
+                        "expanded_url": "https://medium.com/understanding-recommenders/what-does-it-mean-to-give-someone-what-they-want-the-nature-of-preferences-in-recommender-systems-82b5a1559157",
+                        "display_url": "medium.com/understanding-…"
+                    }
+                ]
+            },
+            "public_metrics": { "retweet_count": 0, "reply_count": 0, "like_count": 5, "quote_count": 0 },
+            "text": "\"there are several reasons why choices ≠ preferences — or, more precisely, why observing that a choice was made does not always tell you the reasons it was made.\" https://t.co/fhWfuMHh5y",
+            "id": "1507515522362974208",
+            "author_id": "435324476",
+            "created_at": "2022-03-26T00:31:23.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 28,
+                        "end": 51,
+                        "url": "https://t.co/1YbnShrrVA",
+                        "expanded_url": "https://twitter.com/midjourney/status/1508555785554386948/photo/1",
+                        "display_url": "pic.twitter.com/1YbnShrrVA"
+                    }
+                ],
+                "mentions": [{ "start": 0, "end": 6, "username": "dmarr", "id": "6685592" }]
+            },
+            "public_metrics": { "retweet_count": 0, "reply_count": 1, "like_count": 9, "quote_count": 0 },
+            "text": "@dmarr Here you go \"\uD83D\uDC86\uD83C\uDFFC‍♂️\uD83C\uDF2C\" https://t.co/1YbnShrrVA",
+            "attachments": { "media_keys": ["3_1508555761999249410"] },
+            "id": "1508555785554386948",
+            "in_reply_to_user_id": "6685592",
+            "author_id": "1307056292465274880",
+            "referenced_tweets": [{ "type": "replied_to", "id": "1508528363715051532" }],
+            "created_at": "2022-03-28T21:25:01.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 41,
+                        "end": 64,
+                        "url": "https://t.co/wETaBzu3cd",
+                        "expanded_url": "https://twitter.com/midjourney/status/1508524612392390660/photo/1",
+                        "display_url": "pic.twitter.com/wETaBzu3cd"
+                    }
+                ],
+                "mentions": [{ "start": 0, "end": 16, "username": "prestonoutatime", "id": "205648240" }]
+            },
+            "public_metrics": { "retweet_count": 0, "reply_count": 1, "like_count": 11, "quote_count": 0 },
+            "text": "@prestonoutatime Here you go \"\uD83E\uDD16\uD83D\uDC58\uD83C\uDFF9\uD83C\uDFAF\uD83C\uDFDB️\uD83C\uDFE2\uD83C\uDFD7️\" https://t.co/wETaBzu3cd",
+            "attachments": { "media_keys": ["3_1508524603420803074"] },
+            "id": "1508524612392390660",
+            "in_reply_to_user_id": "205648240",
+            "author_id": "1307056292465274880",
+            "referenced_tweets": [{ "type": "replied_to", "id": "1508520415441965056" }],
+            "created_at": "2022-03-28T19:21:09.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 32,
+                        "end": 55,
+                        "url": "https://t.co/U9ziclHWsJ",
+                        "expanded_url": "https://twitter.com/midjourney/status/1508528156210184192/photo/1",
+                        "display_url": "pic.twitter.com/U9ziclHWsJ"
+                    }
+                ],
+                "mentions": [{ "start": 0, "end": 12, "username": "SrirakshaVR", "id": "890249645858766848" }]
+            },
+            "public_metrics": { "retweet_count": 0, "reply_count": 2, "like_count": 23, "quote_count": 1 },
+            "text": "@SrirakshaVR Here you go \"\uD83E\uDD81\uD83E\uDDEC\uD83D\uDDDE\uD83C\uDCCF\" https://t.co/U9ziclHWsJ",
+            "attachments": { "media_keys": ["3_1508528115324137474"] },
+            "id": "1508528156210184192",
+            "in_reply_to_user_id": "890249645858766848",
+            "author_id": "1307056292465274880",
+            "referenced_tweets": [{ "type": "replied_to", "id": "1508522793314361348" }],
+            "created_at": "2022-03-28T19:35:14.000Z"
+        },
+        {
+            "public_metrics": { "retweet_count": 0, "reply_count": 0, "like_count": 1, "quote_count": 0 },
+            "text": "@dmarr Love it.",
+            "entities": { "mentions": [{ "start": 0, "end": 6, "username": "dmarr", "id": "6685592" }] },
+            "id": "1508493834895958018",
+            "in_reply_to_user_id": "6685592",
+            "author_id": "820340470052245504",
+            "referenced_tweets": [{ "type": "replied_to", "id": "1508490355519496199" }],
+            "created_at": "2022-03-28T17:18:51.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 163,
+                        "end": 186,
+                        "url": "https://t.co/W6V7O5zfDQ",
+                        "expanded_url": "https://twitter.com/TastefulElk/status/1507989014523133954/photo/1",
+                        "display_url": "pic.twitter.com/W6V7O5zfDQ"
+                    }
+                ],
+                "hashtags": [{ "start": 16, "end": 20, "tag": "git" }]
+            },
+            "public_metrics": { "retweet_count": 616, "reply_count": 36, "like_count": 3202, "quote_count": 36 },
+            "text": "Sharing another #git tip that more should know about!\n\nDynamically change your email based on repo location to automatically switch between personal/work accounts https://t.co/W6V7O5zfDQ",
+            "attachments": { "media_keys": ["3_1507988269027446790"] },
+            "id": "1507989014523133954",
+            "author_id": "748010593",
+            "created_at": "2022-03-27T07:52:52.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 148,
+                        "end": 171,
+                        "url": "https://t.co/g6uYtGP9J7",
+                        "expanded_url": "https://twitter.com/aschmelyun/status/1506960015063625733/video/1",
+                        "display_url": "pic.twitter.com/g6uYtGP9J7"
+                    }
+                ],
+                "annotations": [{ "start": 64, "end": 69, "probability": 0.6743, "type": "Product", "normalized_text": "GitHub" }]
+            },
+            "public_metrics": { "retweet_count": 3121, "reply_count": 464, "like_count": 22912, "quote_count": 844 },
+            "text": "So here's why I bought a receipt printer:\n\nEvery time one of my GitHub repos gets a new issue, I now get a physical ticket printed out on my desk \uD83E\uDE84 https://t.co/g6uYtGP9J7",
+            "attachments": { "media_keys": ["7_1506911485162921984"] },
+            "id": "1506960015063625733",
+            "author_id": "125744842",
+            "created_at": "2022-03-24T11:44:00.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 105,
+                        "end": 128,
+                        "url": "https://t.co/j3JUAs9gon",
+                        "expanded_url": "https://twitter.com/tylerangert/status/1507021257115590658",
+                        "display_url": "twitter.com/tylerangert/st…"
+                    }
+                ]
+            },
+            "public_metrics": { "retweet_count": 12, "reply_count": 5, "like_count": 173, "quote_count": 0 },
+            "text": "People today are inundated with crappy software, so the best way to stand out is to obsess over details. https://t.co/j3JUAs9gon",
+            "id": "1507031434862600199",
+            "author_id": "166138615",
+            "referenced_tweets": [{ "type": "quoted", "id": "1507021257115590658" }],
+            "created_at": "2022-03-24T16:27:48.000Z"
+        },
+        {
+            "public_metrics": { "retweet_count": 79, "reply_count": 18, "like_count": 1070, "quote_count": 14 },
+            "text": "Your startup either dies with your genius tech decisions or you live long enough to see them become tech debt.",
+            "id": "1506402687876620288",
+            "author_id": "166138615",
+            "created_at": "2022-03-22T22:49:23.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 169,
+                        "end": 192,
+                        "url": "https://t.co/jGwovCRLeT",
+                        "expanded_url": "https://twitter.com/ClimateBen/status/1505174972121165833/photo/1",
+                        "display_url": "pic.twitter.com/jGwovCRLeT"
+                    }
+                ],
+                "annotations": [{ "start": 55, "end": 63, "probability": 0.564, "type": "Place", "normalized_text": "Antarctic" }]
+            },
+            "public_metrics": { "retweet_count": 24556, "reply_count": 779, "like_count": 60388, "quote_count": 4170 },
+            "text": "BREAKING: simultaneous freakish heat in the Arctic and Antarctic described as 'impossible' and 'unthinkable' by scientists as abrupt climate change accelerates wildly \uD83E\uDDF5 https://t.co/jGwovCRLeT",
+            "attachments": { "media_keys": ["3_1505174969562681355"] },
+            "id": "1505174972121165833",
+            "author_id": "956250134786002944",
+            "created_at": "2022-03-19T13:30:52.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 59,
+                        "end": 82,
+                        "url": "https://t.co/EqiQe8A9tf",
+                        "expanded_url": "https://twitter.com/MailOnline/status/1503400626008596487",
+                        "display_url": "twitter.com/MailOnline/sta…"
+                    }
+                ]
+            },
+            "public_metrics": { "retweet_count": 8414, "reply_count": 2645, "like_count": 101616, "quote_count": 489 },
+            "text": "Surely there’s an easier way to describe this thing’s size https://t.co/EqiQe8A9tf",
+            "id": "1503437342656417796",
+            "author_id": "77852581",
+            "referenced_tweets": [{ "type": "quoted", "id": "1503400626008596487" }],
+            "created_at": "2022-03-14T18:26:09.000Z"
+        },
+        {
+            "public_metrics": { "retweet_count": 0, "reply_count": 1, "like_count": 4, "quote_count": 0 },
+            "text": "@dmarr @tannerlinsley Not for @typescript \uD83D\uDE05, but definitely for humans",
+            "entities": {
+                "mentions": [
+                    { "start": 0, "end": 6, "username": "dmarr", "id": "6685592" },
+                    { "start": 7, "end": 21, "username": "tannerlinsley", "id": "50136899" },
+                    { "start": 30, "end": 41, "username": "typescript", "id": "809233214" }
+                ]
+            },
+            "id": "1503044122042585090",
+            "in_reply_to_user_id": "6685592",
+            "author_id": "44217212",
+            "referenced_tweets": [{ "type": "replied_to", "id": "1503043516527792129" }],
+            "created_at": "2022-03-13T16:23:38.000Z"
+        },
+        {
+            "public_metrics": { "retweet_count": 0, "reply_count": 1, "like_count": 4, "quote_count": 0 },
+            "text": "@dmarr @tannerlinsley onSuccess needs a function. In my snippet I'm calling invalidateQueries in the render function directly, leading to an infinite loop \uD83D\uDD01",
+            "entities": {
+                "mentions": [
+                    { "start": 0, "end": 6, "username": "dmarr", "id": "6685592" },
+                    { "start": 7, "end": 21, "username": "tannerlinsley", "id": "50136899" }
+                ]
+            },
+            "id": "1503043331370147843",
+            "in_reply_to_user_id": "6685592",
+            "author_id": "44217212",
+            "referenced_tweets": [{ "type": "replied_to", "id": "1503042451984064520" }],
+            "created_at": "2022-03-13T16:20:30.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 44,
+                        "end": 67,
+                        "url": "https://t.co/0VpthWxeui",
+                        "expanded_url": "https://roland50.studio/",
+                        "display_url": "roland50.studio"
+                    }
+                ]
+            },
+            "public_metrics": { "retweet_count": 16, "reply_count": 0, "like_count": 21, "quote_count": 4 },
+            "text": "Say goodbye to your job productivity today: https://t.co/0VpthWxeui",
+            "id": "1502296016942419968",
+            "author_id": "14123330",
+            "created_at": "2022-03-11T14:50:56.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 0,
+                        "end": 23,
+                        "url": "https://t.co/yjgGbvbIa8",
+                        "expanded_url": "https://twitter.com/johannes_mono/status/1501574569680850944/photo/1",
+                        "display_url": "pic.twitter.com/yjgGbvbIa8"
+                    }
+                ]
+            },
+            "public_metrics": { "retweet_count": 7, "reply_count": 0, "like_count": 33, "quote_count": 2 },
+            "text": "https://t.co/yjgGbvbIa8",
+            "attachments": { "media_keys": ["3_1501574562038824962"] },
+            "id": "1501574569680850944",
+            "author_id": "6409352",
+            "created_at": "2022-03-09T15:04:09.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 161,
+                        "end": 184,
+                        "url": "https://t.co/okUgvuBKYf",
+                        "expanded_url": "https://news.harvard.edu/gazette/story/2022/01/vitamin-d-reduced-rate-of-autoimmune-diseases-by-22/",
+                        "display_url": "news.harvard.edu/gazette/story/…"
+                    }
+                ]
+            },
+            "public_metrics": { "retweet_count": 319, "reply_count": 15, "like_count": 1370, "quote_count": 20 },
+            "text": "The study found that people who took vitamin D, or vitamin D and omega-3 fatty acids, had a 22% lower rate of autoimmune diseases than people who took a placebo https://t.co/okUgvuBKYf",
+            "id": "1500558091628261376",
+            "author_id": "30862829",
+            "created_at": "2022-03-06T19:45:02.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 186,
+                        "end": 209,
+                        "url": "https://t.co/Ah1h2VFPsz",
+                        "expanded_url": "https://www.cartoonbrew.com/politics/ukrainian-president-volodymyr-zelensky-is-also-the-voice-of-paddington-213898.html",
+                        "display_url": "cartoonbrew.com/politics/ukrai…"
+                    },
+                    {
+                        "start": 210,
+                        "end": 233,
+                        "url": "https://t.co/mqEmldFe2K",
+                        "expanded_url": "https://twitter.com/cartoonbrew/status/1499178250106458113/video/1",
+                        "display_url": "pic.twitter.com/mqEmldFe2K"
+                    }
+                ],
+                "annotations": [
+                    { "start": 20, "end": 37, "probability": 0.6408, "type": "Person", "normalized_text": "Volodymyr Zelensky" },
+                    { "start": 60, "end": 74, "probability": 0.4201, "type": "Place", "normalized_text": "Paddington Bear" },
+                    { "start": 148, "end": 157, "probability": 0.5046, "type": "Place", "normalized_text": "Paddington" }
+                ]
+            },
+            "public_metrics": { "retweet_count": 42, "reply_count": 6, "like_count": 204, "quote_count": 13 },
+            "text": "Ukrainian President Volodymyr Zelensky is also the voice of Paddington Bear. Zelensky voiced the cg-animated bear in the Ukrainian version of both \"Paddington\" and \"Paddington 2.\" MORE: https://t.co/Ah1h2VFPsz https://t.co/mqEmldFe2K",
+            "attachments": { "media_keys": ["7_1499177902558089220"] },
+            "id": "1499178250106458113",
+            "author_id": "15936696",
+            "created_at": "2022-03-03T00:22:02.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 31,
+                        "end": 54,
+                        "url": "https://t.co/41rJK2Ag6N",
+                        "expanded_url": "https://twitter.com/MysterySolvent/status/1497675092012240901",
+                        "display_url": "twitter.com/MysterySolvent…"
+                    }
+                ],
+                "annotations": [{ "start": 0, "end": 14, "probability": 0.5568, "type": "Person", "normalized_text": "Cokey McRailson" }]
+            },
+            "public_metrics": { "retweet_count": 1348, "reply_count": 1571, "like_count": 9290, "quote_count": 192 },
+            "text": "Cokey McRailson is at it again https://t.co/41rJK2Ag6N",
+            "id": "1497679817289912322",
+            "author_id": "19084896",
+            "referenced_tweets": [{ "type": "quoted", "id": "1497675092012240901" }],
+            "created_at": "2022-02-26T21:07:48.000Z"
+        },
+        {
+            "public_metrics": { "retweet_count": 1743, "reply_count": 277, "like_count": 20949, "quote_count": 84 },
+            "text": "It's actually all going wrong for Putin - taking Kyiv ( at a bloody cost) won't mean a thing in the long term. Putin assumed a lightning roll-over. Not happening. Ukraine, movingly has found its national fortitude.",
+            "entities": {
+                "annotations": [
+                    { "start": 34, "end": 38, "probability": 0.9771, "type": "Person", "normalized_text": "Putin" },
+                    { "start": 49, "end": 52, "probability": 0.8288, "type": "Place", "normalized_text": "Kyiv" },
+                    { "start": 111, "end": 115, "probability": 0.9888, "type": "Person", "normalized_text": "Putin" },
+                    { "start": 163, "end": 169, "probability": 0.9864, "type": "Place", "normalized_text": "Ukraine" }
+                ]
+            },
+            "id": "1497282727418249220",
+            "author_id": "1707427058",
+            "created_at": "2022-02-25T18:49:55.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 26,
+                        "end": 49,
+                        "url": "https://t.co/BsyQaHvzXi",
+                        "expanded_url": "https://twitter.com/CityOfBoston/status/1497353617791234050/photo/1",
+                        "display_url": "pic.twitter.com/BsyQaHvzXi"
+                    }
+                ],
+                "annotations": [{ "start": 0, "end": 5, "probability": 0.8748, "type": "Place", "normalized_text": "Boston" }],
+                "hashtags": [{ "start": 10, "end": 22, "tag": "withUkraine" }]
+            },
+            "public_metrics": { "retweet_count": 709, "reply_count": 76, "like_count": 6069, "quote_count": 57 },
+            "text": "Boston is #withUkraine \uD83C\uDDFA\uD83C\uDDE6 https://t.co/BsyQaHvzXi",
+            "attachments": { "media_keys": ["3_1497353059424522243"] },
+            "id": "1497353617791234050",
+            "author_id": "124455872",
+            "created_at": "2022-02-25T23:31:36.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 91,
+                        "end": 114,
+                        "url": "https://t.co/wJBFgcTjf2",
+                        "expanded_url": "https://twitter.com/PaulCogan/status/1497253618923175946",
+                        "display_url": "twitter.com/PaulCogan/stat…"
+                    }
+                ],
+                "annotations": [{ "start": 25, "end": 32, "probability": 0.9914, "type": "Person", "normalized_text": "Giuliani" }]
+            },
+            "public_metrics": { "retweet_count": 0, "reply_count": 0, "like_count": 1, "quote_count": 0 },
+            "text": "This 100%.  Don't forget Giuliani rushing over there post election to try and dig up dirt. https://t.co/wJBFgcTjf2",
+            "id": "1497353618911109126",
+            "author_id": "820340470052245504",
+            "referenced_tweets": [{ "type": "quoted", "id": "1497253618923175946" }],
+            "created_at": "2022-02-25T23:31:36.000Z"
+        },
+        {
+            "public_metrics": { "retweet_count": 0, "reply_count": 1, "like_count": 3, "quote_count": 0 },
+            "text": "@_qudo @SvelteSociety you can promisify the DOM Image constructor and coordinate your image loading in batched chunks so they load nicely \n\n    new Promise(resolve =&gt; {\n      const img = new Image();\n      img.src = src;\n      img.onload = resolve;\n    })",
+            "entities": {
+                "mentions": [
+                    { "start": 0, "end": 6, "username": "_qudo", "id": "1481676289085870081" },
+                    { "start": 7, "end": 21, "username": "SvelteSociety", "id": "1176969867733479424" }
+                ]
+            },
+            "id": "1497338081627676673",
+            "in_reply_to_user_id": "1481676289085870081",
+            "author_id": "33521530",
+            "referenced_tweets": [{ "type": "replied_to", "id": "1497333438633836549" }],
+            "created_at": "2022-02-25T22:29:52.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 30,
+                        "end": 53,
+                        "url": "https://t.co/e2Lx8vTrCD",
+                        "expanded_url": "https://remix-forms.seasoned.cc/",
+                        "display_url": "remix-forms.seasoned.cc"
+                    }
+                ],
+                "annotations": [{ "start": 17, "end": 27, "probability": 0.3959, "type": "Product", "normalized_text": "Remix Forms" }],
+                "mentions": [
+                    { "start": 184, "end": 195, "username": "kentcdodds", "id": "389681470" },
+                    { "start": 196, "end": 209, "username": "ryanflorence", "id": "16468446" },
+                    { "start": 210, "end": 219, "username": "mjackson", "id": "734903" },
+                    { "start": 220, "end": 230, "username": "sergiodxa", "id": "18406943" },
+                    { "start": 231, "end": 243, "username": "vedovelli74", "id": "1214613045986680839" },
+                    { "start": 244, "end": 260, "username": "gustavoguichard", "id": "25121136" },
+                    { "start": 261, "end": 276, "username": "juniormartinxo", "id": "58175042" }
+                ]
+            },
+            "public_metrics": { "retweet_count": 17, "reply_count": 9, "like_count": 138, "quote_count": 2 },
+            "text": "Today I released Remix Forms: https://t.co/e2Lx8vTrCD\n\nYet another form library? Well, it goes beyond that and auto-generates your forms + actions, even when you want a custom UI.\n\ncc @kentcdodds @ryanflorence @mjackson @sergiodxa @vedovelli74 @gustavoguichard @juniormartinxo",
+            "id": "1497276943942635520",
+            "author_id": "26062294",
+            "created_at": "2022-02-25T18:26:56.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 278,
+                        "end": 301,
+                        "url": "https://t.co/TnXAzl7KfU",
+                        "expanded_url": "https://twitter.com/Carnage4Life/status/1495083962779123712/photo/1",
+                        "display_url": "pic.twitter.com/TnXAzl7KfU"
+                    }
+                ]
+            },
+            "public_metrics": { "retweet_count": 6, "reply_count": 4, "like_count": 68, "quote_count": 2 },
+            "text": "On my morning hike I’m trading tweets exhorting young people to work 15 hour days and all I can think of is the advice I wish I could give my past self.\n\nCherish the moments you’re in, because despite whatever you’re going through you’ll look back on this as the good old days. https://t.co/TnXAzl7KfU",
+            "attachments": { "media_keys": ["3_1495083945385361408"] },
+            "id": "1495083962779123712",
+            "author_id": "11336782",
+            "created_at": "2022-02-19T17:12:48.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 91,
+                        "end": 114,
+                        "url": "https://t.co/hU3hOW9KIu",
+                        "expanded_url": "https://twitter.com/tinybuddha/status/1494016292529057801/photo/1",
+                        "display_url": "pic.twitter.com/hU3hOW9KIu"
+                    }
+                ]
+            },
+            "public_metrics": { "retweet_count": 205, "reply_count": 12, "like_count": 1005, "quote_count": 33 },
+            "text": "Everyone needs a friend who will call and say, \"Get dressed, we're going on an adventure.\" https://t.co/hU3hOW9KIu",
+            "attachments": { "media_keys": ["3_1494016289714618371"] },
+            "id": "1494016292529057801",
+            "author_id": "14813320",
+            "created_at": "2022-02-16T18:30:16.000Z"
+        },
+        {
+            "public_metrics": { "retweet_count": 0, "reply_count": 0, "like_count": 15, "quote_count": 0 },
+            "text": "@dmarr @brian_d_vaughn i think there are plans to try to show names for them though it’s not super easy. but of course we’re a lot more excited about simply making “profiling re-renders” not a thing you’d do often by investing in compilation research. see React Forget talk.",
+            "entities": {
+                "mentions": [
+                    { "start": 0, "end": 6, "username": "dmarr", "id": "6685592" },
+                    { "start": 7, "end": 22, "username": "brian_d_vaughn", "id": "99973385" }
+                ]
+            },
+            "id": "1492900773298122752",
+            "in_reply_to_user_id": "6685592",
+            "author_id": "70345946",
+            "referenced_tweets": [{ "type": "replied_to", "id": "1492897909884563461" }],
+            "created_at": "2022-02-13T16:37:35.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 59,
+                        "end": 82,
+                        "url": "https://t.co/CGlRRhFVsr",
+                        "expanded_url": "https://twitter.com/kitasenjudesign/status/1489260985135157258",
+                        "display_url": "twitter.com/kitasenjudesig…"
+                    }
+                ]
+            },
+            "public_metrics": { "retweet_count": 28, "reply_count": 2, "like_count": 486, "quote_count": 0 },
+            "text": "this gives me so many ideas // \na fresh take on slit scans https://t.co/CGlRRhFVsr",
+            "id": "1489948900681306115",
+            "author_id": "52789379",
+            "referenced_tweets": [{ "type": "quoted", "id": "1489260985135157258" }],
+            "created_at": "2022-02-05T13:07:54.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 54,
+                        "end": 77,
+                        "url": "https://t.co/taW9yOu2OS",
+                        "expanded_url": "https://developer.mozilla.org/en-US/docs/Web/API/reportError",
+                        "display_url": "developer.mozilla.org/en-US/docs/Web…"
+                    }
+                ]
+            },
+            "public_metrics": { "retweet_count": 11, "reply_count": 2, "like_count": 91, "quote_count": 2 },
+            "text": "TIL reportError. Supported by the evergreen browsers. https://t.co/taW9yOu2OS",
+            "id": "1489615217990545409",
+            "author_id": "21782915",
+            "created_at": "2022-02-04T15:01:58.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 60,
+                        "end": 83,
+                        "url": "https://t.co/uxm8ilK17H",
+                        "expanded_url": "https://flackr.github.io/crosswordle/",
+                        "display_url": "flackr.github.io/crosswordle/"
+                    }
+                ]
+            },
+            "public_metrics": { "retweet_count": 20, "reply_count": 24, "like_count": 107, "quote_count": 11 },
+            "text": "I wrote my own twist on wordle. Please be gentle and enjoy! https://t.co/uxm8ilK17H",
+            "id": "1487983458127384577",
+            "author_id": "3560823385",
+            "created_at": "2022-01-31T02:57:56.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 48,
+                        "end": 71,
+                        "url": "https://t.co/Gva3kjcPD6",
+                        "expanded_url": "https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png",
+                        "display_url": "cdn.shopify.com/s/files/1/0165…"
+                    },
+                    {
+                        "start": 72,
+                        "end": 95,
+                        "url": "https://t.co/3XaRp89sjf",
+                        "expanded_url": "https://twitter.com/nixcraft/status/1487774760792510464/photo/1",
+                        "display_url": "pic.twitter.com/3XaRp89sjf"
+                    }
+                ],
+                "annotations": [{ "start": 37, "end": 40, "probability": 0.5387, "type": "Product", "normalized_text": "unix" }]
+            },
+            "public_metrics": { "retweet_count": 417, "reply_count": 27, "like_count": 1822, "quote_count": 25 },
+            "text": "another vim cheatsheet for linux and unix users https://t.co/Gva3kjcPD6 https://t.co/3XaRp89sjf",
+            "attachments": { "media_keys": ["3_1487774670078476288"] },
+            "id": "1487774760792510464",
+            "author_id": "17484680",
+            "created_at": "2022-01-30T13:08:39.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 57,
+                        "end": 80,
+                        "url": "https://t.co/X7oqY14Qd8",
+                        "expanded_url": "https://youtu.be/QvLYckq_BWE",
+                        "display_url": "youtu.be/QvLYckq_BWE",
+                        "images": [
+                            {
+                                "url": "https://pbs.twimg.com/news_img/1487794289161740288/U4uBxKJ9?format=jpg&name=orig",
+                                "width": 1280,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://pbs.twimg.com/news_img/1487794289161740288/U4uBxKJ9?format=jpg&name=150x150",
+                                "width": 150,
+                                "height": 150
+                            }
+                        ],
+                        "status": 200,
+                        "title": "Young Thug Engineer Alex Tumay on Recording | Red Bull Music Academy",
+                        "description": "► Subscribe to Red Bull Music Academy: https://win.gs/SubscribeRBMANobody knows prolific and mercurial Atlanta rapper Young Thug quite like audio engineer Al...",
+                        "unwound_url": "https://www.youtube.com/watch?v=QvLYckq_BWE&feature=youtu.be"
+                    }
+                ]
+            },
+            "public_metrics": { "retweet_count": 0, "reply_count": 0, "like_count": 3, "quote_count": 0 },
+            "text": "Here’s the interview. Changed the way I listen to music. https://t.co/X7oqY14Qd8",
+            "id": "1487794286016053252",
+            "in_reply_to_user_id": "384694808",
+            "author_id": "384694808",
+            "referenced_tweets": [{ "type": "replied_to", "id": "1487794283545509895" }],
+            "created_at": "2022-01-30T14:26:14.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 101,
+                        "end": 124,
+                        "url": "https://t.co/CT9O555Bv7",
+                        "expanded_url": "https://twitter.com/AlecStapp/status/1485256499299450884/photo/1",
+                        "display_url": "pic.twitter.com/CT9O555Bv7"
+                    }
+                ],
+                "annotations": [{ "start": 29, "end": 34, "probability": 0.9495, "type": "Place", "normalized_text": "Boston" }]
+            },
+            "public_metrics": { "retweet_count": 288, "reply_count": 48, "like_count": 2586, "quote_count": 58 },
+            "text": "Good news!\n\nLatest data from Boston wastewater surveillance shows the Omicron wave is basically over https://t.co/CT9O555Bv7",
+            "attachments": { "media_keys": ["3_1485256496707473414"] },
+            "id": "1485256499299450884",
+            "author_id": "48111864",
+            "created_at": "2022-01-23T14:21:58.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 233,
+                        "end": 256,
+                        "url": "https://t.co/BydS3RpqOv",
+                        "expanded_url": "https://bit.ly/promises-ebook",
+                        "display_url": "bit.ly/promises-ebook"
+                    },
+                    {
+                        "start": 257,
+                        "end": 280,
+                        "url": "https://t.co/WZEEqnSJ8h",
+                        "expanded_url": "https://twitter.com/slicknet/status/1481310011926061056/photo/1",
+                        "display_url": "pic.twitter.com/WZEEqnSJ8h"
+                    }
+                ]
+            },
+            "public_metrics": { "retweet_count": 302, "reply_count": 25, "like_count": 1181, "quote_count": 18 },
+            "text": "I'm excited to share my first new book (or e-book) in over five years! Understanding JavaScript Promises explains not just how promises work but also how to use them in the real world.\n\nAnd the best part? It's free. Grab yours now.\n\nhttps://t.co/BydS3RpqOv https://t.co/WZEEqnSJ8h",
+            "attachments": { "media_keys": ["3_1481007745302413312"] },
+            "id": "1481310011926061056",
+            "author_id": "17633960",
+            "created_at": "2022-01-12T17:00:02.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 54,
+                        "end": 77,
+                        "url": "https://t.co/XgekSbosOc",
+                        "expanded_url": "https://twitter.com/klwtts/status/1478531775886286848/video/1",
+                        "display_url": "pic.twitter.com/XgekSbosOc"
+                    }
+                ],
+                "hashtags": [{ "start": 44, "end": 52, "tag": "ces2022" }]
+            },
+            "public_metrics": { "retweet_count": 5877, "reply_count": 61, "like_count": 12614, "quote_count": 879 },
+            "text": "BMWがボディカラーを変化できる車を発表したらしい\n映像で見てもVFXにしか見えないな\n#ces2022\n https://t.co/XgekSbosOc",
+            "attachments": { "media_keys": ["7_1478531687529156609"] },
+            "id": "1478664781007831042",
+            "author_id": "28818341",
+            "created_at": "2022-01-05T09:48:50.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 54,
+                        "end": 77,
+                        "url": "https://t.co/xI9M5GV9is",
+                        "expanded_url": "https://dubroy.com/blog/three-ways-of-handling-user-input/",
+                        "display_url": "dubroy.com/blog/three-way…"
+                    },
+                    {
+                        "start": 78,
+                        "end": 101,
+                        "url": "https://t.co/YlPMgAUydr",
+                        "expanded_url": "https://twitter.com/dubroy/status/1478728490807611393/photo/1",
+                        "display_url": "pic.twitter.com/YlPMgAUydr"
+                    }
+                ]
+            },
+            "public_metrics": { "retweet_count": 16, "reply_count": 9, "like_count": 99, "quote_count": 4 },
+            "text": "\uD83D\uDCDD New blog post —\n\nThree ways of handling user input: https://t.co/xI9M5GV9is https://t.co/YlPMgAUydr",
+            "attachments": { "media_keys": ["3_1478705259119841283"] },
+            "id": "1478728490807611393",
+            "author_id": "14385931",
+            "created_at": "2022-01-05T14:02:00.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 178,
+                        "end": 201,
+                        "url": "https://t.co/3WURhiW3hW",
+                        "expanded_url": "https://wiki.openstreetmap.org/wiki/Indoor_Mapping",
+                        "display_url": "wiki.openstreetmap.org/wiki/Indoor_Ma…"
+                    },
+                    {
+                        "start": 202,
+                        "end": 225,
+                        "url": "https://t.co/JOyQnnQEqt",
+                        "expanded_url": "https://twitter.com/johnmaeda/status/1475207723440648198/video/1",
+                        "display_url": "pic.twitter.com/JOyQnnQEqt"
+                    }
+                ]
+            },
+            "public_metrics": { "retweet_count": 4, "reply_count": 0, "like_count": 27, "quote_count": 0 },
+            "text": "I’m realizing now that Indoor Mapping Data Format (IMDF) has been a long time in the making. OSM has a useful repository of past and ongoing attempts to map “the great indoors.” https://t.co/3WURhiW3hW https://t.co/JOyQnnQEqt",
+            "attachments": { "media_keys": ["7_1475207392606445571"] },
+            "id": "1475207723440648198",
+            "author_id": "15414807",
+            "created_at": "2021-12-26T20:51:43.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 113,
+                        "end": 136,
+                        "url": "https://t.co/TYK162ORuq",
+                        "expanded_url": "https://twitter.com/stewart/status/1390384236302045186/photo/1",
+                        "display_url": "pic.twitter.com/TYK162ORuq"
+                    }
+                ],
+                "annotations": [{ "start": 64, "end": 67, "probability": 0.6051, "type": "Product", "normalized_text": "Zoom" }]
+            },
+            "public_metrics": { "retweet_count": 128, "reply_count": 28, "like_count": 1169, "quote_count": 25 },
+            "text": "The overwhelming majority of the time I start screen sharing on Zoom for just a 15 second share, it is this gif: https://t.co/TYK162ORuq",
+            "attachments": { "media_keys": ["16_1390384179419000838"] },
+            "id": "1390384236302045186",
+            "author_id": "5699",
+            "created_at": "2021-05-06T19:13:28.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 172,
+                        "end": 195,
+                        "url": "https://t.co/5fHsYjhvYq",
+                        "expanded_url": "https://youtu.be/YrXaGFCij1A",
+                        "display_url": "youtu.be/YrXaGFCij1A",
+                        "images": [
+                            {
+                                "url": "https://pbs.twimg.com/news_img/1503985261016846340/p6TkUJ0j?format=jpg&name=orig",
+                                "width": 1280,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://pbs.twimg.com/news_img/1503985261016846340/p6TkUJ0j?format=jpg&name=150x150",
+                                "width": 150,
+                                "height": 150
+                            }
+                        ],
+                        "status": 200,
+                        "title": "Talking Watches 2 With John Mayer",
+                        "description": "It's hard to believe it's been over five years – half a decade (!!) – since I sat down with John Mayer at a little cafe down the road from our office, a four...",
+                        "unwound_url": "https://www.youtube.com/watch?v=YrXaGFCij1A&feature=youtu.be"
+                    }
+                ],
+                "annotations": [{ "start": 57, "end": 66, "probability": 0.997, "type": "Person", "normalized_text": "John Mayer" }],
+                "mentions": [{ "start": 71, "end": 80, "username": "HODINKEE", "id": "20568189" }]
+            },
+            "public_metrics": { "retweet_count": 0, "reply_count": 0, "like_count": 8, "quote_count": 0 },
+            "text": "I’ve forgotten the number of times I’ve gone back to see John Mayer on @HODINKEE talking watches - it’s not just the best TW ep but one of the best interviews in general : https://t.co/5fHsYjhvYq",
+            "id": "1472463106991263745",
+            "author_id": "12893512",
+            "created_at": "2021-12-19T07:05:36.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 201,
+                        "end": 224,
+                        "url": "https://t.co/RYsqpTHF5j",
+                        "expanded_url": "https://googleprojectzero.blogspot.com/2021/12/a-deep-dive-into-nso-zero-click.html",
+                        "display_url": "googleprojectzero.blogspot.com/2021/12/a-deep…"
+                    }
+                ],
+                "annotations": [{ "start": 110, "end": 120, "probability": 0.8928, "type": "Organization", "normalized_text": "Citizen Lab" }]
+            },
+            "public_metrics": { "retweet_count": 1807, "reply_count": 72, "like_count": 4951, "quote_count": 501 },
+            "text": "Today we're publishing a detailed technical writeup of FORCEDENTRY, the zero-click iMessage exploit linked by Citizen Lab to the exploitation of journalists,\nactivists and dissidents around the world. https://t.co/RYsqpTHF5j",
+            "id": "1471163195679252484",
+            "author_id": "938035181201580032",
+            "created_at": "2021-12-15T17:00:13.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 49,
+                        "end": 72,
+                        "url": "https://t.co/K57YBC2Ue3",
+                        "expanded_url": "https://twitter.com/deekaymotion/status/1468943525840449539/video/1",
+                        "display_url": "pic.twitter.com/K57YBC2Ue3"
+                    }
+                ]
+            },
+            "public_metrics": { "retweet_count": 15914, "reply_count": 902, "like_count": 75955, "quote_count": 1558 },
+            "text": "Curious about how I make animations? Watch this. https://t.co/K57YBC2Ue3",
+            "attachments": { "media_keys": ["7_1468831752005189632"] },
+            "id": "1468943525840449539",
+            "author_id": "993595279545982976",
+            "created_at": "2021-12-09T14:00:02.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 112,
+                        "end": 135,
+                        "url": "https://t.co/7fZ7egqzIx",
+                        "expanded_url": "https://twitter.com/SazeracNELA/status/1464662134055342082/photo/1",
+                        "display_url": "pic.twitter.com/7fZ7egqzIx"
+                    }
+                ]
+            },
+            "public_metrics": { "retweet_count": 704, "reply_count": 45, "like_count": 3569, "quote_count": 41 },
+            "text": "Time for a repost of one of my very favorites in my gif collection. I wish I could remember where it came from. https://t.co/7fZ7egqzIx",
+            "attachments": { "media_keys": ["16_1464661901082710023"] },
+            "id": "1464662134055342082",
+            "author_id": "1008503459790794752",
+            "created_at": "2021-11-27T18:27:19.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 240,
+                        "end": 263,
+                        "url": "https://t.co/ANV4SeHRMy",
+                        "expanded_url": "https://codepen.io/joshwcomeau/pen/XWjBLej?editors=1100",
+                        "display_url": "codepen.io/joshwcomeau/pe…"
+                    },
+                    {
+                        "start": 264,
+                        "end": 287,
+                        "url": "https://t.co/JfvzHhgbLp",
+                        "expanded_url": "https://twitter.com/JoshWComeau/status/1349012260207915016/photo/1",
+                        "display_url": "pic.twitter.com/JfvzHhgbLp"
+                    }
+                ],
+                "annotations": [{ "start": 98, "end": 104, "probability": 0.5481, "type": "Product", "normalized_text": "Flexbox" }]
+            },
+            "public_metrics": { "retweet_count": 38, "reply_count": 11, "like_count": 367, "quote_count": 3 },
+            "text": "\uD83C\uDF20 Keep navigation centered in a lopsided container (logo on one side, nothing on the other) with Flexbox!\n\n“Asymmetrical centering” like this has befuddled me for a long time, but I've cracked the code: `flex-basis` is key \uD83D\uDD13\uD83D\uDDDD\n\nDemo + Code: https://t.co/ANV4SeHRMy https://t.co/JfvzHhgbLp",
+            "attachments": { "media_keys": ["16_1349000978440347648"] },
+            "id": "1349012260207915016",
+            "author_id": "2308474213",
+            "created_at": "2021-01-12T15:16:00.000Z"
+        },
+        {
+            "public_metrics": { "retweet_count": 117, "reply_count": 22, "like_count": 1184, "quote_count": 8 },
+            "text": "One idea that really stuck with me from @a16z is to never disparage people sincerely trying to build something positive.\n\nIt’s easy to shit on people, since everything has easy to spot trade offs, and nothing is perfectly executed.\n\nIt’s harder to be constructive.",
+            "entities": { "mentions": [{ "start": 40, "end": 45, "username": "a16z", "id": "64844802" }] },
+            "id": "1461433455296716804",
+            "author_id": "47716918",
+            "created_at": "2021-11-18T20:37:42.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 21,
+                        "end": 44,
+                        "url": "https://t.co/jTQXHP4E5y",
+                        "expanded_url": "https://www.paradigm.xyz/2020/10/870/",
+                        "display_url": "paradigm.xyz/2020/10/870/"
+                    }
+                ]
+            },
+            "public_metrics": { "retweet_count": 36, "reply_count": 7, "like_count": 295, "quote_count": 9 },
+            "text": "Apropos of nothing \n\nhttps://t.co/jTQXHP4E5y",
+            "id": "1459223338992214025",
+            "author_id": "273288231",
+            "created_at": "2021-11-12T18:15:29.000Z"
+        },
+        {
+            "entities": {
+                "urls": [
+                    {
+                        "start": 15,
+                        "end": 38,
+                        "url": "https://t.co/r9getVmoJa",
+                        "expanded_url": "https://twitter.com/Veeshandle/status/1455614347200376837/photo/1",
+                        "display_url": "pic.twitter.com/r9getVmoJa"
+                    }
+                ],
+                "mentions": [{ "start": 0, "end": 14, "username": "MollyJongFast", "id": "14298769" }]
+            },
+            "public_metrics": { "retweet_count": 481, "reply_count": 61, "like_count": 5034, "quote_count": 21 },
+            "text": "@MollyJongFast https://t.co/r9getVmoJa",
+            "attachments": { "media_keys": ["3_1455614313608196104"] },
+            "id": "1455614347200376837",
+            "in_reply_to_user_id": "14298769",
+            "author_id": "848044670",
+            "referenced_tweets": [{ "type": "replied_to", "id": "1455613726372110337" }],
+            "created_at": "2021-11-02T19:14:39.000Z"
+        },
+        {
+            "public_metrics": { "retweet_count": 0, "reply_count": 0, "like_count": 1, "quote_count": 0 },
+            "text": "@dmarr @MaterialUI There will be scenarios where people will need to install base - when they want to build their own design systems on our foundations. As for MD - we are going to have a second design system (parallel to MD), so calling MD core would be confusing.",
+            "entities": {
+                "mentions": [
+                    { "start": 0, "end": 6, "username": "dmarr", "id": "6685592" },
+                    { "start": 7, "end": 18, "username": "MaterialUI", "id": "1474857929308266500" }
+                ]
+            },
+            "id": "1452682386899099648",
+            "in_reply_to_user_id": "6685592",
+            "author_id": "300994273",
+            "referenced_tweets": [{ "type": "replied_to", "id": "1452678045735821313" }],
+            "created_at": "2021-10-25T17:04:05.000Z"
+        }
+    ],
+    "includes": {
+        "users": [
+            {
+                "id": "13502732",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/0gnaVwARmR",
+                                "expanded_url": "https://floppy.foone.org/w/Main_Page",
+                                "display_url": "floppy.foone.org/w/Main_Page"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "start": 106,
+                                "end": 129,
+                                "url": "https://t.co/RWnHtUISyM",
+                                "expanded_url": "https://ko-fi.com/fooneturing",
+                                "display_url": "ko-fi.com/fooneturing"
+                            }
+                        ]
+                    }
+                },
+                "url": "https://t.co/0gnaVwARmR",
+                "username": "Foone",
+                "name": "foone",
+                "public_metrics": { "followers_count": 136027, "following_count": 561, "tweet_count": 243803, "listed_count": 1031 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/880340410333143040/-s_buYC0_normal.jpg"
+            },
+            {
+                "id": "1092966160956645376",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/MsKEw83Yr5",
+                                "expanded_url": "https://twitter.com/WiiSensorBar/status/1302857026729582593?s=19",
+                                "display_url": "twitter.com/WiiSensorBar/s…"
+                            }
+                        ]
+                    }
+                },
+                "url": "https://t.co/MsKEw83Yr5",
+                "username": "WiiSensorBar",
+                "name": "hepointatsquib",
+                "public_metrics": { "followers_count": 1463, "following_count": 664, "tweet_count": 57493, "listed_count": 10 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1509043181572304896/T294EsRx_normal.jpg"
+            },
+            {
+                "id": "74286565",
+                "verified": true,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/V2zzrE5VMl",
+                                "expanded_url": "https://news.microsoft.com/",
+                                "display_url": "news.microsoft.com"
+                            }
+                        ]
+                    },
+                    "description": { "mentions": [{ "start": 106, "end": 121, "username": "MicrosoftHelps" }] }
+                },
+                "url": "https://t.co/V2zzrE5VMl",
+                "username": "Microsoft",
+                "name": "Microsoft",
+                "public_metrics": { "followers_count": 10518656, "following_count": 2525, "tweet_count": 26429, "listed_count": 26124 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1454912483248930822/_hO4WPRC_normal.png"
+            },
+            {
+                "id": "18884269",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/e0dKkTSlIh",
+                                "expanded_url": "https://niftys.com",
+                                "display_url": "niftys.com"
+                            }
+                        ]
+                    }
+                },
+                "url": "https://t.co/e0dKkTSlIh",
+                "username": "chrisyour",
+                "name": "Chris Your",
+                "public_metrics": { "followers_count": 355, "following_count": 567, "tweet_count": 4553, "listed_count": 18 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1642376757/chrisyour_twitter_4_normal.png"
+            },
+            {
+                "id": "5905672",
+                "verified": true,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/WR9swZdL8R",
+                                "expanded_url": "https://danbenjamin.com",
+                                "display_url": "danbenjamin.com"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            { "start": 59, "end": 82, "url": "https://t.co/JWiGFNacBh", "expanded_url": "http://5by5.tv", "display_url": "5by5.tv" },
+                            {
+                                "start": 91,
+                                "end": 114,
+                                "url": "https://t.co/poD65d1wKC",
+                                "expanded_url": "http://fireside.fm",
+                                "display_url": "fireside.fm"
+                            }
+                        ]
+                    }
+                },
+                "url": "https://t.co/WR9swZdL8R",
+                "username": "danbenjamin",
+                "name": "Dan Benjamin",
+                "public_metrics": { "followers_count": 33330, "following_count": 290, "tweet_count": 51114, "listed_count": 2332 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1482031141100167171/X5atjGQ9_normal.jpg"
+            },
+            {
+                "id": "1797691",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/jIrXsr4uDZ",
+                                "expanded_url": "http://www.meandmybadself.com",
+                                "display_url": "meandmybadself.com"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "start": 91,
+                                "end": 114,
+                                "url": "https://t.co/HeYjf7VFnx",
+                                "expanded_url": "http://minnecrapol.is",
+                                "display_url": "minnecrapol.is"
+                            }
+                        ],
+                        "mentions": [
+                            { "start": 34, "end": 44, "username": "episogood" },
+                            { "start": 62, "end": 76, "username": "abennettewald" }
+                        ]
+                    }
+                },
+                "url": "https://t.co/jIrXsr4uDZ",
+                "username": "meandmybadself",
+                "name": "Jeffery and 7 Others",
+                "public_metrics": { "followers_count": 718, "following_count": 691, "tweet_count": 5558, "listed_count": 41 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1484689286444244994/Bl34GYc__normal.png"
+            },
+            {
+                "id": "995546167",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/z7xIvgpIv5",
+                                "expanded_url": "https://xn--yp8h1g48i.y.at",
+                                "display_url": "\uD83D\uDCBB\uD83E\uDD13\uD83D\uDC4D.y.at"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "hashtags": [{ "start": 2, "end": 7, "tag": "Web3" }],
+                        "mentions": [
+                            { "start": 48, "end": 55, "username": "Twilio" },
+                            { "start": 68, "end": 79, "username": "vertosainc" }
+                        ]
+                    }
+                },
+                "url": "https://t.co/z7xIvgpIv5",
+                "username": "Blake_Petersen",
+                "name": "b\uD83D\uDC40p",
+                "public_metrics": { "followers_count": 1009, "following_count": 743, "tweet_count": 9158, "listed_count": 54 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1513337313975099394/DdO_h5mM_normal.jpg"
+            },
+            {
+                "id": "13802782",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/gUyOKBrloX",
+                                "expanded_url": "https://anthonygore.com",
+                                "display_url": "anthonygore.com"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "mentions": [
+                            { "start": 22, "end": 35, "username": "coursekitdev" },
+                            { "start": 36, "end": 52, "username": "vuejsdevelopers" }
+                        ]
+                    }
+                },
+                "url": "https://t.co/gUyOKBrloX",
+                "username": "anthonygore",
+                "name": "Anthony Gore",
+                "public_metrics": { "followers_count": 6171, "following_count": 1190, "tweet_count": 2836, "listed_count": 187 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1315557674533089286/WRWiKQA-_normal.jpg"
+            },
+            {
+                "id": "435324476",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/cdlZOqKdIg",
+                                "expanded_url": "https://www.linkedin.com/pub/ray-sturm/3/270/439",
+                                "display_url": "linkedin.com/pub/ray-sturm/…"
+                            }
+                        ]
+                    },
+                    "description": { "mentions": [{ "start": 12, "end": 22, "username": "AlphaFlow" }] }
+                },
+                "url": "https://t.co/cdlZOqKdIg",
+                "username": "Ray_Sturm",
+                "name": "Ray Sturm",
+                "public_metrics": { "followers_count": 3013, "following_count": 952, "tweet_count": 5785, "listed_count": 253 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1051649110544015360/N1fy9Z7Q_normal.jpg"
+            },
+            {
+                "id": "1307056292465274880",
+                "verified": false,
+                "entities": {
+                    "description": {
+                        "urls": [
+                            {
+                                "start": 126,
+                                "end": 149,
+                                "url": "https://t.co/fo5qmOGYDg",
+                                "expanded_url": "http://bit.ly/3J2NNVs",
+                                "display_url": "bit.ly/3J2NNVs"
+                            }
+                        ]
+                    }
+                },
+                "url": "",
+                "username": "midjourney",
+                "name": "Midjourney",
+                "public_metrics": { "followers_count": 13530, "following_count": 0, "tweet_count": 147, "listed_count": 94 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1500078940299272198/quB4bgi9_normal.jpg"
+            },
+            {
+                "id": "6685592",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/v3dfqxPyp8",
+                                "expanded_url": "http://github.com/marr",
+                                "display_url": "github.com/marr"
+                            }
+                        ]
+                    }
+                },
+                "url": "https://t.co/v3dfqxPyp8",
+                "username": "dmarr",
+                "name": "David Marr",
+                "public_metrics": { "followers_count": 231, "following_count": 430, "tweet_count": 1374, "listed_count": 12 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1506021181362745344/wc5quhbh_normal.jpg"
+            },
+            {
+                "id": "205648240",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/Q291GTFqfU",
+                                "expanded_url": "http://linktr.ee/preston.outatime",
+                                "display_url": "linktr.ee/preston.outati…"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "hashtags": [{ "start": 51, "end": 64, "tag": "brokenrecord" }],
+                        "mentions": [{ "start": 98, "end": 108, "username": "subexotic" }]
+                    }
+                },
+                "url": "https://t.co/Q291GTFqfU",
+                "username": "prestonoutatime",
+                "name": "PRESTON⌒OUTATIME",
+                "public_metrics": { "followers_count": 516, "following_count": 417, "tweet_count": 9668, "listed_count": 28 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1441360401434873856/oZPTsMZW_normal.jpg"
+            },
+            {
+                "id": "890249645858766848",
+                "verified": false,
+                "url": "",
+                "username": "SrirakshaVR",
+                "name": "சங்கு\uD83D\uDC1A",
+                "public_metrics": { "followers_count": 54, "following_count": 916, "tweet_count": 567, "listed_count": 0 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1476102972379590656/fzAc5_ri_normal.jpg"
+            },
+            {
+                "id": "820340470052245504",
+                "verified": false,
+                "url": "",
+                "username": "andypcollins1",
+                "name": "I like fishing.",
+                "public_metrics": { "followers_count": 69, "following_count": 391, "tweet_count": 10901, "listed_count": 0 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/985911791086637056/Hm-BrCk8_normal.jpg"
+            },
+            {
+                "id": "748010593",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/uF56FfR3rK",
+                                "expanded_url": "https://dev.to/tastefulelk",
+                                "display_url": "dev.to/tastefulelk"
+                            }
+                        ]
+                    }
+                },
+                "url": "https://t.co/uF56FfR3rK",
+                "username": "TastefulElk",
+                "name": "Sebastian Bille",
+                "public_metrics": { "followers_count": 1096, "following_count": 416, "tweet_count": 1111, "listed_count": 17 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1311388116633235456/FvPs1UAz_normal.jpg"
+            },
+            {
+                "id": "125744842",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/omTpD9z1We",
+                                "expanded_url": "http://aschmelyun.com",
+                                "display_url": "aschmelyun.com"
+                            }
+                        ]
+                    }
+                },
+                "url": "https://t.co/omTpD9z1We",
+                "username": "aschmelyun",
+                "name": "Andrew Schmelyun",
+                "public_metrics": { "followers_count": 5186, "following_count": 2184, "tweet_count": 7183, "listed_count": 124 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1079118209561841671/dI-xB5Az_normal.jpg"
+            },
+            {
+                "id": "166138615",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/CckUlUzE5Q",
+                                "expanded_url": "http://amasad.me",
+                                "display_url": "amasad.me"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "start": 81,
+                                "end": 104,
+                                "url": "https://t.co/GiyZw0ZuGY",
+                                "expanded_url": "http://replit.com/careers",
+                                "display_url": "replit.com/careers"
+                            }
+                        ],
+                        "hashtags": [{ "start": 110, "end": 118, "tag": "Bitcoin" }],
+                        "mentions": [{ "start": 4, "end": 11, "username": "replit" }]
+                    }
+                },
+                "url": "https://t.co/CckUlUzE5Q",
+                "username": "amasad",
+                "name": "Amjad Masad ⠕",
+                "public_metrics": { "followers_count": 58555, "following_count": 3, "tweet_count": 11441, "listed_count": 940 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1435423438173138946/Lp0JqX83_normal.jpg"
+            },
+            {
+                "id": "1291224355",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/aUlgM32LpG",
+                                "expanded_url": "https://tyler.cafe/",
+                                "display_url": "tyler.cafe"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "mentions": [
+                            { "start": 11, "end": 27, "username": "watchfacesworld" },
+                            { "start": 35, "end": 42, "username": "replit" },
+                            { "start": 43, "end": 53, "username": "vectordao" }
+                        ]
+                    }
+                },
+                "url": "https://t.co/aUlgM32LpG",
+                "username": "tylerangert",
+                "name": "tyler⏱",
+                "public_metrics": { "followers_count": 3435, "following_count": 1447, "tweet_count": 4972, "listed_count": 78 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1507152061137408006/wC-lgJbs_normal.jpg"
+            },
+            {
+                "id": "956250134786002944",
+                "verified": false,
+                "url": "",
+                "username": "ClimateBen",
+                "name": "Ben See",
+                "public_metrics": { "followers_count": 84398, "following_count": 48576, "tweet_count": 42499, "listed_count": 936 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/991798409895047168/SMQ3gznm_normal.jpg"
+            },
+            {
+                "id": "77852581",
+                "verified": true,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/mbj37tqaq4",
+                                "expanded_url": "https://www.lebassett.com/",
+                                "display_url": "lebassett.com"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "mentions": [
+                            { "start": 16, "end": 24, "username": "jezebel" },
+                            { "start": 38, "end": 49, "username": "GQMagazine" },
+                            { "start": 51, "end": 57, "username": "MSNBC" },
+                            { "start": 59, "end": 71, "username": "HuffPostPol" }
+                        ]
+                    }
+                },
+                "url": "https://t.co/mbj37tqaq4",
+                "username": "LEBassett",
+                "name": "Laura Bassett",
+                "public_metrics": { "followers_count": 120454, "following_count": 2133, "tweet_count": 29728, "listed_count": 1369 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1500589799337607173/1NJaaTd7_normal.jpg"
+            },
+            {
+                "id": "15438913",
+                "verified": true,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/7WEFA27EgH",
+                                "expanded_url": "http://www.dailymail.com",
+                                "display_url": "dailymail.com"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "start": 58,
+                                "end": 81,
+                                "url": "https://t.co/cs4EQ2odpE",
+                                "expanded_url": "http://dailymail.co.uk",
+                                "display_url": "dailymail.co.uk"
+                            }
+                        ],
+                        "hashtags": [{ "start": 82, "end": 99, "tag": "seriouslypopular" }]
+                    }
+                },
+                "url": "https://t.co/7WEFA27EgH",
+                "username": "MailOnline",
+                "name": "Daily Mail Online",
+                "public_metrics": { "followers_count": 2712883, "following_count": 2225, "tweet_count": 443691, "listed_count": 13605 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1500192462442225669/ArJOPEyf_normal.png"
+            },
+            {
+                "id": "44217212",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/ahCaT7xING",
+                                "expanded_url": "https://tkdodo.eu",
+                                "display_url": "tkdodo.eu"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "start": 114,
+                                "end": 137,
+                                "url": "https://t.co/9p738H6wih",
+                                "expanded_url": "http://tkdodo.eu/blog",
+                                "display_url": "tkdodo.eu/blog"
+                            }
+                        ],
+                        "mentions": [{ "start": 60, "end": 71, "username": "myadverity" }]
+                    }
+                },
+                "url": "https://t.co/ahCaT7xING",
+                "username": "TkDodo",
+                "name": "Dominik \uD83C\uDDFA\uD83C\uDDE6",
+                "public_metrics": { "followers_count": 5391, "following_count": 288, "tweet_count": 5093, "listed_count": 76 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1428810489157595139/lBT2YI9D_normal.jpg"
+            },
+            {
+                "id": "50136899",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/Ez8YFEDFmd",
+                                "expanded_url": "https://tanstack.com",
+                                "display_url": "tanstack.com"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "hashtags": [
+                            { "start": 63, "end": 72, "tag": "TanStack" },
+                            { "start": 73, "end": 84, "tag": "ReactQuery" },
+                            { "start": 85, "end": 96, "tag": "ReactTable" },
+                            { "start": 97, "end": 111, "tag": "ReactLocation" },
+                            { "start": 112, "end": 124, "tag": "ReactCharts" }
+                        ],
+                        "mentions": [
+                            { "start": 52, "end": 61, "username": "NozzleIO" },
+                            { "start": 132, "end": 147, "username": "Ch_JesusChrist" }
+                        ]
+                    }
+                },
+                "url": "https://t.co/Ez8YFEDFmd",
+                "username": "tannerlinsley",
+                "name": "Tanner Linsley",
+                "public_metrics": { "followers_count": 25993, "following_count": 581, "tweet_count": 12754, "listed_count": 420 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1164219021283094530/ACRln2kL_normal.jpg"
+            },
+            {
+                "id": "809233214",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/p0njgjyy3d",
+                                "expanded_url": "http://www.typescriptlang.org/",
+                                "display_url": "typescriptlang.org"
+                            }
+                        ]
+                    }
+                },
+                "url": "https://t.co/p0njgjyy3d",
+                "username": "typescript",
+                "name": "TypeScript",
+                "public_metrics": { "followers_count": 231590, "following_count": 55, "tweet_count": 327, "listed_count": 3025 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1290672565690695681/0G4bie6b_normal.jpg"
+            },
+            {
+                "id": "14123330",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/yRiWX1KU94",
+                                "expanded_url": "http://jasoneckert.net",
+                                "display_url": "jasoneckert.net"
+                            }
+                        ]
+                    }
+                },
+                "url": "https://t.co/yRiWX1KU94",
+                "username": "the_unix_guru",
+                "name": "Jason W. Eckert \uD83D\uDC89\uD83D\uDC89\uD83D\uDC89",
+                "public_metrics": { "followers_count": 1231, "following_count": 653, "tweet_count": 10417, "listed_count": 23 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1086733014678339585/iI3-zQsk_normal.jpg"
+            },
+            {
+                "id": "6409352",
+                "verified": true,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/LOUc7awugd",
+                                "expanded_url": "https://en.wikipedia.org/wiki/Johannes_Grenzfurthner",
+                                "display_url": "en.wikipedia.org/wiki/Johannes_…"
+                            }
+                        ]
+                    }
+                },
+                "url": "https://t.co/LOUc7awugd",
+                "username": "johannes_mono",
+                "name": "///Grenzfurthner\\\\\\",
+                "public_metrics": { "followers_count": 6932, "following_count": 714, "tweet_count": 22926, "listed_count": 215 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1131555909187067904/ff2Kq6D0_normal.png"
+            },
+            {
+                "id": "30862829",
+                "verified": true,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/fNS9bedmtD",
+                                "expanded_url": "http://hms.harvard.edu",
+                                "display_url": "hms.harvard.edu"
+                            }
+                        ]
+                    }
+                },
+                "url": "https://t.co/fNS9bedmtD",
+                "username": "harvardmed",
+                "name": "Harvard Medical School",
+                "public_metrics": { "followers_count": 382432, "following_count": 697, "tweet_count": 16371, "listed_count": 3479 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/737626984990314497/IeHkfA6C_normal.jpg"
+            },
+            {
+                "id": "15936696",
+                "verified": true,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/RmlQ9mX0my",
+                                "expanded_url": "http://www.cartoonbrew.com",
+                                "display_url": "cartoonbrew.com"
+                            }
+                        ]
+                    }
+                },
+                "url": "https://t.co/RmlQ9mX0my",
+                "username": "cartoonbrew",
+                "name": "cartoonbrew.com - Animation News",
+                "public_metrics": { "followers_count": 105683, "following_count": 3476, "tweet_count": 24739, "listed_count": 1755 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1268269181616762881/0okOwXkV_normal.jpg"
+            },
+            {
+                "id": "19084896",
+                "verified": true,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/coL8G35fuI",
+                                "expanded_url": "http://therickwilson.com",
+                                "display_url": "therickwilson.com"
+                            }
+                        ]
+                    }
+                },
+                "url": "https://t.co/coL8G35fuI",
+                "username": "TheRickWilson",
+                "name": "Rick Wilson",
+                "public_metrics": { "followers_count": 1383570, "following_count": 6659, "tweet_count": 345068, "listed_count": 9371 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1512517861759193092/Hvp3fu2-_normal.jpg"
+            },
+            {
+                "id": "1094713876132872192",
+                "verified": false,
+                "entities": { "description": { "hashtags": [{ "start": 153, "end": 157, "tag": "FBR" }] } },
+                "url": "",
+                "username": "MysterySolvent",
+                "name": "Mystery Solvent",
+                "public_metrics": { "followers_count": 154260, "following_count": 68288, "tweet_count": 100087, "listed_count": 362 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1136401889233231872/6bOjVhWx_normal.jpg"
+            },
+            {
+                "id": "1707427058",
+                "verified": true,
+                "url": "",
+                "username": "simon_schama",
+                "name": "Simon Schama",
+                "public_metrics": { "followers_count": 182447, "following_count": 3645, "tweet_count": 48764, "listed_count": 1930 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1432156300062904321/v_A8xlfI_normal.jpg"
+            },
+            {
+                "id": "124455872",
+                "verified": true,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/CGMMpQKhpV",
+                                "expanded_url": "http://Boston.gov",
+                                "display_url": "Boston.gov"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "start": 138,
+                                "end": 161,
+                                "url": "https://t.co/L04V7p9AN5",
+                                "expanded_url": "http://Boston.gov/covid-19",
+                                "display_url": "Boston.gov/covid-19"
+                            }
+                        ]
+                    }
+                },
+                "url": "https://t.co/CGMMpQKhpV",
+                "username": "CityOfBoston",
+                "name": "City of Boston",
+                "public_metrics": { "followers_count": 348432, "following_count": 545, "tweet_count": 24652, "listed_count": 2068 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/823906698897330177/H_6xVFoF_normal.jpg"
+            },
+            {
+                "id": "110194870",
+                "verified": false,
+                "url": "",
+                "username": "PaulCogan",
+                "name": "Paul Cogan",
+                "public_metrics": { "followers_count": 30309, "following_count": 31664, "tweet_count": 193441, "listed_count": 97 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/2430461504/qizcpp1c1mi2cz20zg7s_normal.jpeg"
+            },
+            {
+                "id": "33521530",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            { "start": 0, "end": 23, "url": "https://t.co/C4rUZWCbgW", "expanded_url": "http://swyx.io", "display_url": "swyx.io" }
+                        ]
+                    },
+                    "description": {
+                        "mentions": [
+                            { "start": 21, "end": 32, "username": "Temporalio" },
+                            { "start": 76, "end": 90, "username": "SvelteSociety" },
+                            { "start": 117, "end": 131, "username": "Coding_Career" },
+                            { "start": 137, "end": 144, "username": "swyxio" }
+                        ]
+                    }
+                },
+                "url": "https://t.co/C4rUZWCbgW",
+                "username": "swyx",
+                "name": "swyx",
+                "public_metrics": { "followers_count": 41029, "following_count": 2697, "tweet_count": 54435, "listed_count": 1039 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1510319731466993664/tGoqnzGK_normal.jpg"
+            },
+            {
+                "id": "1481676289085870081",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/0GsaekQ0C9",
+                                "expanded_url": "http://qudo.site",
+                                "display_url": "qudo.site"
+                            }
+                        ]
+                    },
+                    "description": { "mentions": [{ "start": 18, "end": 31, "username": "matrbuilders" }] }
+                },
+                "url": "https://t.co/0GsaekQ0C9",
+                "username": "_qudo",
+                "name": "qudo",
+                "public_metrics": { "followers_count": 407, "following_count": 724, "tweet_count": 1562, "listed_count": 4 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1512957931960119297/APD6HXf0_normal.jpg"
+            },
+            {
+                "id": "1176969867733479424",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/bbF8vYBFSW",
+                                "expanded_url": "https://sveltesociety.dev/",
+                                "display_url": "sveltesociety.dev"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "start": 64,
+                                "end": 87,
+                                "url": "https://t.co/Lt1kRjyQwX",
+                                "expanded_url": "http://bit.ly/38uPJ7T",
+                                "display_url": "bit.ly/38uPJ7T"
+                            },
+                            {
+                                "start": 100,
+                                "end": 123,
+                                "url": "https://t.co/bDvUqAOToS",
+                                "expanded_url": "http://discord.gg/cT2KFtu",
+                                "display_url": "discord.gg/cT2KFtu"
+                            },
+                            {
+                                "start": 135,
+                                "end": 158,
+                                "url": "https://t.co/YXWzyekPry",
+                                "expanded_url": "http://bit.ly/35fH5sk",
+                                "display_url": "bit.ly/35fH5sk"
+                            }
+                        ],
+                        "mentions": [{ "start": 11, "end": 20, "username": "sveltejs" }]
+                    }
+                },
+                "url": "https://t.co/bbF8vYBFSW",
+                "username": "SvelteSociety",
+                "name": "Svelte Summit \uD83D\uDD1C Apr 30!",
+                "public_metrics": { "followers_count": 15289, "following_count": 1664, "tweet_count": 3487, "listed_count": 270 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1287132544333357057/5D1E3q7o_normal.jpg"
+            },
+            {
+                "id": "26062294",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/uKMoz0cXqP",
+                                "expanded_url": "https://www.seasoned.cc",
+                                "display_url": "seasoned.cc"
+                            }
+                        ]
+                    }
+                },
+                "url": "https://t.co/uKMoz0cXqP",
+                "username": "danielweinmann",
+                "name": "Daniel Weinmann",
+                "public_metrics": { "followers_count": 1075, "following_count": 14, "tweet_count": 1652, "listed_count": 42 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1491741134929989644/DI_PGSuy_normal.jpg"
+            },
+            {
+                "id": "389681470",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/2Zzqk7yHjs",
+                                "expanded_url": "http://kentcdodds.com",
+                                "display_url": "kentcdodds.com"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "start": 107,
+                                "end": 130,
+                                "url": "https://t.co/U5Kafq0X1p",
+                                "expanded_url": "http://TestingJavaScript.com",
+                                "display_url": "TestingJavaScript.com"
+                            },
+                            {
+                                "start": 133,
+                                "end": 156,
+                                "url": "https://t.co/7KDAxI9QOD",
+                                "expanded_url": "http://EpicReact.Dev",
+                                "display_url": "EpicReact.Dev"
+                            }
+                        ],
+                        "mentions": [{ "start": 94, "end": 104, "username": "remix_run" }]
+                    }
+                },
+                "url": "https://t.co/2Zzqk7yHjs",
+                "username": "kentcdodds",
+                "name": "Kent C. Dodds \uD83D\uDCBF",
+                "public_metrics": { "followers_count": 171557, "following_count": 143, "tweet_count": 120897, "listed_count": 3106 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1444988463216922631/IDffhy4i_normal.jpg"
+            },
+            {
+                "id": "16468446",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/BT3AKjsb8C",
+                                "expanded_url": "https://remix.run",
+                                "display_url": "remix.run"
+                            }
+                        ]
+                    },
+                    "description": { "mentions": [{ "start": 0, "end": 10, "username": "remix_run" }] }
+                },
+                "url": "https://t.co/BT3AKjsb8C",
+                "username": "ryanflorence",
+                "name": "Ryan Florence",
+                "public_metrics": { "followers_count": 120123, "following_count": 188, "tweet_count": 65295, "listed_count": 2332 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1344410501309030403/L2rNpO6h_normal.jpg"
+            },
+            {
+                "id": "734903",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/PNVyLsxOfa",
+                                "expanded_url": "https://remix.run",
+                                "display_url": "remix.run"
+                            }
+                        ]
+                    },
+                    "description": { "mentions": [{ "start": 30, "end": 40, "username": "remix_run" }] }
+                },
+                "url": "https://t.co/PNVyLsxOfa",
+                "username": "mjackson",
+                "name": "MJ",
+                "public_metrics": { "followers_count": 63587, "following_count": 810, "tweet_count": 37047, "listed_count": 1277 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1095819845382299649/zG-2_UHS_normal.jpg"
+            },
+            {
+                "id": "18406943",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/3cUnXDwnFY",
+                                "expanded_url": "https://sergiodxa.com",
+                                "display_url": "sergiodxa.com"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "mentions": [
+                            { "start": 25, "end": 37, "username": "DaffyGiving" },
+                            { "start": 46, "end": 54, "username": "able_co" },
+                            { "start": 55, "end": 62, "username": "vercel" },
+                            { "start": 63, "end": 70, "username": "platzi" },
+                            { "start": 71, "end": 77, "username": "prmkr" }
+                        ]
+                    }
+                },
+                "url": "https://t.co/3cUnXDwnFY",
+                "username": "sergiodxa",
+                "name": "Sergio Xalambrí",
+                "public_metrics": { "followers_count": 5745, "following_count": 148, "tweet_count": 7569, "listed_count": 131 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1287284807211388928/zOtMSM31_normal.jpg"
+            },
+            {
+                "id": "1214613045986680839",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/aWYb70R6DM",
+                                "expanded_url": "https://linktr.ee/vedovelli",
+                                "display_url": "linktr.ee/vedovelli"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "start": 16,
+                                "end": 39,
+                                "url": "https://t.co/meOD3J61Lm",
+                                "expanded_url": "http://javascript.tv.br",
+                                "display_url": "javascript.tv.br"
+                            },
+                            {
+                                "start": 42,
+                                "end": 65,
+                                "url": "https://t.co/Qn6dpPCxNw",
+                                "expanded_url": "http://circle.com",
+                                "display_url": "circle.com"
+                            },
+                            {
+                                "start": 99,
+                                "end": 122,
+                                "url": "https://t.co/IdJWcbPS51",
+                                "expanded_url": "http://youtube.com/vedovelli",
+                                "display_url": "youtube.com/vedovelli"
+                            }
+                        ],
+                        "mentions": [{ "start": 143, "end": 157, "username": "RemixCookbook" }]
+                    }
+                },
+                "url": "https://t.co/aWYb70R6DM",
+                "username": "vedovelli74",
+                "name": "Fabio Vedovelli \uD83C\uDDFA\uD83C\uDDE6",
+                "public_metrics": { "followers_count": 12516, "following_count": 1178, "tweet_count": 8289, "listed_count": 88 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1496419788637282310/_Vcs-th3_normal.png"
+            },
+            {
+                "id": "25121136",
+                "verified": false,
+                "entities": {
+                    "description": {
+                        "urls": [
+                            {
+                                "start": 60,
+                                "end": 83,
+                                "url": "https://t.co/dBePVpr00e",
+                                "expanded_url": "http://seasoned.cc",
+                                "display_url": "seasoned.cc"
+                            }
+                        ]
+                    }
+                },
+                "url": "",
+                "username": "gustavoguichard",
+                "name": "Gustavo Guichard",
+                "public_metrics": { "followers_count": 180, "following_count": 194, "tweet_count": 988, "listed_count": 12 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1496592341448204293/aFfYlDk0_normal.jpg"
+            },
+            {
+                "id": "58175042",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/CmdkkJKwdH",
+                                "expanded_url": "https://juniormartins.dev",
+                                "display_url": "juniormartins.dev"
+                            }
+                        ]
+                    }
+                },
+                "url": "https://t.co/CmdkkJKwdH",
+                "username": "juniormartinxo",
+                "name": "Junior Martins",
+                "public_metrics": { "followers_count": 481, "following_count": 571, "tweet_count": 4988, "listed_count": 4 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1477382568362315780/Se5fEnb4_normal.jpg"
+            },
+            {
+                "id": "11336782",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/ddV1qbVY1B",
+                                "expanded_url": "https://medium.com/@dareobasanjo",
+                                "display_url": "medium.com/@dareobasanjo"
+                            }
+                        ]
+                    }
+                },
+                "url": "https://t.co/ddV1qbVY1B",
+                "username": "Carnage4Life",
+                "name": "Dare Obasanjo",
+                "public_metrics": { "followers_count": 63738, "following_count": 962, "tweet_count": 30765, "listed_count": 1525 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1165282125295190016/h0lTAKvp_normal.jpg"
+            },
+            {
+                "id": "14813320",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/eCSJpxCgY1",
+                                "expanded_url": "http://tinybuddha.com/",
+                                "display_url": "tinybuddha.com"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "start": 127,
+                                "end": 150,
+                                "url": "https://t.co/bfiFGNQiXz",
+                                "expanded_url": "http://bit.ly/2v4zNJo",
+                                "display_url": "bit.ly/2v4zNJo"
+                            }
+                        ]
+                    }
+                },
+                "url": "https://t.co/eCSJpxCgY1",
+                "username": "tinybuddha",
+                "name": "Tiny Buddha",
+                "public_metrics": { "followers_count": 626974, "following_count": 0, "tweet_count": 17982, "listed_count": 11112 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/472077396523233280/VDtHqvrS_normal.png"
+            },
+            {
+                "id": "70345946",
+                "verified": false,
+                "url": "",
+                "username": "dan_abramov",
+                "name": "дэн",
+                "public_metrics": { "followers_count": 328941, "following_count": 478, "tweet_count": 86657, "listed_count": 5568 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1336281436685541376/fRSl8uJP_normal.jpg"
+            },
+            {
+                "id": "99973385",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/6LQAfwLqlz",
+                                "expanded_url": "http://www.briandavidvaughn.com",
+                                "display_url": "briandavidvaughn.com"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "start": 33,
+                                "end": 56,
+                                "url": "https://t.co/DlqMMCb2o5",
+                                "expanded_url": "http://soundcloud.com/brianvaughn",
+                                "display_url": "soundcloud.com/brianvaughn"
+                            },
+                            {
+                                "start": 108,
+                                "end": 131,
+                                "url": "https://t.co/DrecpCDvfq",
+                                "expanded_url": "http://github.com/bvaughn",
+                                "display_url": "github.com/bvaughn"
+                            }
+                        ]
+                    }
+                },
+                "url": "https://t.co/6LQAfwLqlz",
+                "username": "brian_d_vaughn",
+                "name": "Brian Vaughn \uD83C\uDFF3️‍\uD83C\uDF08\uD83D\uDDA4",
+                "public_metrics": { "followers_count": 45123, "following_count": 197, "tweet_count": 32927, "listed_count": 766 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1510472374860365830/i2EZEEqO_normal.jpg"
+            },
+            {
+                "id": "52789379",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/YKGRkKxR0v",
+                                "expanded_url": "http://Instagram.com/zach.lieberman",
+                                "display_url": "Instagram.com/zach.lieberman"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            { "start": 21, "end": 44, "url": "https://t.co/rLEdQ6ofMv", "expanded_url": "http://sfpc.io", "display_url": "sfpc.io" },
+                            {
+                                "start": 45,
+                                "end": 68,
+                                "url": "https://t.co/vMjE3xLUbp",
+                                "expanded_url": "http://media.mit.edu",
+                                "display_url": "media.mit.edu"
+                            },
+                            {
+                                "start": 69,
+                                "end": 92,
+                                "url": "https://t.co/MYb5C8vG3s",
+                                "expanded_url": "http://openframeworks.cc",
+                                "display_url": "openframeworks.cc"
+                            },
+                            {
+                                "start": 93,
+                                "end": 116,
+                                "url": "https://t.co/4ID0L3Qxoo",
+                                "expanded_url": "http://eyewriter.org",
+                                "display_url": "eyewriter.org"
+                            },
+                            {
+                                "start": 117,
+                                "end": 140,
+                                "url": "https://t.co/dXztM74M0s",
+                                "expanded_url": "http://yesyesno.com",
+                                "display_url": "yesyesno.com"
+                            },
+                            { "start": 156, "end": 179, "url": "https://t.co/rLEdQ6ofMv", "expanded_url": "http://sfpc.io", "display_url": "sfpc.io" }
+                        ]
+                    }
+                },
+                "url": "https://t.co/YKGRkKxR0v",
+                "username": "zachlieberman",
+                "name": "zach lieberman",
+                "public_metrics": { "followers_count": 63856, "following_count": 922, "tweet_count": 31828, "listed_count": 1570 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/860186961579003904/fGVbWgDV_normal.jpg"
+            },
+            {
+                "id": "2612898242",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/bfuM8CdolS",
+                                "expanded_url": "https://kitasenju.design/",
+                                "display_url": "kitasenju.design"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "start": 68,
+                                "end": 91,
+                                "url": "https://t.co/SHWVleTucY",
+                                "expanded_url": "http://instagram.com/kitasenjudesign",
+                                "display_url": "instagram.com/kitasenjudesign"
+                            }
+                        ]
+                    }
+                },
+                "url": "https://t.co/bfuM8CdolS",
+                "username": "kitasenjudesign",
+                "name": "Kitasenju Design",
+                "public_metrics": { "followers_count": 10493, "following_count": 1636, "tweet_count": 1211, "listed_count": 185 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1015898747794907136/baQA-1Wh_normal.jpg"
+            },
+            {
+                "id": "21782915",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/uFdTwpgHsR",
+                                "expanded_url": "https://andrewclark.io/",
+                                "display_url": "andrewclark.io"
+                            }
+                        ]
+                    },
+                    "description": { "mentions": [{ "start": 0, "end": 8, "username": "reactjs" }] }
+                },
+                "url": "https://t.co/uFdTwpgHsR",
+                "username": "acdlite",
+                "name": "Andrew Clark",
+                "public_metrics": { "followers_count": 59135, "following_count": 2033, "tweet_count": 20236, "listed_count": 1130 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1395210306075365383/4O1YKBac_normal.jpg"
+            },
+            {
+                "id": "3560823385",
+                "verified": false,
+                "entities": {
+                    "description": {
+                        "hashtags": [
+                            { "start": 22, "end": 29, "tag": "Google" },
+                            { "start": 33, "end": 42, "tag": "Chromium" }
+                        ]
+                    }
+                },
+                "url": "",
+                "username": "flackrw",
+                "name": "Robert Flack",
+                "public_metrics": { "followers_count": 306, "following_count": 99, "tweet_count": 279, "listed_count": 28 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1494682900696027140/AgKdpwHS_normal.jpg"
+            },
+            {
+                "id": "17484680",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/vb8eIR0xWV",
+                                "expanded_url": "https://www.cyberciti.biz/",
+                                "display_url": "cyberciti.biz"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "start": 137,
+                                "end": 160,
+                                "url": "https://t.co/WZA6DM9Z1G",
+                                "expanded_url": "http://opensourceflare.com",
+                                "display_url": "opensourceflare.com"
+                            }
+                        ],
+                        "hashtags": [{ "start": 6, "end": 12, "tag": "Linux" }]
+                    }
+                },
+                "url": "https://t.co/vb8eIR0xWV",
+                "username": "nixcraft",
+                "name": "nixCraft",
+                "public_metrics": { "followers_count": 255888, "following_count": 483, "tweet_count": 53348, "listed_count": 4123 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1209802752819261440/jvir-xNm_normal.jpg"
+            },
+            {
+                "id": "384694808",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/K6EJQ1Shif",
+                                "expanded_url": "http://jacobruiz.com",
+                                "display_url": "jacobruiz.com"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "start": 19,
+                                "end": 42,
+                                "url": "https://t.co/lvVfC2V0iY",
+                                "expanded_url": "http://shootgrain.com",
+                                "display_url": "shootgrain.com"
+                            },
+                            {
+                                "start": 45,
+                                "end": 68,
+                                "url": "https://t.co/JFBskMXbtk",
+                                "expanded_url": "http://meetshotty.com",
+                                "display_url": "meetshotty.com"
+                            }
+                        ],
+                        "mentions": [{ "start": 7, "end": 16, "username": "beondeck" }]
+                    }
+                },
+                "url": "https://t.co/K6EJQ1Shif",
+                "username": "JacobRuizDesign",
+                "name": "Jacob Ruiz",
+                "public_metrics": { "followers_count": 764, "following_count": 353, "tweet_count": 1612, "listed_count": 36 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1206519540823158784/GB1zGHg2_normal.jpg"
+            },
+            {
+                "id": "48111864",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/5tTXGFpxEw",
+                                "expanded_url": "http://progress.institute",
+                                "display_url": "progress.institute"
+                            }
+                        ]
+                    },
+                    "description": { "mentions": [{ "start": 11, "end": 15, "username": "IFP" }] }
+                },
+                "url": "https://t.co/5tTXGFpxEw",
+                "username": "AlecStapp",
+                "name": "Alec Stapp",
+                "public_metrics": { "followers_count": 30027, "following_count": 943, "tweet_count": 18662, "listed_count": 509 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1498170157176393731/tyrdhQ1M_normal.jpg"
+            },
+            {
+                "id": "17633960",
+                "verified": true,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/wkFb2oCErV",
+                                "expanded_url": "https://humanwhocodes.com",
+                                "display_url": "humanwhocodes.com"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "mentions": [
+                            { "start": 28, "end": 38, "username": "geteslint" },
+                            { "start": 103, "end": 117, "username": "humanwhocodes" }
+                        ]
+                    }
+                },
+                "url": "https://t.co/wkFb2oCErV",
+                "username": "slicknet",
+                "name": "Nicholas C. Zakas",
+                "public_metrics": { "followers_count": 58345, "following_count": 64, "tweet_count": 24563, "listed_count": 2359 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1316939132392763394/sX89bluY_normal.jpg"
+            },
+            {
+                "id": "28818341",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/yzwx1F8zAs",
+                                "expanded_url": "http://www.keisuketerashima.com/",
+                                "display_url": "keisuketerashima.com"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "start": 49,
+                                "end": 72,
+                                "url": "https://t.co/VDzilHNXvD",
+                                "expanded_url": "http://keepdistanceruler.prty.jp",
+                                "display_url": "keepdistanceruler.prty.jp"
+                            }
+                        ],
+                        "hashtags": [
+                            { "start": 78, "end": 92, "tag": "RAD_SHINSEKAI" },
+                            { "start": 141, "end": 147, "tag": "NOWAR" }
+                        ]
+                    }
+                },
+                "url": "https://t.co/yzwx1F8zAs",
+                "username": "kskee",
+                "name": "Keisuke Terashima",
+                "public_metrics": { "followers_count": 2553, "following_count": 764, "tweet_count": 15900, "listed_count": 57 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1163755129239044096/ncgynWWf_normal.jpg"
+            },
+            {
+                "id": "14385931",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/PYGYWvSxSw",
+                                "expanded_url": "http://dubroy.com",
+                                "display_url": "dubroy.com"
+                            }
+                        ]
+                    },
+                    "description": { "mentions": [{ "start": 49, "end": 56, "username": "_ohmjs" }] }
+                },
+                "url": "https://t.co/PYGYWvSxSw",
+                "username": "dubroy",
+                "name": "Patrick Dubroy",
+                "public_metrics": { "followers_count": 1768, "following_count": 194, "tweet_count": 5020, "listed_count": 101 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/720549513178402816/sNuufv6K_normal.jpg"
+            },
+            {
+                "id": "15414807",
+                "verified": true,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/PbJeHrxaei",
+                                "expanded_url": "https://maedastudio.com",
+                                "display_url": "maedastudio.com"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "start": 100,
+                                "end": 123,
+                                "url": "https://t.co/eb6gj2vHbD",
+                                "expanded_url": "http://amzn.to/2HjDtM6",
+                                "display_url": "amzn.to/2HjDtM6"
+                            }
+                        ],
+                        "hashtags": [{ "start": 148, "end": 159, "tag": "CanvasFilm" }],
+                        "mentions": [{ "start": 25, "end": 36, "username": "Everbridge" }]
+                    }
+                },
+                "url": "https://t.co/PbJeHrxaei",
+                "username": "johnmaeda",
+                "name": "John Maeda",
+                "public_metrics": { "followers_count": 407990, "following_count": 28824, "tweet_count": 23602, "listed_count": 9249 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/839937736018501632/0aXmic50_normal.jpg"
+            },
+            {
+                "id": "5699",
+                "verified": true,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/mJwdA5YjAh",
+                                "expanded_url": "http://slack.com",
+                                "display_url": "slack.com"
+                            }
+                        ]
+                    }
+                },
+                "url": "https://t.co/mJwdA5YjAh",
+                "username": "stewart",
+                "name": "Stewart Butterfield",
+                "public_metrics": { "followers_count": 136822, "following_count": 3079, "tweet_count": 12588, "listed_count": 2792 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/850330691816620034/LEE6tYPA_normal.jpg"
+            },
+            {
+                "id": "12893512",
+                "verified": true,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/qZFt0D143k",
+                                "expanded_url": "http://about.me/rahulganjoo",
+                                "display_url": "about.me/rahulganjoo"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "mentions": [
+                            { "start": 20, "end": 27, "username": "zomato" },
+                            { "start": 56, "end": 64, "username": "twitter" },
+                            { "start": 65, "end": 74, "username": "saymedia" },
+                            { "start": 75, "end": 84, "username": "sixapart" },
+                            { "start": 112, "end": 126, "username": "birdswithbats" }
+                        ]
+                    }
+                },
+                "url": "https://t.co/qZFt0D143k",
+                "username": "elegantlywasted",
+                "name": "Rahul Ganjoo",
+                "public_metrics": { "followers_count": 10981, "following_count": 586, "tweet_count": 6949, "listed_count": 90 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1460975310900453389/JLuJg64g_normal.jpg"
+            },
+            {
+                "id": "20568189",
+                "verified": true,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/t50krWHQnq",
+                                "expanded_url": "https://www.hodinkee.com",
+                                "display_url": "hodinkee.com"
+                            }
+                        ]
+                    }
+                },
+                "url": "https://t.co/t50krWHQnq",
+                "username": "HODINKEE",
+                "name": "HODINKEE",
+                "public_metrics": { "followers_count": 76002, "following_count": 1477, "tweet_count": 29226, "listed_count": 902 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/614145562498232322/V3dulW5J_normal.png"
+            },
+            {
+                "id": "938035181201580032",
+                "verified": false,
+                "url": "",
+                "username": "i41nbeer",
+                "name": "Ian Beer",
+                "public_metrics": { "followers_count": 51751, "following_count": 122, "tweet_count": 63, "listed_count": 382 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/938833482838659072/A1z4tyvI_normal.jpg"
+            },
+            {
+                "id": "993595279545982976",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/JahcpU0LyH",
+                                "expanded_url": "https://linktr.ee/deekaymotion",
+                                "display_url": "linktr.ee/deekaymotion"
+                            }
+                        ]
+                    }
+                },
+                "url": "https://t.co/JahcpU0LyH",
+                "username": "deekaymotion",
+                "name": "DeeKay",
+                "public_metrics": { "followers_count": 161695, "following_count": 883, "tweet_count": 2456, "listed_count": 1082 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1491546975916806148/pYw_pUP-_normal.jpg"
+            },
+            {
+                "id": "1008503459790794752",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/iIAlm3CSho",
+                                "expanded_url": "http://mixcloud.com/SazeracLA",
+                                "display_url": "mixcloud.com/SazeracLA"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "hashtags": [
+                            { "start": 55, "end": 64, "tag": "StarTrek" },
+                            { "start": 66, "end": 71, "tag": "IDIC" }
+                        ]
+                    }
+                },
+                "url": "https://t.co/iIAlm3CSho",
+                "username": "SazeracNELA",
+                "name": "Chuck Taggart \uD83C\uDFF3️‍\uD83C\uDF08\uD83D\uDD96\uD83C\uDFFB\uD83C\uDF3B\uD83C\uDDFA\uD83C\uDDE6",
+                "public_metrics": { "followers_count": 1933, "following_count": 3441, "tweet_count": 102994, "listed_count": 7 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1425587467168587780/eypWJ81k_normal.jpg"
+            },
+            {
+                "id": "2308474213",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/E8uZxqIx7g",
+                                "expanded_url": "https://joshwcomeau.com",
+                                "display_url": "joshwcomeau.com"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "start": 58,
+                                "end": 81,
+                                "url": "https://t.co/Erljast3hG",
+                                "expanded_url": "http://css-for-js.dev",
+                                "display_url": "css-for-js.dev"
+                            }
+                        ],
+                        "mentions": [
+                            { "start": 94, "end": 103, "username": "gatsbyjs" },
+                            { "start": 105, "end": 121, "username": "concordia_btcmp" },
+                            { "start": 123, "end": 135, "username": "khanacademy" },
+                            { "start": 137, "end": 146, "username": "unsplash" }
+                        ]
+                    }
+                },
+                "url": "https://t.co/E8uZxqIx7g",
+                "username": "JoshWComeau",
+                "name": "Josh W. Comeau",
+                "public_metrics": { "followers_count": 71024, "following_count": 2125, "tweet_count": 23652, "listed_count": 1066 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1497584731667537923/BZzyDlnt_normal.jpg"
+            },
+            {
+                "id": "47716918",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/Zqs3xNQEvs",
+                                "expanded_url": "https://alexkroeger.mirror.xyz",
+                                "display_url": "alexkroeger.mirror.xyz"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "hashtags": [{ "start": 0, "end": 9, "tag": "ethereum" }],
+                        "mentions": [
+                            { "start": 16, "end": 24, "username": "phantom" },
+                            { "start": 37, "end": 50, "username": "tetonfinance" },
+                            { "start": 63, "end": 68, "username": "a16z" },
+                            { "start": 89, "end": 99, "username": "0xProject" },
+                            { "start": 114, "end": 123, "username": "coinbase" }
+                        ]
+                    }
+                },
+                "url": "https://t.co/Zqs3xNQEvs",
+                "username": "alex_kroeger",
+                "name": "DeFiCorgi.eth \uD83E\uDD87\uD83D\uDD0A",
+                "public_metrics": { "followers_count": 8456, "following_count": 946, "tweet_count": 3928, "listed_count": 219 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1484239597328429056/wmTzkY1T_normal.png"
+            },
+            {
+                "id": "64844802",
+                "verified": true,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/lEZr1rVECd",
+                                "expanded_url": "http://www.a16z.com",
+                                "display_url": "a16z.com"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "start": 40,
+                                "end": 63,
+                                "url": "https://t.co/ZZLWI3uCQy",
+                                "expanded_url": "http://a16z.com/portfolio/",
+                                "display_url": "a16z.com/portfolio/"
+                            },
+                            {
+                                "start": 65,
+                                "end": 88,
+                                "url": "https://t.co/Z7JS4DaRua",
+                                "expanded_url": "http://a16z.com/podcasts/",
+                                "display_url": "a16z.com/podcasts/"
+                            },
+                            {
+                                "start": 90,
+                                "end": 113,
+                                "url": "https://t.co/dJu6Y8MQRI",
+                                "expanded_url": "http://future.com",
+                                "display_url": "future.com"
+                            }
+                        ]
+                    }
+                },
+                "url": "https://t.co/lEZr1rVECd",
+                "username": "a16z",
+                "name": "a16z",
+                "public_metrics": { "followers_count": 588680, "following_count": 43, "tweet_count": 20623, "listed_count": 9993 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1506618374889082882/IJZsn8PG_normal.jpg"
+            },
+            {
+                "id": "273288231",
+                "verified": false,
+                "entities": { "description": { "mentions": [{ "start": 28, "end": 37, "username": "paradigm" }] } },
+                "url": "",
+                "username": "danrobinson",
+                "name": "Dan Robinson",
+                "public_metrics": { "followers_count": 51312, "following_count": 980, "tweet_count": 6585, "listed_count": 1496 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1377598520149082113/autwFh23_normal.jpg"
+            },
+            {
+                "id": "848044670",
+                "verified": false,
+                "entities": {
+                    "description": {
+                        "hashtags": [
+                            { "start": 129, "end": 140, "tag": "Resistance" },
+                            { "start": 142, "end": 149, "tag": "Autism" }
+                        ]
+                    }
+                },
+                "url": "",
+                "username": "Veeshandle",
+                "name": "Veronica stands with Ukraine\uD83C\uDDFA\uD83C\uDDE6",
+                "public_metrics": { "followers_count": 5021, "following_count": 5388, "tweet_count": 64215, "listed_count": 4 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1506469099446190085/kKpmWpMx_normal.jpg"
+            },
+            {
+                "id": "14298769",
+                "verified": true,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/MmuhUfZv9d",
+                                "expanded_url": "https://www.instagram.com/mollyjongfast/?hl=en",
+                                "display_url": "instagram.com/mollyjongfast/…"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "start": 112,
+                                "end": 135,
+                                "url": "https://t.co/76HlHXH1q2",
+                                "expanded_url": "http://newsletters.theatlantic.com/wait-what/",
+                                "display_url": "newsletters.theatlantic.com/wait-what/"
+                            }
+                        ],
+                        "mentions": [
+                            { "start": 11, "end": 23, "username": "theatlantic" },
+                            { "start": 26, "end": 40, "username": "voguemagazine" },
+                            { "start": 43, "end": 56, "username": "onesignalpub" },
+                            { "start": 69, "end": 84, "username": "newabnormalpod" }
+                        ]
+                    }
+                },
+                "url": "https://t.co/MmuhUfZv9d",
+                "username": "MollyJongFast",
+                "name": "Molly Jong-Fast",
+                "public_metrics": { "followers_count": 1006355, "following_count": 6615, "tweet_count": 13085, "listed_count": 5821 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1487079489536466945/9gQ6Avp7_normal.jpg"
+            },
+            {
+                "id": "300994273",
+                "verified": false,
+                "entities": {
+                    "url": {
+                        "urls": [
+                            { "start": 0, "end": 23, "url": "https://t.co/sXdRuzOCRS", "expanded_url": "https://dudak.me", "display_url": "dudak.me" }
+                        ]
+                    },
+                    "description": {
+                        "mentions": [
+                            { "start": 94, "end": 101, "username": "MUI_hq" },
+                            { "start": 113, "end": 129, "username": "FutureProcessin" }
+                        ]
+                    }
+                },
+                "url": "https://t.co/sXdRuzOCRS",
+                "username": "michaldudak",
+                "name": "Michał Dudak",
+                "public_metrics": { "followers_count": 234, "following_count": 309, "tweet_count": 363, "listed_count": 13 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1400039759003766785/1eFwPvgW_normal.jpg"
+            },
+            {
+                "id": "1474857929308266500",
+                "verified": false,
+                "entities": { "description": { "mentions": [{ "start": 77, "end": 84, "username": "MUI_hq" }] } },
+                "url": "",
+                "username": "MaterialUI",
+                "name": "Material UI",
+                "public_metrics": { "followers_count": 197, "following_count": 1, "tweet_count": 5, "listed_count": 3 },
+                "profile_image_url": "https://pbs.twimg.com/profile_images/1482375747809460229/eSjsD5CQ_normal.jpg"
+            }
+        ],
+        "tweets": [
+            {
+                "public_metrics": { "retweet_count": 1, "reply_count": 2, "like_count": 17, "quote_count": 0 },
+                "text": "@Foone @Microsoft Have you heard of V3DMM? its a modernizatuon of the program that allows for mods, its what vargskelthor used for The Blue Shell Incident",
+                "entities": {
+                    "mentions": [
+                        { "start": 0, "end": 6, "username": "Foone", "id": "13502732" },
+                        { "start": 7, "end": 17, "username": "Microsoft", "id": "74286565" }
+                    ]
+                },
+                "id": "1511936927792078851",
+                "in_reply_to_user_id": "13502732",
+                "author_id": "1092966160956645376",
+                "referenced_tweets": [{ "type": "replied_to", "id": "1511808848729804803" }],
+                "created_at": "2022-04-07T05:20:28.000Z"
+            },
+            {
+                "public_metrics": { "retweet_count": 20, "reply_count": 118, "like_count": 243, "quote_count": 8 },
+                "text": "Some day React/Vue/Svelte etc will all be obsolete and we'll be using some new type of library or framework for web dev.\n\nWhat do you think it'll be like?",
+                "id": "1508963137693052929",
+                "author_id": "13802782",
+                "created_at": "2022-03-30T00:23:41.000Z"
+            },
+            {
+                "public_metrics": { "retweet_count": 0, "reply_count": 1, "like_count": 0, "quote_count": 0 },
+                "text": "@midjourney \uD83D\uDC86\uD83C\uDFFC‍♂️\uD83C\uDF2C",
+                "entities": { "mentions": [{ "start": 0, "end": 11, "username": "midjourney", "id": "1307056292465274880" }] },
+                "id": "1508528363715051532",
+                "in_reply_to_user_id": "1307056292465274880",
+                "author_id": "6685592",
+                "referenced_tweets": [{ "type": "replied_to", "id": "1508519799487225858" }],
+                "created_at": "2022-03-28T19:36:03.000Z"
+            },
+            {
+                "public_metrics": { "retweet_count": 0, "reply_count": 2, "like_count": 3, "quote_count": 0 },
+                "text": "@midjourney \uD83E\uDD16\uD83D\uDC58\uD83C\uDFF9\uD83C\uDFAF\uD83C\uDFDB️\uD83C\uDFE2\uD83C\uDFD7️",
+                "entities": { "mentions": [{ "start": 0, "end": 11, "username": "midjourney", "id": "1307056292465274880" }] },
+                "id": "1508520415441965056",
+                "in_reply_to_user_id": "1307056292465274880",
+                "author_id": "205648240",
+                "referenced_tweets": [{ "type": "replied_to", "id": "1508519799487225858" }],
+                "created_at": "2022-03-28T19:04:28.000Z"
+            },
+            {
+                "public_metrics": { "retweet_count": 0, "reply_count": 1, "like_count": 0, "quote_count": 0 },
+                "text": "@midjourney \uD83E\uDD81\uD83E\uDDEC\uD83D\uDDDE\uD83C\uDCCF",
+                "entities": { "mentions": [{ "start": 0, "end": 11, "username": "midjourney", "id": "1307056292465274880" }] },
+                "id": "1508522793314361348",
+                "in_reply_to_user_id": "1307056292465274880",
+                "author_id": "890249645858766848",
+                "referenced_tweets": [{ "type": "replied_to", "id": "1508519799487225858" }],
+                "created_at": "2022-03-28T19:13:55.000Z"
+            },
+            {
+                "entities": {
+                    "urls": [
+                        {
+                            "start": 15,
+                            "end": 38,
+                            "url": "https://t.co/8N831mrqKx",
+                            "expanded_url": "https://twitter.com/swyx/status/1508472545309196289?s=21&t=nbMlQ9KiEeWOEPlhiOrQeg",
+                            "display_url": "twitter.com/swyx/status/15…"
+                        }
+                    ],
+                    "mentions": [{ "start": 0, "end": 14, "username": "andypcollins1", "id": "820340470052245504" }]
+                },
+                "public_metrics": { "retweet_count": 0, "reply_count": 1, "like_count": 2, "quote_count": 0 },
+                "text": "@andypcollins1 https://t.co/8N831mrqKx",
+                "id": "1508490355519496199",
+                "in_reply_to_user_id": "820340470052245504",
+                "author_id": "6685592",
+                "referenced_tweets": [
+                    { "type": "quoted", "id": "1508472545309196289" },
+                    { "type": "replied_to", "id": "1508483696315314178" }
+                ],
+                "created_at": "2022-03-28T17:05:01.000Z"
+            },
+            {
+                "public_metrics": { "retweet_count": 3, "reply_count": 4, "like_count": 51, "quote_count": 1 },
+                "text": "details matter",
+                "id": "1507021257115590658",
+                "author_id": "1291224355",
+                "created_at": "2022-03-24T15:47:21.000Z"
+            },
+            {
+                "entities": {
+                    "urls": [
+                        {
+                            "start": 75,
+                            "end": 98,
+                            "url": "https://t.co/x72diJ7q5Q",
+                            "expanded_url": "https://trib.al/aAcXJVb",
+                            "display_url": "trib.al/aAcXJVb",
+                            "images": [
+                                {
+                                    "url": "https://pbs.twimg.com/news_img/1512604710959726599/N51DVf-G?format=jpg&name=orig",
+                                    "width": 636,
+                                    "height": 382
+                                },
+                                {
+                                    "url": "https://pbs.twimg.com/news_img/1512604710959726599/N51DVf-G?format=jpg&name=150x150",
+                                    "width": 150,
+                                    "height": 150
+                                }
+                            ],
+                            "status": 200,
+                            "title": "Asteroid half the size of a giraffe strikes Earth off coast of Iceland",
+                            "description": "Some people in Iceland reported hearing a boom or seeing a flash of light around the time 2022 EB5 scooted across the sky between Greenland and Norway at 21:22 GMT (16:22 ET) on March 11.",
+                            "unwound_url": "https://www.dailymail.co.uk/sciencetech/article-10610491/Asteroid-half-size-giraffe-strikes-Earth-coast-Iceland.html?ito=social-twitter_mailonline"
+                        }
+                    ],
+                    "annotations": [{ "start": 67, "end": 73, "probability": 0.9693, "type": "Place", "normalized_text": "Iceland" }]
+                },
+                "public_metrics": { "retweet_count": 1677, "reply_count": 2653, "like_count": 7028, "quote_count": 6288 },
+                "text": "Asteroid half the size of a giraffe strikes Earth off the coast of Iceland https://t.co/x72diJ7q5Q",
+                "id": "1503400626008596487",
+                "author_id": "15438913",
+                "created_at": "2022-03-14T16:00:15.000Z"
+            },
+            {
+                "public_metrics": { "retweet_count": 0, "reply_count": 1, "like_count": 2, "quote_count": 0 },
+                "text": "@TkDodo @tannerlinsley Thanks, def an easy one to miss!",
+                "entities": {
+                    "mentions": [
+                        { "start": 0, "end": 7, "username": "TkDodo", "id": "44217212" },
+                        { "start": 8, "end": 22, "username": "tannerlinsley", "id": "50136899" }
+                    ]
+                },
+                "id": "1503043516527792129",
+                "in_reply_to_user_id": "44217212",
+                "author_id": "6685592",
+                "referenced_tweets": [{ "type": "replied_to", "id": "1503043331370147843" }],
+                "created_at": "2022-03-13T16:21:14.000Z"
+            },
+            {
+                "public_metrics": { "retweet_count": 0, "reply_count": 1, "like_count": 2, "quote_count": 0 },
+                "text": "@TkDodo @tannerlinsley Sorry, I meant why would the arrow function be an issue that Tanner was calling out.",
+                "entities": {
+                    "annotations": [{ "start": 84, "end": 89, "probability": 0.9916, "type": "Person", "normalized_text": "Tanner" }],
+                    "mentions": [
+                        { "start": 0, "end": 7, "username": "TkDodo", "id": "44217212" },
+                        { "start": 8, "end": 22, "username": "tannerlinsley", "id": "50136899" }
+                    ]
+                },
+                "id": "1503042451984064520",
+                "in_reply_to_user_id": "44217212",
+                "author_id": "6685592",
+                "referenced_tweets": [{ "type": "replied_to", "id": "1503040949013909509" }],
+                "created_at": "2022-03-13T16:17:00.000Z"
+            },
+            {
+                "entities": {
+                    "urls": [
+                        {
+                            "start": 156,
+                            "end": 179,
+                            "url": "https://t.co/LBUPqiTrAS",
+                            "expanded_url": "https://twitter.com/MysterySolvent/status/1497675092012240901/video/1",
+                            "display_url": "pic.twitter.com/LBUPqiTrAS"
+                        }
+                    ],
+                    "annotations": [
+                        { "start": 74, "end": 78, "probability": 0.9869, "type": "Person", "normalized_text": "Putin" },
+                        { "start": 103, "end": 109, "probability": 0.9992, "type": "Place", "normalized_text": "Ukraine" },
+                        { "start": 112, "end": 127, "probability": 0.93, "type": "Person", "normalized_text": "Donald Trump Jr." }
+                    ]
+                },
+                "public_metrics": { "retweet_count": 1241, "reply_count": 2445, "like_count": 5276, "quote_count": 614 },
+                "text": "Today as the entire world holds its collective breath waiting to see what Putin’s next move will be in Ukraine, Donald Trump Jr. decided to do some drugs…. https://t.co/LBUPqiTrAS",
+                "attachments": { "media_keys": ["7_1497674271480500231"] },
+                "id": "1497675092012240901",
+                "author_id": "1094713876132872192",
+                "created_at": "2022-02-26T20:49:02.000Z"
+            },
+            {
+                "public_metrics": { "retweet_count": 5092, "reply_count": 433, "like_count": 13418, "quote_count": 349 },
+                "text": "Just Saying: Very few American journalists are connecting the dots between Paul Manafort's work in Ukraine, the Trump campaign's change to the GOP platform in 2015, Trump's withholding of support and attempted blackmail of Zelensky, and this invasion.",
+                "entities": {
+                    "annotations": [
+                        { "start": 75, "end": 87, "probability": 0.9957, "type": "Person", "normalized_text": "Paul Manafort" },
+                        { "start": 99, "end": 105, "probability": 0.9996, "type": "Place", "normalized_text": "Ukraine" },
+                        { "start": 112, "end": 116, "probability": 0.9966, "type": "Person", "normalized_text": "Trump" },
+                        { "start": 143, "end": 145, "probability": 0.9383, "type": "Organization", "normalized_text": "GOP" },
+                        { "start": 165, "end": 169, "probability": 0.9971, "type": "Person", "normalized_text": "Trump" },
+                        { "start": 223, "end": 230, "probability": 0.3496, "type": "Person", "normalized_text": "Zelensky" }
+                    ]
+                },
+                "id": "1497253618923175946",
+                "author_id": "110194870",
+                "created_at": "2022-02-25T16:54:15.000Z"
+            },
+            {
+                "entities": {
+                    "urls": [
+                        {
+                            "start": 256,
+                            "end": 279,
+                            "url": "https://t.co/wOauBymtZ2",
+                            "expanded_url": "https://gist.github.com/qudo-code/e241814d8448d0c1cccb4b998eda5cea",
+                            "display_url": "gist.github.com/qudo-code/e241…",
+                            "images": [
+                                {
+                                    "url": "https://pbs.twimg.com/news_img/1497333441053933568/qDgVvYvH?format=png&name=orig",
+                                    "width": 1280,
+                                    "height": 640
+                                },
+                                {
+                                    "url": "https://pbs.twimg.com/news_img/1497333441053933568/qDgVvYvH?format=png&name=150x150",
+                                    "width": 150,
+                                    "height": 150
+                                }
+                            ],
+                            "status": 200,
+                            "title": "Svelte State Factory",
+                            "description": "Svelte State Factory. GitHub Gist: instantly share code, notes, and snippets.",
+                            "unwound_url": "https://gist.github.com/qudo-code/e241814d8448d0c1cccb4b998eda5cea"
+                        },
+                        {
+                            "start": 280,
+                            "end": 303,
+                            "url": "https://t.co/mxOCaXJzwi",
+                            "expanded_url": "https://twitter.com/_qudo/status/1497333438633836549/video/1",
+                            "display_url": "pic.twitter.com/mxOCaXJzwi"
+                        }
+                    ],
+                    "mentions": [{ "start": 210, "end": 224, "username": "SvelteSociety", "id": "1176969867733479424" }],
+                    "hashtags": [
+                        { "start": 141, "end": 146, "tag": "web3" },
+                        { "start": 243, "end": 254, "tag": "javascript" }
+                    ]
+                },
+                "public_metrics": { "retweet_count": 3, "reply_count": 2, "like_count": 1, "quote_count": 0 },
+                "text": "Kind of a WIP/POC. Trying to figure out the best way to handle these types of async loading patterns. These types of things come up a ton in #web3 such as getting a token and then fetching its metadata. Fellow @SvelteSociety, any suggestions? #javascript \nhttps://t.co/wOauBymtZ2 https://t.co/mxOCaXJzwi",
+                "attachments": { "media_keys": ["7_1497333168109604865"] },
+                "id": "1497333438633836549",
+                "author_id": "1481676289085870081",
+                "created_at": "2022-02-25T22:11:25.000Z"
+            },
+            {
+                "public_metrics": { "retweet_count": 0, "reply_count": 1, "like_count": 5, "quote_count": 0 },
+                "text": "@dan_abramov Thanks for offering this opportunity, Dan! I was wondering what would it take to be able to profile re-renders caused by hooks better. Right now “hooks 2,5,22 changed” causes me pain. Any chance of making them identifiable by name / signature? Cc @brian_d_vaughn",
+                "entities": {
+                    "annotations": [{ "start": 51, "end": 53, "probability": 0.8154, "type": "Person", "normalized_text": "Dan" }],
+                    "mentions": [
+                        { "start": 0, "end": 12, "username": "dan_abramov", "id": "70345946" },
+                        { "start": 260, "end": 275, "username": "brian_d_vaughn", "id": "99973385" }
+                    ]
+                },
+                "id": "1492897909884563461",
+                "in_reply_to_user_id": "70345946",
+                "author_id": "6685592",
+                "referenced_tweets": [{ "type": "replied_to", "id": "1492880870499360769" }],
+                "created_at": "2022-02-13T16:26:13.000Z"
+            },
+            {
+                "entities": {
+                    "urls": [
+                        {
+                            "start": 35,
+                            "end": 58,
+                            "url": "https://t.co/wxxvi9bkYq",
+                            "expanded_url": "https://twitter.com/kitasenjudesign/status/1489260985135157258/video/1",
+                            "display_url": "pic.twitter.com/wxxvi9bkYq"
+                        }
+                    ]
+                },
+                "public_metrics": { "retweet_count": 3027, "reply_count": 57, "like_count": 18541, "quote_count": 196 },
+                "text": "structure of slit-scan\nスリットスキャンの構造 https://t.co/wxxvi9bkYq",
+                "attachments": { "media_keys": ["7_1489260143770435584"] },
+                "id": "1489260985135157258",
+                "author_id": "2612898242",
+                "created_at": "2022-02-03T15:34:22.000Z"
+            },
+            {
+                "entities": {
+                    "urls": [
+                        {
+                            "start": 180,
+                            "end": 203,
+                            "url": "https://t.co/TX49KOP1ka",
+                            "expanded_url": "https://twitter.com/TIDAL/status/1487582316344057857",
+                            "display_url": "twitter.com/TIDAL/status/1…"
+                        }
+                    ],
+                    "annotations": [{ "start": 107, "end": 116, "probability": 0.9664, "type": "Person", "normalized_text": "Young Thug" }]
+                },
+                "public_metrics": { "retweet_count": 0, "reply_count": 1, "like_count": 0, "quote_count": 0 },
+                "text": "Sound engineers should get more appreciation as artists themselves.\n\nI remember watching an interview with Young Thug’s engineer and it blew my mind how he thinks about his craft. https://t.co/TX49KOP1ka",
+                "id": "1487794283545509895",
+                "author_id": "384694808",
+                "referenced_tweets": [{ "type": "quoted", "id": "1487582316344057857" }],
+                "created_at": "2022-01-30T14:26:13.000Z"
+            },
+            {
+                "public_metrics": { "retweet_count": 0, "reply_count": 1, "like_count": 1, "quote_count": 0 },
+                "text": "@michaldudak @MaterialUI I was confused about the core package name when playing on CodeSandbox. Lots of people probably won’t read the docs before trying it out, so my vote goes to ‘@mui/base’ as something people won’t try to install. I do wish material was named core though.",
+                "entities": {
+                    "annotations": [{ "start": 84, "end": 94, "probability": 0.2654, "type": "Person", "normalized_text": "CodeSandbox" }],
+                    "mentions": [
+                        { "start": 0, "end": 12, "username": "michaldudak", "id": "300994273" },
+                        { "start": 13, "end": 24, "username": "MaterialUI", "id": "1474857929308266500" }
+                    ]
+                },
+                "id": "1452678045735821313",
+                "in_reply_to_user_id": "300994273",
+                "author_id": "6685592",
+                "referenced_tweets": [{ "type": "replied_to", "id": "1452630484706635779" }],
+                "created_at": "2021-10-25T16:46:50.000Z"
+            }
+        ],
+        "media": [
+            {
+                "width": 1024,
+                "type": "photo",
+                "url": "https://pbs.twimg.com/media/FO93eQ3VgAICcWk.jpg",
+                "media_key": "3_1508555761999249410",
+                "height": 1024
+            },
+            {
+                "width": 1024,
+                "type": "photo",
+                "url": "https://pbs.twimg.com/media/FO9bImHVgAIRrr4.jpg",
+                "media_key": "3_1508524603420803074",
+                "height": 1024
+            },
+            {
+                "width": 1024,
+                "type": "photo",
+                "url": "https://pbs.twimg.com/media/FO9eVA-VsAIExkY.jpg",
+                "media_key": "3_1508528115324137474",
+                "height": 1024
+            },
+            {
+                "width": 1054,
+                "type": "photo",
+                "url": "https://pbs.twimg.com/media/FO1zV0zWUAYc45l.jpg",
+                "media_key": "3_1507988269027446790",
+                "height": 676
+            },
+            {
+                "width": 1080,
+                "preview_image_url": "https://pbs.twimg.com/ext_tw_video_thumb/1506911485162921984/pu/img/222bKdE53Ymk9s1V.jpg",
+                "type": "video",
+                "media_key": "7_1506911485162921984",
+                "height": 1920
+            },
+            {
+                "width": 894,
+                "type": "photo",
+                "url": "https://pbs.twimg.com/media/FON0qPmX0Aso07C.jpg",
+                "media_key": "3_1505174969562681355",
+                "height": 722
+            },
+            {
+                "width": 680,
+                "type": "photo",
+                "url": "https://pbs.twimg.com/media/FNaqG8YWQAIAJ5R.png",
+                "media_key": "3_1501574562038824962",
+                "height": 616
+            },
+            {
+                "width": 1920,
+                "preview_image_url": "https://pbs.twimg.com/ext_tw_video_thumb/1499177902558089220/pu/img/ZOp1mA5Vbyq_pexN.jpg",
+                "type": "video",
+                "media_key": "7_1499177902558089220",
+                "height": 1080
+            },
+            {
+                "width": 2048,
+                "type": "photo",
+                "url": "https://pbs.twimg.com/media/FMeqrJpX0AM0DJu.jpg",
+                "media_key": "3_1497353059424522243",
+                "height": 1365
+            },
+            {
+                "width": 1536,
+                "type": "photo",
+                "url": "https://pbs.twimg.com/media/FL-a7VIVgAAD3_c.jpg",
+                "media_key": "3_1495083945385361408",
+                "height": 2048
+            },
+            {
+                "width": 1080,
+                "type": "photo",
+                "url": "https://pbs.twimg.com/media/FLvP5l0WQAMRImI.jpg",
+                "media_key": "3_1494016289714618371",
+                "height": 1080
+            },
+            {
+                "width": 1979,
+                "type": "photo",
+                "url": "https://pbs.twimg.com/media/FKWjLgvaAAAxm7M.png",
+                "media_key": "3_1487774670078476288",
+                "height": 1346
+            },
+            {
+                "width": 1043,
+                "type": "photo",
+                "url": "https://pbs.twimg.com/media/FJyw6h6XEAYLNVd.jpg",
+                "media_key": "3_1485256496707473414",
+                "height": 746
+            },
+            {
+                "width": 1220,
+                "type": "photo",
+                "url": "https://pbs.twimg.com/media/FI2YsphaQAAwEyW.jpg",
+                "media_key": "3_1481007745302413312",
+                "height": 675
+            },
+            {
+                "width": 720,
+                "preview_image_url": "https://pbs.twimg.com/ext_tw_video_thumb/1478531687529156609/pu/img/f1DxCL8CTW7ibQ-f.jpg",
+                "type": "video",
+                "media_key": "7_1478531687529156609",
+                "height": 1280
+            },
+            {
+                "width": 1430,
+                "type": "photo",
+                "url": "https://pbs.twimg.com/media/FIVqmUFXEAMg3aX.png",
+                "media_key": "3_1478705259119841283",
+                "height": 648,
+                "alt_text": "Excerpt: \"It’s 2022 and things are pretty much the same: the dominant way of handling user input is still based on events and — in some form or another — callbacks. They come in slightly different forms (addEventListener, responder objects, etc.) but the core idea is the same.\n\nIt’s still going strong more than 40 years later, so the event-and-callback-based approach clearly has something going for it. But in nearly every code base I’ve worked in, the hairiest, most difficult-to-modify logic is in the event handling code. Handling user input is — to borrow a phrase from Laurence Tratt — a solved problem that isn’t.\n\nTo help me understand the pros and cons of the events-and-callbacks model and to experiment with some other approaches, I decided to write up a simple example in a three different styles.\""
+            },
+            {
+                "width": 640,
+                "preview_image_url": "https://pbs.twimg.com/ext_tw_video_thumb/1475207392606445571/pu/img/kjsP3P1lNndbzSgR.jpg",
+                "type": "video",
+                "media_key": "7_1475207392606445571",
+                "height": 732
+            },
+            {
+                "width": 1200,
+                "preview_image_url": "https://pbs.twimg.com/tweet_video_thumb/E0ujC2uXsAY9_L3.jpg",
+                "type": "animated_gif",
+                "media_key": "16_1390384179419000838",
+                "height": 704
+            },
+            {
+                "width": 1920,
+                "preview_image_url": "https://pbs.twimg.com/ext_tw_video_thumb/1468831752005189632/pu/img/RANvMwGvayGHO8Kp.jpg",
+                "type": "video",
+                "media_key": "7_1468831752005189632",
+                "height": 1920
+            },
+            {
+                "width": 720,
+                "preview_image_url": "https://pbs.twimg.com/tweet_video_thumb/FFOGPSoVUAcr5NL.jpg",
+                "type": "animated_gif",
+                "media_key": "16_1464661901082710023",
+                "height": 720
+            },
+            {
+                "width": 1236,
+                "preview_image_url": "https://pbs.twimg.com/tweet_video_thumb/EridPhmXYAAUSjc.jpg",
+                "type": "animated_gif",
+                "media_key": "16_1349000978440347648",
+                "height": 386
+            },
+            {
+                "width": 563,
+                "type": "photo",
+                "url": "https://pbs.twimg.com/media/FDNhgYyXMAgtyVO.jpg",
+                "media_key": "3_1455614313608196104",
+                "height": 316
+            }
+        ]
+    },
+    "errors": [
+        {
+            "value": "1455613726372110337",
+            "detail": "Could not find tweet with referenced_tweets.id: [1455613726372110337].",
+            "title": "Not Found Error",
+            "resource_type": "tweet",
+            "parameter": "referenced_tweets.id",
+            "resource_id": "1455613726372110337",
+            "type": "https://api.twitter.com/2/problems/resource-not-found"
+        }
+    ],
+    "meta": { "result_count": 50, "next_token": "7140dibdnow9c7btw480ipp2x0qfe79zcj7pk0r98jacz" }
+}
