@@ -1,16 +1,18 @@
+import camelcaseKeys from 'camelcase-keys';
 import _emojis from '~/assets/emojis.json';
 
 type GithubEmojis = typeof _emojis;
 
 export type GithubRepo = {
     description: string,
-    full_name: string,
-    html_url: string,
+    fullName: string,
+    htmlUrl: string,
     id: string
 };
 
 export type GithubStarProps = {
-    starred_at: string,
+    className?: string,
+    starredAt: string,
     repo: GithubRepo
 };
 
@@ -29,6 +31,5 @@ export const getActivity = async (limit = 20) => {
     if (!response.ok) {
         throw response;
     }
-
-    return response.json();
+    return camelcaseKeys(await response.json(), { deep: true });
 }

@@ -1,0 +1,535 @@
+{
+    "_id": "1503003974689083393",
+    "data": [
+        {
+            "_id": "1503040949013909509",
+            "authorId": "44217212",
+            "conversationId": "1503003974689083393",
+            "createdAt": { "$date": "2022-03-13T16:11:02.000+0000" },
+            "entities": {
+                "mentions": [
+                    { "start": 0, "end": 6, "username": "dmarr", "id": "6685592" },
+                    { "start": 7, "end": 21, "username": "tannerlinsley", "id": "50136899" }
+                ]
+            },
+            "inReplyToUserId": "6685592",
+            "publicMetrics": { "retweetCount": 0, "replyCount": 1, "likeCount": 1, "quoteCount": 0 },
+            "referencedTweets": [
+                {
+                    "_id": "1503039050713862149",
+                    "authorId": "6685592",
+                    "conversationId": "1503003974689083393",
+                    "createdAt": { "$date": "2022-03-13T16:03:29.000+0000" },
+                    "entities": {
+                        "mentions": [
+                            { "start": 0, "end": 7, "username": "TkDodo", "id": "44217212" },
+                            { "start": 8, "end": 22, "username": "tannerlinsley", "id": "50136899" }
+                        ]
+                    },
+                    "inReplyToUserId": "44217212",
+                    "publicMetrics": { "retweetCount": 0, "replyCount": 1, "likeCount": 1, "quoteCount": 0 },
+                    "referencedTweets": [{ "type": "replied_to", "id": "1503012261333458953" }],
+                    "text": "@TkDodo @tannerlinsley Why would that be an issue?",
+                    "author": {
+                        "_id": "6685592",
+                        "entities": {
+                            "url": {
+                                "urls": [
+                                    {
+                                        "start": 0,
+                                        "end": 23,
+                                        "url": "https://t.co/v3dfqxPyp8",
+                                        "expandedUrl": "http://github.com/marr",
+                                        "displayUrl": "github.com/marr"
+                                    }
+                                ]
+                            }
+                        },
+                        "name": "David Marr",
+                        "profileImageUrl": "https://pbs.twimg.com/profile_images/1506021181362745344/wc5quhbh_normal.jpg",
+                        "publicMetrics": { "followersCount": 231, "followingCount": 429, "tweetCount": 1376, "listedCount": 12 },
+                        "url": "https://t.co/v3dfqxPyp8",
+                        "username": "dmarr",
+                        "verified": false
+                    }
+                }
+            ],
+            "text": "@dmarr @tannerlinsley ['movies', 1] and ['movies', '1'] don't match :)",
+            "type": "replied_to",
+            "author": {
+                "_id": "44217212",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            { "start": 0, "end": 23, "url": "https://t.co/ahCaT7xING", "expandedUrl": "https://tkdodo.eu", "displayUrl": "tkdodo.eu" }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "start": 114,
+                                "end": 137,
+                                "url": "https://t.co/9p738H6wih",
+                                "expandedUrl": "http://tkdodo.eu/blog",
+                                "displayUrl": "tkdodo.eu/blog"
+                            }
+                        ],
+                        "mentions": [{ "start": 60, "end": 71, "username": "myadverity" }]
+                    }
+                },
+                "name": "Dominik 🇺🇦",
+                "profileImageUrl": "https://pbs.twimg.com/profile_images/1428810489157595139/lBT2YI9D_normal.jpg",
+                "publicMetrics": { "followersCount": 5448, "followingCount": 288, "tweetCount": 5170, "listedCount": 77 },
+                "url": "https://t.co/ahCaT7xING",
+                "username": "TkDodo",
+                "verified": false
+            },
+            "media": []
+        },
+        {
+            "_id": "1503044122042585090",
+            "authorId": "44217212",
+            "conversationId": "1503003974689083393",
+            "createdAt": { "$date": "2022-03-13T16:23:38.000+0000" },
+            "entities": {
+                "mentions": [
+                    { "start": 0, "end": 6, "username": "dmarr", "id": "6685592" },
+                    { "start": 7, "end": 21, "username": "tannerlinsley", "id": "50136899" },
+                    { "start": 30, "end": 41, "username": "typescript", "id": "809233214" }
+                ]
+            },
+            "inReplyToUserId": "6685592",
+            "publicMetrics": { "retweetCount": 0, "replyCount": 1, "likeCount": 4, "quoteCount": 0 },
+            "referencedTweets": [
+                {
+                    "_id": "1503043516527792129",
+                    "authorId": "6685592",
+                    "conversationId": "1503003974689083393",
+                    "createdAt": { "$date": "2022-03-13T16:21:14.000+0000" },
+                    "entities": {
+                        "mentions": [
+                            { "start": 0, "end": 7, "username": "TkDodo", "id": "44217212" },
+                            { "start": 8, "end": 22, "username": "tannerlinsley", "id": "50136899" }
+                        ]
+                    },
+                    "inReplyToUserId": "44217212",
+                    "publicMetrics": { "retweetCount": 0, "replyCount": 1, "likeCount": 2, "quoteCount": 0 },
+                    "referencedTweets": [{ "type": "replied_to", "id": "1503043331370147843" }],
+                    "text": "@TkDodo @tannerlinsley Thanks, def an easy one to miss!",
+                    "type": "replied_to",
+                    "author": {
+                        "_id": "6685592",
+                        "entities": {
+                            "url": {
+                                "urls": [
+                                    {
+                                        "start": 0,
+                                        "end": 23,
+                                        "url": "https://t.co/v3dfqxPyp8",
+                                        "expandedUrl": "http://github.com/marr",
+                                        "displayUrl": "github.com/marr"
+                                    }
+                                ]
+                            }
+                        },
+                        "name": "David Marr",
+                        "profileImageUrl": "https://pbs.twimg.com/profile_images/1506021181362745344/wc5quhbh_normal.jpg",
+                        "publicMetrics": { "followersCount": 231, "followingCount": 429, "tweetCount": 1376, "listedCount": 12 },
+                        "url": "https://t.co/v3dfqxPyp8",
+                        "username": "dmarr",
+                        "verified": false
+                    }
+                }
+            ],
+            "text": "@dmarr @tannerlinsley Not for @typescript 😅, but definitely for humans",
+            "author": {
+                "_id": "44217212",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            { "start": 0, "end": 23, "url": "https://t.co/ahCaT7xING", "expandedUrl": "https://tkdodo.eu", "displayUrl": "tkdodo.eu" }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "start": 114,
+                                "end": 137,
+                                "url": "https://t.co/9p738H6wih",
+                                "expandedUrl": "http://tkdodo.eu/blog",
+                                "displayUrl": "tkdodo.eu/blog"
+                            }
+                        ],
+                        "mentions": [{ "start": 60, "end": 71, "username": "myadverity" }]
+                    }
+                },
+                "name": "Dominik 🇺🇦",
+                "profileImageUrl": "https://pbs.twimg.com/profile_images/1428810489157595139/lBT2YI9D_normal.jpg",
+                "publicMetrics": { "followersCount": 5448, "followingCount": 288, "tweetCount": 5170, "listedCount": 77 },
+                "url": "https://t.co/ahCaT7xING",
+                "username": "TkDodo",
+                "verified": false
+            },
+            "media": []
+        },
+        {
+            "_id": "1503043331370147843",
+            "authorId": "44217212",
+            "conversationId": "1503003974689083393",
+            "createdAt": { "$date": "2022-03-13T16:20:30.000+0000" },
+            "entities": {
+                "mentions": [
+                    { "start": 0, "end": 6, "username": "dmarr", "id": "6685592" },
+                    { "start": 7, "end": 21, "username": "tannerlinsley", "id": "50136899" }
+                ]
+            },
+            "inReplyToUserId": "6685592",
+            "publicMetrics": { "retweetCount": 0, "replyCount": 1, "likeCount": 4, "quoteCount": 0 },
+            "referencedTweets": [
+                {
+                    "_id": "1503042451984064520",
+                    "authorId": "6685592",
+                    "conversationId": "1503003974689083393",
+                    "createdAt": { "$date": "2022-03-13T16:17:00.000+0000" },
+                    "entities": {
+                        "annotations": [{ "start": 84, "end": 89, "probability": 0.9916, "type": "Person", "normalizedText": "Tanner" }],
+                        "mentions": [
+                            { "start": 0, "end": 7, "username": "TkDodo", "id": "44217212" },
+                            { "start": 8, "end": 22, "username": "tannerlinsley", "id": "50136899" }
+                        ]
+                    },
+                    "inReplyToUserId": "44217212",
+                    "publicMetrics": { "retweetCount": 0, "replyCount": 1, "likeCount": 2, "quoteCount": 0 },
+                    "referencedTweets": [{ "type": "replied_to", "id": "1503040949013909509" }],
+                    "text": "@TkDodo @tannerlinsley Sorry, I meant why would the arrow function be an issue that Tanner was calling out.",
+                    "type": "replied_to",
+                    "author": {
+                        "_id": "6685592",
+                        "entities": {
+                            "url": {
+                                "urls": [
+                                    {
+                                        "start": 0,
+                                        "end": 23,
+                                        "url": "https://t.co/v3dfqxPyp8",
+                                        "expandedUrl": "http://github.com/marr",
+                                        "displayUrl": "github.com/marr"
+                                    }
+                                ]
+                            }
+                        },
+                        "name": "David Marr",
+                        "profileImageUrl": "https://pbs.twimg.com/profile_images/1506021181362745344/wc5quhbh_normal.jpg",
+                        "publicMetrics": { "followersCount": 231, "followingCount": 429, "tweetCount": 1376, "listedCount": 12 },
+                        "url": "https://t.co/v3dfqxPyp8",
+                        "username": "dmarr",
+                        "verified": false
+                    }
+                }
+            ],
+            "text": "@dmarr @tannerlinsley onSuccess needs a function. In my snippet I'm calling invalidateQueries in the render function directly, leading to an infinite loop 🔁",
+            "type": "replied_to",
+            "author": {
+                "_id": "44217212",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            { "start": 0, "end": 23, "url": "https://t.co/ahCaT7xING", "expandedUrl": "https://tkdodo.eu", "displayUrl": "tkdodo.eu" }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "start": 114,
+                                "end": 137,
+                                "url": "https://t.co/9p738H6wih",
+                                "expandedUrl": "http://tkdodo.eu/blog",
+                                "displayUrl": "tkdodo.eu/blog"
+                            }
+                        ],
+                        "mentions": [{ "start": 60, "end": 71, "username": "myadverity" }]
+                    }
+                },
+                "name": "Dominik 🇺🇦",
+                "profileImageUrl": "https://pbs.twimg.com/profile_images/1428810489157595139/lBT2YI9D_normal.jpg",
+                "publicMetrics": { "followersCount": 5448, "followingCount": 288, "tweetCount": 5170, "listedCount": 77 },
+                "url": "https://t.co/ahCaT7xING",
+                "username": "TkDodo",
+                "verified": false
+            },
+            "media": []
+        },
+        {
+            "_id": "1503043516527792129",
+            "authorId": "6685592",
+            "conversationId": "1503003974689083393",
+            "createdAt": { "$date": "2022-03-13T16:21:14.000+0000" },
+            "entities": {
+                "mentions": [
+                    { "start": 0, "end": 7, "username": "TkDodo", "id": "44217212" },
+                    { "start": 8, "end": 22, "username": "tannerlinsley", "id": "50136899" }
+                ]
+            },
+            "inReplyToUserId": "44217212",
+            "publicMetrics": { "retweetCount": 0, "replyCount": 1, "likeCount": 2, "quoteCount": 0 },
+            "referencedTweets": [
+                {
+                    "_id": "1503043331370147843",
+                    "authorId": "44217212",
+                    "conversationId": "1503003974689083393",
+                    "createdAt": { "$date": "2022-03-13T16:20:30.000+0000" },
+                    "entities": {
+                        "mentions": [
+                            { "start": 0, "end": 6, "username": "dmarr", "id": "6685592" },
+                            { "start": 7, "end": 21, "username": "tannerlinsley", "id": "50136899" }
+                        ]
+                    },
+                    "inReplyToUserId": "6685592",
+                    "publicMetrics": { "retweetCount": 0, "replyCount": 1, "likeCount": 4, "quoteCount": 0 },
+                    "referencedTweets": [{ "type": "replied_to", "id": "1503042451984064520" }],
+                    "text": "@dmarr @tannerlinsley onSuccess needs a function. In my snippet I'm calling invalidateQueries in the render function directly, leading to an infinite loop 🔁",
+                    "type": "replied_to",
+                    "author": {
+                        "_id": "44217212",
+                        "entities": {
+                            "url": {
+                                "urls": [
+                                    {
+                                        "start": 0,
+                                        "end": 23,
+                                        "url": "https://t.co/ahCaT7xING",
+                                        "expandedUrl": "https://tkdodo.eu",
+                                        "displayUrl": "tkdodo.eu"
+                                    }
+                                ]
+                            },
+                            "description": {
+                                "urls": [
+                                    {
+                                        "start": 114,
+                                        "end": 137,
+                                        "url": "https://t.co/9p738H6wih",
+                                        "expandedUrl": "http://tkdodo.eu/blog",
+                                        "displayUrl": "tkdodo.eu/blog"
+                                    }
+                                ],
+                                "mentions": [{ "start": 60, "end": 71, "username": "myadverity" }]
+                            }
+                        },
+                        "name": "Dominik 🇺🇦",
+                        "profileImageUrl": "https://pbs.twimg.com/profile_images/1428810489157595139/lBT2YI9D_normal.jpg",
+                        "publicMetrics": { "followersCount": 5448, "followingCount": 288, "tweetCount": 5170, "listedCount": 77 },
+                        "url": "https://t.co/ahCaT7xING",
+                        "username": "TkDodo",
+                        "verified": false
+                    }
+                }
+            ],
+            "text": "@TkDodo @tannerlinsley Thanks, def an easy one to miss!",
+            "type": "replied_to",
+            "author": {
+                "_id": "6685592",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/v3dfqxPyp8",
+                                "expandedUrl": "http://github.com/marr",
+                                "displayUrl": "github.com/marr"
+                            }
+                        ]
+                    }
+                },
+                "name": "David Marr",
+                "profileImageUrl": "https://pbs.twimg.com/profile_images/1506021181362745344/wc5quhbh_normal.jpg",
+                "publicMetrics": { "followersCount": 231, "followingCount": 429, "tweetCount": 1376, "listedCount": 12 },
+                "url": "https://t.co/v3dfqxPyp8",
+                "username": "dmarr",
+                "verified": false
+            },
+            "media": []
+        },
+        {
+            "_id": "1503042451984064520",
+            "authorId": "6685592",
+            "conversationId": "1503003974689083393",
+            "createdAt": { "$date": "2022-03-13T16:17:00.000+0000" },
+            "entities": {
+                "annotations": [{ "start": 84, "end": 89, "probability": 0.9916, "type": "Person", "normalizedText": "Tanner" }],
+                "mentions": [
+                    { "start": 0, "end": 7, "username": "TkDodo", "id": "44217212" },
+                    { "start": 8, "end": 22, "username": "tannerlinsley", "id": "50136899" }
+                ]
+            },
+            "inReplyToUserId": "44217212",
+            "publicMetrics": { "retweetCount": 0, "replyCount": 1, "likeCount": 2, "quoteCount": 0 },
+            "referencedTweets": [
+                {
+                    "_id": "1503040949013909509",
+                    "authorId": "44217212",
+                    "conversationId": "1503003974689083393",
+                    "createdAt": { "$date": "2022-03-13T16:11:02.000+0000" },
+                    "entities": {
+                        "mentions": [
+                            { "start": 0, "end": 6, "username": "dmarr", "id": "6685592" },
+                            { "start": 7, "end": 21, "username": "tannerlinsley", "id": "50136899" }
+                        ]
+                    },
+                    "inReplyToUserId": "6685592",
+                    "publicMetrics": { "retweetCount": 0, "replyCount": 1, "likeCount": 1, "quoteCount": 0 },
+                    "referencedTweets": [{ "type": "replied_to", "id": "1503039050713862149" }],
+                    "text": "@dmarr @tannerlinsley ['movies', 1] and ['movies', '1'] don't match :)",
+                    "type": "replied_to",
+                    "author": {
+                        "_id": "44217212",
+                        "entities": {
+                            "url": {
+                                "urls": [
+                                    {
+                                        "start": 0,
+                                        "end": 23,
+                                        "url": "https://t.co/ahCaT7xING",
+                                        "expandedUrl": "https://tkdodo.eu",
+                                        "displayUrl": "tkdodo.eu"
+                                    }
+                                ]
+                            },
+                            "description": {
+                                "urls": [
+                                    {
+                                        "start": 114,
+                                        "end": 137,
+                                        "url": "https://t.co/9p738H6wih",
+                                        "expandedUrl": "http://tkdodo.eu/blog",
+                                        "displayUrl": "tkdodo.eu/blog"
+                                    }
+                                ],
+                                "mentions": [{ "start": 60, "end": 71, "username": "myadverity" }]
+                            }
+                        },
+                        "name": "Dominik 🇺🇦",
+                        "profileImageUrl": "https://pbs.twimg.com/profile_images/1428810489157595139/lBT2YI9D_normal.jpg",
+                        "publicMetrics": { "followersCount": 5448, "followingCount": 288, "tweetCount": 5170, "listedCount": 77 },
+                        "url": "https://t.co/ahCaT7xING",
+                        "username": "TkDodo",
+                        "verified": false
+                    }
+                }
+            ],
+            "text": "@TkDodo @tannerlinsley Sorry, I meant why would the arrow function be an issue that Tanner was calling out.",
+            "type": "replied_to",
+            "author": {
+                "_id": "6685592",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/v3dfqxPyp8",
+                                "expandedUrl": "http://github.com/marr",
+                                "displayUrl": "github.com/marr"
+                            }
+                        ]
+                    }
+                },
+                "name": "David Marr",
+                "profileImageUrl": "https://pbs.twimg.com/profile_images/1506021181362745344/wc5quhbh_normal.jpg",
+                "publicMetrics": { "followersCount": 231, "followingCount": 429, "tweetCount": 1376, "listedCount": 12 },
+                "url": "https://t.co/v3dfqxPyp8",
+                "username": "dmarr",
+                "verified": false
+            },
+            "media": []
+        },
+        {
+            "_id": "1503039050713862149",
+            "authorId": "6685592",
+            "conversationId": "1503003974689083393",
+            "createdAt": { "$date": "2022-03-13T16:03:29.000+0000" },
+            "entities": {
+                "mentions": [
+                    { "start": 0, "end": 7, "username": "TkDodo", "id": "44217212" },
+                    { "start": 8, "end": 22, "username": "tannerlinsley", "id": "50136899" }
+                ]
+            },
+            "inReplyToUserId": "44217212",
+            "publicMetrics": { "retweetCount": 0, "replyCount": 1, "likeCount": 1, "quoteCount": 0 },
+            "referencedTweets": [
+                {
+                    "_id": "1503012261333458953",
+                    "authorId": "44217212",
+                    "conversationId": "1503003974689083393",
+                    "createdAt": { "$date": "2022-03-13T14:17:02.000+0000" },
+                    "entities": { "mentions": [{ "start": 0, "end": 14, "username": "tannerlinsley", "id": "50136899" }] },
+                    "inReplyToUserId": "50136899",
+                    "publicMetrics": { "retweetCount": 0, "replyCount": 1, "likeCount": 12, "quoteCount": 0 },
+                    "referencedTweets": [{ "type": "replied_to", "id": "1503004537660923907" }],
+                    "text": "@tannerlinsley Yep 😅. A classic. I also stumbled upon non matching query keys because number vs string when reading movieId from params 🙄",
+                    "type": "replied_to",
+                    "author": {
+                        "_id": "44217212",
+                        "entities": {
+                            "url": {
+                                "urls": [
+                                    {
+                                        "start": 0,
+                                        "end": 23,
+                                        "url": "https://t.co/ahCaT7xING",
+                                        "expandedUrl": "https://tkdodo.eu",
+                                        "displayUrl": "tkdodo.eu"
+                                    }
+                                ]
+                            },
+                            "description": {
+                                "urls": [
+                                    {
+                                        "start": 114,
+                                        "end": 137,
+                                        "url": "https://t.co/9p738H6wih",
+                                        "expandedUrl": "http://tkdodo.eu/blog",
+                                        "displayUrl": "tkdodo.eu/blog"
+                                    }
+                                ],
+                                "mentions": [{ "start": 60, "end": 71, "username": "myadverity" }]
+                            }
+                        },
+                        "name": "Dominik 🇺🇦",
+                        "profileImageUrl": "https://pbs.twimg.com/profile_images/1428810489157595139/lBT2YI9D_normal.jpg",
+                        "publicMetrics": { "followersCount": 5448, "followingCount": 288, "tweetCount": 5170, "listedCount": 77 },
+                        "url": "https://t.co/ahCaT7xING",
+                        "username": "TkDodo",
+                        "verified": false
+                    }
+                }
+            ],
+            "text": "@TkDodo @tannerlinsley Why would that be an issue?",
+            "author": {
+                "_id": "6685592",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "start": 0,
+                                "end": 23,
+                                "url": "https://t.co/v3dfqxPyp8",
+                                "expandedUrl": "http://github.com/marr",
+                                "displayUrl": "github.com/marr"
+                            }
+                        ]
+                    }
+                },
+                "name": "David Marr",
+                "profileImageUrl": "https://pbs.twimg.com/profile_images/1506021181362745344/wc5quhbh_normal.jpg",
+                "publicMetrics": { "followersCount": 231, "followingCount": 429, "tweetCount": 1376, "listedCount": 12 },
+                "url": "https://t.co/v3dfqxPyp8",
+                "username": "dmarr",
+                "verified": false
+            },
+            "media": []
+        }
+    ],
+    "provider": "twitter"
+}

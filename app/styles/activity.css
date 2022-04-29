@@ -4,15 +4,19 @@
 }
 
 .activity-list-item {
-    background-color: rgba(174,107,182,0.32);
+    background-color: rgba(174,107,182,0.12);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     font-size: 14px;
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 52.25% 20px 10px;
+    padding: 20px;
     text-decoration: none;
+}
+
+.github-star {
+    padding-top: 52.25%;
 }
 
 .activity-list-item + .activity-list-item {
@@ -37,6 +41,12 @@
     margin-top: 10px;
 }
 
-.starred-at::not(::before):hover {
+.timestamp a:link,
+.timestamp a:visited {
+    text-decoration: none;
+}
+
+.timestamp a:hover,
+.timestamp a:active {
     text-decoration: underline;
 }

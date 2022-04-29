@@ -1,4 +1,4 @@
-import { Prisma, PrismaClient } from "@prisma/client";
+import { Prisma } from "@prisma/client";
 // import { getActivity } from "~/api/twitter";
 import { getActivity } from "~/api/twitter.mock";
 import { db } from "~/utils/db.server";
@@ -42,16 +42,13 @@ async function main() {
             create: tweet as Prisma.TweetCreateInput,
             update: update as Prisma.TweetUpdateInput
         }));
-        if (tweet.referencedTweets?.length) {
-            console.log(tweet.referencedTweets);
-        }
         tweet.referencedTweets?.forEach((referencedTweet: any) => {
             const { id: referencedTweetId, type } = referencedTweet;
             if (!referencedTweetsById[referencedTweetId]) {
                 return;
             }
             const { id, ...referencedTweetUpdate } = referencedTweetsById[referencedTweetId];
-            const u = {
+            const upsert = {
                 where: {
                     id: referencedTweetId
                 },
@@ -64,22 +61,10 @@ async function main() {
                     type
                 } as Prisma.TweetUpdateInput
             };
-            tweetOperations.push(db.tweet.upsert(u));
+            tweetOperations.push(db.tweet.upsert(upsert));
         });
     });
-
     await Promise.all(tweetOperations);
-    
-    await Promise.all(data.map((tweet: any) => {
-        const { id, ...update } = tweet;
-        return db.tweet.upsert({
-            where: {
-                id
-            },
-            create: tweet as Prisma.TweetCreateInput,
-            update: update as Prisma.TweetUpdateInput
-        });
-    }));
 }
 
 export default function crawl() {

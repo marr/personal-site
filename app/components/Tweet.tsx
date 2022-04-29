@@ -1,47 +1,20 @@
+import clsx from 'clsx';
 import twitter from 'twitter-text';
 
 import TwitterVerified from './TwitterVerified';
 import { formatDateTime } from '~/utils/date';
 import PermalinkIcon from './PermalinkIcon';
-import type { TweetProps } from '~/api/twitter';
-interface TweetAuthorProps {
-    id: string,
-    name: string,
-    profileImageUrl: string,
-    url: string,
-    username: string,
-    verified: boolean
-};
-
-interface MediaProps {
-    keys: string[],
-    media: any
-};
-
-interface TweetTextProps {
-    text: string,
-    entities: any[]
-};
+import type { MediaProps, TweetAuthorProps, TweetTextProps, TweetProps } from '~/api/twitter';
 
 const Media = (props: MediaProps) => {
-    const { keys, media } = props;
+    const { height, width, url, previewImageUrl } = props;
     return (
-        <div className="tweet-media">
-            {keys.map(key => {
-                if (!media[key]) {
-                    console.log(key)
-                }
-                return (
-                    <img
-                        key={key}
-                        className="tweet-media-image"
-                        height={media[key].height}
-                        src={media[key].url || media[key].previewImageUrl}
-                        width={media[key].width}
-                    />
-                );
-            })}
-        </div>
+        <img
+            className="tweet-media-image"
+            height={height}
+            src={url || previewImageUrl}
+            width={width}
+        />
     );
 }
 
@@ -68,40 +41,32 @@ const TweetText = (props: TweetTextProps) => {
 
 export default function Tweet (props: TweetProps) {
     const {
-        attachments,
-        authorId,
-        authors,
+        _id,
+        author,
+        className,
         createdAt,
         entities,
-        id,
         isReferencedTweet,
-        media,
-        referencedTweets = [],
+        media: mediaItems,
+        referencedTweets,
         text,
-        tweets
+        type
     } = props;
-    const { mediaKeys } = attachments || {};
 
-    const parents = referencedTweets.map(tweet => {
-        const ref = tweets[tweet.id];
-        if (!ref) {
-            return <p key={tweet.id} className="tweet tweet-missing">Tweet not found</p>
-        }
-        return (
-            <Tweet
-                key={tweet.id}
-                {...ref}
-                isReferencedTweet
-                attachments={{}}
-                authors={authors}
-                referencedTweets={[]}
-            />
-        );
-    });
+    // if (type === 'replied_to' && isReferencedTweet) return null;
 
-    const author = authors[authorId];
+    // const parents = referencedTweets?.map((tweet: any) => {
+    //     return (
+    //         <Tweet
+    //             key={tweet._id}
+    //             {...tweet}
+    //             isReferencedTweet
+    //             referencedTweets={[]}
+    //         />
+    //     );
+    // });
 
-    const url = `https://twitter.com/${author?.username || 'twitter'}/status/${id}`;
+    const url = `https://twitter.com/${author?.username || 'twitter'}/status/${_id}`;
     
     let timeStamp = '';
     if (createdAt) {
@@ -115,8 +80,18 @@ export default function Tweet (props: TweetProps) {
         </a>
     );
 
+    let media = null;
+    if (mediaItems?.length > 0) {
+        media = (
+            <div className="tweet-media">
+                {mediaItems.map(mediaItem => <Media key={mediaItem._id} {...mediaItem} />)}
+            </div>
+        )
+    }
+
     return (
-        <div className="tweet">
+        <div className={clsx('tweet', className)}>
+            {type}
             <div className="tweet-header">
                 {author && (
                     <TweetAuthor {...author} />
@@ -126,8 +101,8 @@ export default function Tweet (props: TweetProps) {
                 )}
             </div>
             <TweetText entities={entities?.urls} text={text} />
-            {mediaKeys && <Media keys={mediaKeys} media={media} />}
-            {parents}
+            {media}
+            {/* {parents} */}
             <div className="tweet-footer">
                 {!isReferencedTweet && timeStamp && url && permaLink}
             </div>

@@ -1,5 +1,5 @@
-import merge from 'lodash/merge';
-import mergeWith from 'lodash/mergeWith';
+import { expect, describe, it } from 'vitest';
+import { deepMerge } from '~/utils/general';
 
 const obj = {
     data: [{
@@ -14,7 +14,7 @@ const obj = {
     }
 }
 
-mergeWith(obj, {
+deepMerge(obj, {
     data: [{
         id: '2',
         name: 'bbb'
@@ -32,6 +32,13 @@ mergeWith(obj, {
         }
     ]
     }
-}, (obj, src) => Array.isArray(obj) && Array.isArray(src) ? [...src, ...obj] : undefined);
+});
 
-console.log(obj.includes);
+describe("utils/general", () => {
+    describe("deepMerge", () => {
+        it("merges arrays deeply", () => {
+            expect(obj.data).toHaveLength(2);
+            expect(obj.includes.users).toHaveLength(3)
+        })
+    })
+})

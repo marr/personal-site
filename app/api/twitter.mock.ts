@@ -1,9 +1,8 @@
 import camelcaseKeys from 'camelcase-keys';
 import { byDate } from '~/utils/date';
 import { deepMerge, sortByField } from '~/utils/general';
-import type { TweetProps } from './twitter';
-import likedTweets from '~/liked-tweets.json';
-import tweets from '~/tweets.json';
+import likedTweets from '../../tests/fixtures/liked-tweets.json';
+import tweets from '../../tests/fixtures/tweets.json';
 
 export const getActivity = async () => {
     const {
@@ -20,9 +19,9 @@ export const getActivity = async () => {
             ...likedData,
             ...tweetData
         ].sort(sortByField(
-            ({ createdAt }: TweetProps) => new Date(createdAt),
+            ({ created_at }: any) => new Date(created_at),
             byDate()
         )),
         includes: deepMerge(likedIncludes, tweetIncludes)
-    }, { deep: true });
+    }, { deep: true, stopPaths: ['data.entities'] });
 };

@@ -1,6 +1,5 @@
 .tweet {
     background-color: rgba(174,107,182,0.32);
-    border: 1px solid #bc9a;
     border-radius: 6px;
     font-size: 14px;
     padding: 10px;
@@ -16,6 +15,7 @@
 }
 
 .tweet > .tweet {
+    border: 1px solid #bc9a;
     margin-top: 10px;
 }
 
@@ -97,6 +97,8 @@
 
 .tweet-text {
     margin: 12px 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .twitter-verified {

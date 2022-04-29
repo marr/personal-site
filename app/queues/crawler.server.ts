@@ -1,6 +1,6 @@
 import { Queue } from "~/utils/queue.server";
 
-import twitter from '~/crawlers/twitter';
+import twitter from '~/scrapers/twitter';
 
 type QueueData = {
     provider: "twitter" | "github" | "youtube";

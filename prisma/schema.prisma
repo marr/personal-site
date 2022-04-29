@@ -7,6 +7,12 @@ datasource db {
     url      = env("DATABASE_URL")
 }
 
+model GithubStar {
+    id                  Int @id @map("_id")
+    starredAt           DateTime
+    repo                Json
+}
+
 model TwitterUser {
     id                  String  @id @map("_id")
     entities            Json?
@@ -22,6 +28,7 @@ model Tweet {
     id                  String      @id @map("_id")
     attachments         Json?
     authorId            String
+    conversationId      String
     createdAt           DateTime
     entities            Json?
     inReplyToUserId     String?
