@@ -1,0 +1,327 @@
+
+<!doctype html>
+<html>
+
+  <head>
+
+    <style type="text/css">
+      body     { display: flex;gap: 50px; padding: 2em 3em; }
+      textarea { margin: 1em 0 4em 0; }
+      .result  { margin-bottom: 1em; background-color: #dde; padding: 0.5em; }
+    </style>
+
+    <script type="text/javascript">
+
+
+
+
+
+const test = [
+  {
+    referencedTweets: [
+      {
+        type: "replied_to",
+        id: "1508555785554386948",
+      },
+    ],
+    createdAt: "2022-03-28T21:29:48.000Z",
+    inReplyToUserId: "1307056292465274880",
+    authorId: "6685592",
+    conversationId: "1508519799487225858",
+    id: "1508556989357514760",
+    text: "@midjourney Can i keep it!",
+    publicMetrics: {
+      retweetCount: 0,
+      replyCount: 0,
+      likeCount: 0,
+      quoteCount: 0,
+    },
+    entities: {
+      mentions: [
+        {
+          start: 0,
+          end: 11,
+          username: "midjourney",
+          id: "1307056292465274880",
+        },
+      ],
+    },
+  },
+  {
+    inReplyToUserId: "6685592",
+    id: "1508555785554386948",
+    referencedTweets: [
+      {
+        type: "replied_to",
+        id: "1508528363715051532",
+      },
+    ],
+    authorId: "1307056292465274880",
+    entities: {
+      mentions: [
+        {
+          start: 0,
+          end: 6,
+          username: "dmarr",
+          id: "6685592",
+        },
+      ],
+      urls: [
+        {
+          start: 28,
+          end: 51,
+          url: "https://t.co/1YbnShrrVA",
+          expanded_url: "https://twitter.com/midjourney/status/1508555785554386948/photo/1",
+          display_url: "pic.twitter.com/1YbnShrrVA",
+        },
+      ],
+    },
+    publicMetrics: {
+      retweetCount: 0,
+      replyCount: 1,
+      likeCount: 9,
+      quoteCount: 0,
+    },
+    createdAt: "2022-03-28T21:25:01.000Z",
+    attachments: {
+      mediaKeys: [
+        "3_1508555761999249410",
+      ],
+    },
+    text: "@dmarr Here you go \"💆🏼‍♂️🌬\" https://t.co/1YbnShrrVA",
+    conversationId: "1508519799487225858",
+  },
+  {
+    referencedTweets: [
+      {
+        type: "replied_to",
+        id: "1508519799487225858",
+      },
+    ],
+    createdAt: "2022-03-28T19:36:03.000Z",
+    inReplyToUserId: "1307056292465274880",
+    authorId: "6685592",
+    conversationId: "1508519799487225858",
+    id: "1508528363715051532",
+    text: "@midjourney 💆🏼‍♂️🌬",
+    publicMetrics: {
+      retweetCount: 0,
+      replyCount: 1,
+      likeCount: 0,
+      quoteCount: 0,
+    },
+    entities: {
+      mentions: [
+        {
+          start: 0,
+          end: 11,
+          username: "midjourney",
+          id: "1307056292465274880",
+        },
+      ],
+    },
+  },
+  {
+    inReplyToUserId: "890249645858766848",
+    id: "1508528156210184192",
+    referencedTweets: [
+      {
+        type: "replied_to",
+        id: "1508522793314361348",
+      },
+    ],
+    authorId: "1307056292465274880",
+    entities: {
+      mentions: [
+        {
+          start: 0,
+          end: 12,
+          username: "SrirakshaVR",
+          id: "890249645858766848",
+        },
+      ],
+      urls: [
+        {
+          start: 32,
+          end: 55,
+          url: "https://t.co/U9ziclHWsJ",
+          expanded_url: "https://twitter.com/midjourney/status/1508528156210184192/photo/1",
+          display_url: "pic.twitter.com/U9ziclHWsJ",
+        },
+      ],
+    },
+    publicMetrics: {
+      retweetCount: 0,
+      replyCount: 2,
+      likeCount: 23,
+      quoteCount: 1,
+    },
+    createdAt: "2022-03-28T19:35:14.000Z",
+    attachments: {
+      mediaKeys: [
+        "3_1508528115324137474",
+      ],
+    },
+    text: "@SrirakshaVR Here you go \"🦁🧬🗞🃏\" https://t.co/U9ziclHWsJ",
+    conversationId: "1508519799487225858",
+  },
+  {
+    inReplyToUserId: "205648240",
+    id: "1508524612392390660",
+    referencedTweets: [
+      {
+        type: "replied_to",
+        id: "1508520415441965056",
+      },
+    ],
+    authorId: "1307056292465274880",
+    entities: {
+      mentions: [
+        {
+          start: 0,
+          end: 16,
+          username: "prestonoutatime",
+          id: "205648240",
+        },
+      ],
+      urls: [
+        {
+          start: 41,
+          end: 64,
+          url: "https://t.co/wETaBzu3cd",
+          expanded_url: "https://twitter.com/midjourney/status/1508524612392390660/photo/1",
+          display_url: "pic.twitter.com/wETaBzu3cd",
+        },
+      ],
+    },
+    publicMetrics: {
+      retweetCount: 0,
+      replyCount: 1,
+      likeCount: 11,
+      quoteCount: 0,
+    },
+    createdAt: "2022-03-28T19:21:09.000Z",
+    attachments: {
+      mediaKeys: [
+        "3_1508524603420803074",
+      ],
+    },
+    text: "@prestonoutatime Here you go \"🤖👘🏹🎯🏛️🏢🏗️\" https://t.co/wETaBzu3cd",
+    conversationId: "1508519799487225858",
+  },
+];
+
+
+
+
+
+const enforce_first_instance = (item, pos, orig_arr) =>
+
+  orig_arr.indexOf(item) === pos;
+
+
+
+
+
+const reref_impl = (forest, ordering, ctp, ptc, tweets, currentParent) => {
+
+  forest.map(tree => {
+
+    ordering.push(tree.id);
+    tweets.set( tree.id, tree );
+
+    if (currentParent !== null) {
+      ctp.set(tree.id, currentParent);
+      ptc.set(currentParent, ptc.has(currentParent)? ptc.get(currentParent).push(tree.id) : [tree.id]);
+    }
+
+    if (tree.referencedTweets) {
+      reref_impl(tree.referencedTweets, ordering, ctp, ptc, tweets, tree.id);
+    }
+
+  });
+
+  const deduped_ordering = ordering.filter( enforce_first_instance );
+
+  return { forest, ordering: deduped_ordering, ctp, ptc, tweets };
+
+}
+
+
+
+
+
+const reref = forest => {
+
+  const ChildToParent = new Map(),
+        ParentToChild = new Map(),
+        Tweets        = new Map(),
+        Ordering      = [];
+
+  return reref_impl(forest, [], ChildToParent, ParentToChild, Tweets, null);
+
+}
+
+
+
+
+
+const reparse = () => {
+
+  const src     = JSON.parse(document.getElementById('to_parse').value),
+        results = reref(src);
+console.log(results);
+  document.getElementById('ordering').innerHTML = JSON.stringify(results.ordering);
+  document.getElementById('ctp').innerHTML      = JSON.stringify(Array.from(results.ctp));
+  document.getElementById('ptc').innerHTML      = JSON.stringify(Array.from(results.ptc));
+  document.getElementById('tweets').innerHTML   = JSON.stringify(results.tweets);
+
+}
+
+
+
+
+
+window.onload = () => {
+
+  document.getElementById('to_parse').value   = JSON.stringify(test, undefined, 2);
+  document.getElementById('to_parse').onkeyup = reparse;
+  reparse();
+
+}
+
+
+
+
+
+// console.log(JSON.stringify(reref(test), undefined, 2));
+
+
+
+
+
+    </script>
+
+  </head>
+
+  <body>
+
+    <label for="to_parse"><h1>To parse:</h1><textarea id="to_parse" name="to_parse" cols="60" rows="40"></textarea></label>
+    <div>
+      <h1>Result:</h1>
+
+      <div>Ordering:</div>
+      <div class="result" id="ordering"></div>
+
+      <div>CTP:</div>
+      <div class="result" id="ctp"></div>
+
+      <div>PTC:</div>
+      <div class="result" id="ptc"></div>
+
+      <div>Tweets:</div>
+      <div class="result" id="tweets"></div>
+    </div>
+  </body>
+
+</html>

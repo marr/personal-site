@@ -7,13 +7,13 @@ export default function TwitterConversation(props:TwitterConversationProps) {
             {props.tweets.map(tweet => (
                 <>
                     <Tweet {...tweet} />
-                    {/* {(tweet.referencedTweets.length > 0) ? (
+                    {(tweet.children.length > 0) ? (
                         <div className="tweet-replies">
-                            {tweet.referencedTweets.map(reply => (
+                            {tweet.children.map(reply => (
                                 <Tweet key={reply._id} isReferencedTweet {...reply} />
                             ))}
                         </div>
-                    ) : null} */}
+                    ) : null}
                 </>
             ))}
         </div>

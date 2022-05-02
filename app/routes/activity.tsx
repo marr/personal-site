@@ -3,13 +3,12 @@ import {  useLoaderData } from "@remix-run/react";
 import type { LinksFunction, LoaderFunction } from "@remix-run/node";
 import twemoji from "twemoji";
 import { getActivity } from "~/api/activity";
+import { getActivity as getTwitterActivity } from "~/api/twitter";
 import type ActivityItem from '~/api/activity';
 // import { getActivity as getGithubActivity } from "~/api/github";
 
 import GithubStarredRepo from "~/components/GithubStarredRepo";
 import TwitterConversation from "~/components/TwitterConversation";
-
-
 
 import activityStyles from '~/styles/activity.css';
 import twitterStyles from '~/styles/twitter.css';
@@ -20,10 +19,16 @@ export const links: LinksFunction = () => [
 ];
 
 export const loader: LoaderFunction = async () => {
-    return await Promise.all([
-        getActivity(),
+    const [twitterActivity] = await Promise.all([
+        getTwitterActivity()
+        // getActivity(),
         // getGithubActivity()
     ]);
+    return twitterActivity.map((item, index) => ({
+        id: index,
+        data: item,
+        provider: 'twitter'
+    }));
 };
 
 const providerMap = {
