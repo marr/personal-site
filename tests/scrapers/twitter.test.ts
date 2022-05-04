@@ -1,7 +1,7 @@
 import { beforeEach, expect, describe, it } from 'vitest';
 import groupBy from 'lodash/groupBy';
 import type { TweetProps } from '~/api/twitter';
-import { flattenTweetTree, getFormatter } from '~/scrapers/twitter';
+import { flattenTweetTree, getFormatter, log } from '~/scrapers/twitter';
 import { getActivity } from '~/api/twitter';
 
 let fixture: any;
@@ -31,10 +31,17 @@ describe("scrapers/twitter", () => {
         const expected = formatter(fixture[convoId]);
         expect(expected[convoId].children).toHaveLength(3);
     });
+    it("handles long conversations", () => {
+        const convoId = '1503003974689083393';
+        let res = formatter(fixture[convoId]);
+        log(res[convoId]);
+    })
     it("scrapes my retweets", () => {
-        const retweetId = '1146225206744272896';
+        const retweetId = '1313293395943739392';
         const expected = formatter(fixture[retweetId]);
-        expect(expected[retweetId].text.startsWith('RT')).toBeFalsy();
+        expect(expected[retweetId].id).toEqual(retweetId);
+        expect(expected[retweetId].retweetOf.authorId).not.toEqual('6685592');
+        expect(expected[retweetId].retweetOf.text.startsWith('RT')).toBeFalsy();
     });
     it("scrapes my quoted tweets", () => {
         const quoteId = '1508483696315314178';

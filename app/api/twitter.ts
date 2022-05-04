@@ -12,6 +12,7 @@ export interface TweetAuthorProps {
     verified: boolean
 };
 export interface MediaProps {
+    entities: any[]
     mediaKey: string
     width: number
     height: number
@@ -25,7 +26,8 @@ export interface TweetTextProps {
 };
 export interface TweetProps {
     id: string
-    author: any
+    attachments: any
+    author: TweetAuthorProps
     authorId: string
     children: TweetProps[]
     className?: string
@@ -35,8 +37,10 @@ export interface TweetProps {
     isMissing?: boolean
     isReferencedTweet?: boolean
     media: MediaProps[]
+    quoted: TweetProps[]
     referencedTweets: any[]
-    replies: TweetProps[]
+    retweetOf?: TweetProps
+    retweetBy?: TweetAuthorProps
     text: string
     type: string
 };

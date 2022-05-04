@@ -1,4 +1,4 @@
-import { db } from "~/utils/db.server";
+// import { db } from "~/utils/db.server";
 
 const pipeline = [
     {
@@ -52,7 +52,7 @@ const transformTweet = (tweet: any) => {
         createdAt: tweet.createdAt.$date,
     };
 };
-
+/*
 export async function getActivity() {
     const res = await db.tweet.aggregateRaw({
         pipeline,
@@ -71,3 +71,4 @@ export async function getActivity() {
         return obj;
     });
 }
+*/

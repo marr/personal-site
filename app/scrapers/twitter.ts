@@ -21,6 +21,9 @@ function getTweet(parentId:string, tweets:any[]):any {
 }
 
 export function log(tweet: any, depth: number = 0, key: string = 'children') {
+    if(!tweet) {
+        debugger;
+    }
     console.log(depth ? "  ".repeat(depth) : "", tweet.text);
     depth++;
     if (tweet[key]) {
@@ -40,29 +43,38 @@ export function getFormatter (includes: any) {
     const refMap = groupBy(includes.tweets, (tweet: TweetProps) => tweet.id);
     const mediaMap = groupBy(includes.media, (media: MediaProps) => media.mediaKey);
 
+    
+
     function formatConversation(convo: TweetProps[], parentToChild: any = {}): TweetProps[] {
         return formatConversationImpl(convo, parentToChild, null);
     }
 
     function formatConversationImpl(tweets: TweetProps[], parents: any, currentParent: any): any[] {
-        for (const tweet of tweets) {
-            // set the top level to be the current tweet
-            const ref = getTweet(tweet.id, parents) || refMap[tweet.id]?.[0] || tweet;
-            if (!ref.text) {
-                ref.isMissing = true;
+        function populateTweet(tweet:TweetProps) {
+            Object.assign(tweet, tweets.find(t => t.id === tweet.id));
+            if (!tweet.text) {
+                tweet.isMissing = true;
             } else {
-                ref.author = authorMap[ref.authorId][0];
+                tweet.author = authorMap[tweet.authorId][0];
+                tweet.isMissing = false;
             }
-            if (ref.attachments?.mediaKeys) {
-                ref.media = ref.attachments.mediaKeys
+            if (tweet.attachments?.mediaKeys) {
+                tweet.media = tweet.attachments.mediaKeys
                     .map((mediaKey:string) => mediaMap[mediaKey]?.[0])
                     .filter(Boolean);
             }
+        }
+
+        for (const tweet of tweets) {
+            // set the top level to be the current tweet
+            const ref = parents[tweet.id] || refMap[tweet.id]?.[0] || tweet;
+            populateTweet(ref);
             parents[tweet.id] = ref;
             // check if this is a retweet
             const [{ id: parentId, type }] = tweet.referencedTweets || [{}];
             if (type === 'retweeted') {
-                parents[tweet.id] = refMap[parentId][0];
+                ref.retweetOf = refMap[parentId][0];
+                populateTweet(ref.retweetOf);
                 continue;
             }
             // check if the type might be a parent (replied_to),

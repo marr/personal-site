@@ -11,11 +11,11 @@ export default function TwitterConversation(props:TwitterConversationProps) {
                 return (
                     <Fragment key={tweet.id}>
                         {tweet.isMissing ? <MissingTweet id={tweet.id} className={className} /> : (
-                            <Tweet className={className} {...tweet} />
+                            <Tweet className={className} {...tweet} isParentTweet />
                         )}
                         {(tweet.children?.length > 0) ? (
                             <div className="tweet-replies">
-                                {tweet.children.map(reply => reply.isMissing ? <MissingTweet /> : (
+                                {tweet.children.map(reply => reply.isMissing ? <MissingTweet key={reply.id} /> : (
                                     <Tweet key={reply.id} isReferencedTweet {...reply} />
                                 ))}
                             </div>

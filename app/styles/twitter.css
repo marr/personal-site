@@ -10,36 +10,46 @@
     border-bottom-right-radius: 0; 
 }
 
-.tweet:first-child {
-    border-top: 1px solid #bc9a;
-}
-
-.tweet-replies .tweet {
-    background-color: #7a44aa57;
-    border-radius: 0;
-    border-top: 1px dashed #6f6b8aad; 
-}
-
 .tweet-replies .tweet:last-child {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
 }
 
-.tweet-replies > .tweet .tweet-footer {
+.tweet:first-child {
+    border-top: 1px solid #bc9a;
+}
+
+.tweet.missing-tweet {
+    display: block;
+}
+
+.tweet.referenced-tweet {
+    background-color: #7a44aa57;
+    border-radius: 0;
+    border-top: 1px dashed #6f6b8aad; 
+}
+
+.tweet.referenced-tweet .tweet-footer {
     display: none;
 }
 
-.tweet-replies > .tweet .tweet-header {
+.tweet.referenced-tweet .tweet-header {
     line-height: 20px;
 }
 
-.tweet-replies > .tweet .tweet-author-image {
+.tweet.referenced-tweet .tweet-author-image {
     width: 30px;
 }
 
-.tweet-replies > .tweet .tweet-author-info {
+.tweet.referenced-tweet .tweet-author-info {
     flex-direction: row;
     gap: 3px;
+}
+
+.quote-tweets .tweet {
+    border-radius: 6px;
+    border: none;
+    margin: 10px;
 }
 
 .tweet-author {
@@ -60,9 +70,9 @@
 }
 
 .tweet .emoji {
-    max-width: 20px;
+    height: 16px;
+    width: 16px;
     vertical-align: -20%;
-    max-height: 16px;
 }
 
 .tweet-header {
@@ -92,7 +102,14 @@
 }
 
 .tweet-media {
+    display: flex;
+    gap: 10px;
     margin: 10px 0 0;
+    flex-wrap: wrap;
+}
+
+.tweet-media-link {
+    flex-basis: 49%;
 }
 
 .tweet-media-image {
@@ -115,6 +132,18 @@
     width: 18px;
 }
 
-.twitter-verified path {
-    fill: white;
+.twitter-verified {
+    fill: currentColor;
+}
+
+.tweet-retweet-header {
+    padding: 0px 0px 10px;
+}
+
+.retweet-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: bottom;
+    fill: currentColor;
 }
