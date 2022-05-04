@@ -1,10 +1,11 @@
-import { createElement, useEffect } from "react";
 import {  useLoaderData } from "@remix-run/react";
 import type { LinksFunction, LoaderFunction } from "@remix-run/node";
+import groupBy from 'lodash/groupBy';
+import { createElement, useEffect } from "react";
 import twemoji from "twemoji";
-import { getActivity } from "~/api/activity";
 import { getActivity as getTwitterActivity } from "~/api/twitter";
-import type ActivityItem from '~/api/activity';
+import type { ActivityItem } from '~/api/activity';
+import { flattenTweetTree, getFormatter } from '~/scrapers/twitter';
 // import { getActivity as getGithubActivity } from "~/api/github";
 
 import GithubStarredRepo from "~/components/GithubStarredRepo";
@@ -24,11 +25,22 @@ export const loader: LoaderFunction = async () => {
         // getActivity(),
         // getGithubActivity()
     ]);
-    return twitterActivity.map((item, index) => ({
-        id: index,
-        data: item,
-        provider: 'twitter'
-    }));
+    const formatter = getFormatter(twitterActivity.includes);
+    const twitterConversations = groupBy(twitterActivity.data, item => item.conversationId);
+    return Object.entries(twitterConversations).map(([key, item]) => {
+        const data = Object.values(formatter(item)).map(tweet => {
+            if (tweet.children) {
+                tweet.children = flattenTweetTree(tweet.children);
+                tweet.children.reverse();
+            }
+            return tweet; 
+        });
+        return {
+            id: key,
+            data,
+            provider: 'twitter'
+        };
+    });
 };
 
 const providerMap = {
@@ -38,7 +50,7 @@ const providerMap = {
 };
 
 export default function Activity() {
-    const [activity] = useLoaderData();
+    const activity = useLoaderData();
     useEffect(() => {
         twemoji.parse(document.body);
     }, []);

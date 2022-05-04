@@ -1,37 +1,43 @@
 .tweet {
-    background-color: rgba(174,107,182,0.32);
+    background-color: rgba(174, 107, 182, 0.32);
     border-radius: 6px;
     font-size: 14px;
     padding: 10px;
 }
 
-.tweet.tweet-missing {
-    border: 1px dashed #bc9a;
-    margin-bottom: 0;
+.tweet.has-replies {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; 
 }
 
-.tweet + .tweet {
-    margin-top: 15px;
+.tweet:first-child {
+    border-top: 1px solid #bc9a;
 }
 
-.tweet > .tweet {
-    border: 1px solid #bc9a;
-    margin-top: 10px;
+.tweet-replies .tweet {
+    background-color: #7a44aa57;
+    border-radius: 0;
+    border-top: 1px dashed #6f6b8aad; 
 }
 
-.tweet > .tweet .tweet-footer {
+.tweet-replies .tweet:last-child {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.tweet-replies > .tweet .tweet-footer {
     display: none;
 }
 
-.tweet > .tweet .tweet-header {
+.tweet-replies > .tweet .tweet-header {
     line-height: 20px;
 }
 
-.tweet > .tweet .tweet-author-image {
+.tweet-replies > .tweet .tweet-author-image {
     width: 30px;
 }
 
-.tweet > .tweet .tweet-author-info {
+.tweet-replies > .tweet .tweet-author-info {
     flex-direction: row;
     gap: 3px;
 }

@@ -2,6 +2,7 @@ import camelcaseKeys from 'camelcase-keys';
 
 import { byDate } from '~/utils/date';
 import { deepMerge, sortByField } from '~/utils/general';
+
 export interface TweetAuthorProps {
     id: string,
     name: string,
@@ -11,7 +12,7 @@ export interface TweetAuthorProps {
     verified: boolean
 };
 export interface MediaProps {
-    _id: string
+    mediaKey: string
     width: number
     height: number
     previewImageUrl?: string
@@ -30,16 +31,15 @@ export interface TweetProps {
     className?: string
     conversationId: string
     createdAt: string
+    entities: any
+    isMissing?: boolean
     isReferencedTweet?: boolean
-    text: string
+    media: MediaProps[]
     referencedTweets: any[]
     replies: TweetProps[]
-    entities: any
-    media: MediaProps[]
+    text: string
+    type: string
 };
-export interface UnavailableTweetProps {
-    id: string
-}
 
 export interface TwitterConversationProps {
     conversationId: string
@@ -74,16 +74,14 @@ export const getActivity = async () => {
         getTwitterData(getTweetsUrl('users/6685592/tweets'))
     ]);
 
-    const mergedResults = camelcaseKeys({
+    return camelcaseKeys({
         data: [
             ...likedData.data,
             ...tweetData.data
         ].sort(sortByField(
-            ({ createdAt }: TweetProps) => new Date(createdAt),
+            ({ created_at }: any) => new Date(created_at),
             byDate()
         )),
         includes: deepMerge(likedData.includes, tweetData.includes)
-    }, { deep: true, stopPaths: ['data.entities'] });
-
-    
+    }, { deep: true, stopPaths: ['data.entities', 'includes.tweets.entities'] });
 }

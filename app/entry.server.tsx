@@ -1,6 +1,10 @@
 import { renderToString } from "react-dom/server";
 import { RemixServer } from "@remix-run/react";
 import type { EntryContext } from "@remix-run/node";
+import { server as mockApiServer } from '../tests/mockApi';
+
+mockApiServer.listen();
+console.warn("Mock API listening");
 
 export default function handleRequest(
   request: Request,

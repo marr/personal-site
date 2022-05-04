@@ -41,32 +41,31 @@ const TweetText = (props: TweetTextProps) => {
 
 export default function Tweet (props: TweetProps) {
     const {
-        _id,
+        id,
         author,
+        children,
         className,
         createdAt,
         entities,
         isReferencedTweet,
         media: mediaItems,
-        referencedTweets,
         text,
         type
     } = props;
 
     // if (type === 'replied_to' && isReferencedTweet) return null;
 
-    // const parents = referencedTweets?.map((tweet: any) => {
-    //     return (
-    //         <Tweet
-    //             key={tweet._id}
-    //             {...tweet}
-    //             isReferencedTweet
-    //             referencedTweets={[]}
-    //         />
-    //     );
-    // });
+    const parents = children?.map((tweet: any) => {
+        return (
+            <Tweet
+                key={tweet.id}
+                {...tweet}
+                isReferencedTweet
+            />
+        );
+    });
 
-    const url = `https://twitter.com/${author?.username || 'twitter'}/status/${_id}`;
+    const url = `https://twitter.com/${author?.username || 'twitter'}/status/${id}`;
     
     let timeStamp = '';
     if (createdAt) {
@@ -84,7 +83,7 @@ export default function Tweet (props: TweetProps) {
     if (mediaItems?.length > 0) {
         media = (
             <div className="tweet-media">
-                {mediaItems.map(mediaItem => <Media key={mediaItem._id} {...mediaItem} />)}
+                {mediaItems.map(mediaItem => <Media key={mediaItem.mediaKey} {...mediaItem} />)}
             </div>
         )
     }

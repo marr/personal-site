@@ -1,10 +1,129 @@
-import { Prisma } from "@prisma/client";
-// import { getActivity } from "~/api/twitter";
-import { getActivity } from "~/api/twitter.mock";
+import { Prisma, TwitterUser } from "@prisma/client";
+import groupBy from 'lodash/groupBy';
+
+import type { MediaProps, TweetProps } from '~/api/twitter';
+import { getActivity } from "~/api/twitter";
 import { db } from "~/utils/db.server";
-import {  reduceByField } from "~/utils/general";
+import { reduceByField } from "~/utils/general";
+
+function getTweet(parentId:string, tweets:any[]):any {
+    if (tweets?.length) {
+        for (let i = 0, len = tweets.length; i < len; i++) {
+            if (parentId === tweets[i].id) {
+                return tweets[i];
+            }
+            const found = getTweet(parentId, tweets[i].children);
+            if (found) {
+                return found;
+            }
+        }
+    }
+}
+
+export function log(tweet: any, depth: number = 0, key: string = 'children') {
+    console.log(depth ? "  ".repeat(depth) : "", tweet.text);
+    depth++;
+    if (tweet[key]) {
+        for (const reply of tweet[key]) {
+            log(reply, depth, key);
+        }
+    }
+}
+
+// getFormatter: Creates a function to format twitter API responses
+// Parameters
+// * includes - a map of tweets from the includes payload of the response
+// * Return - function for grouping twitter conversations. function(tweets) {}
+// * pass in tweets from a specific conversation to receive a structure for rendering
+export function getFormatter (includes: any) {
+    const authorMap = groupBy(includes.users, (user: TwitterUser) => user.id);
+    const refMap = groupBy(includes.tweets, (tweet: TweetProps) => tweet.id);
+    const mediaMap = groupBy(includes.media, (media: MediaProps) => media.mediaKey);
+
+    function formatConversation(convo: TweetProps[], parentToChild: any = {}): TweetProps[] {
+        return formatConversationImpl(convo, parentToChild, null);
+    }
+
+    function formatConversationImpl(tweets: TweetProps[], parents: any, currentParent: any): any[] {
+        for (const tweet of tweets) {
+            // set the top level to be the current tweet
+            const ref = getTweet(tweet.id, parents) || refMap[tweet.id]?.[0] || tweet;
+            if (!ref.text) {
+                ref.isMissing = true;
+            } else {
+                ref.author = authorMap[ref.authorId][0];
+            }
+            if (ref.attachments?.mediaKeys) {
+                ref.media = ref.attachments.mediaKeys
+                    .map((mediaKey:string) => mediaMap[mediaKey]?.[0])
+                    .filter(Boolean);
+            }
+            parents[tweet.id] = ref;
+            // check if this is a retweet
+            const [{ id: parentId, type }] = tweet.referencedTweets || [{}];
+            if (type === 'retweeted') {
+                parents[tweet.id] = refMap[parentId][0];
+                continue;
+            }
+            // check if the type might be a parent (replied_to),
+            // meaning the current parent should actually be a child.
+            // the current parent was added to the top level in the previous
+            // step, so we need to add it as a child to the current parent.
+            if (currentParent && tweet.type !== 'retweeted') {
+                // check if tweet is a quote tweet
+                if (tweet.type === 'quoted') {
+                    currentParent.quoted ||= [];
+                    if (!getTweet(tweet.id, currentParent.quoted)) {
+                        currentParent.quoted.push(ref);
+                    }
+                    delete parents[tweet.id];
+                    continue;
+                }
+                const { referencedTweets, ...parent } = parents[currentParent.id];
+                ref.children ||= [];
+                if (!getTweet(parent.id, ref.children)) {
+                    ref.children.push(parent);
+                }
+                delete parents[parent.id];
+            }
+            if (ref.referencedTweets) {
+                formatConversationImpl(ref.referencedTweets, parents, ref);
+            }
+        }
+        return parents;
+    }
+
+    return formatConversation;
+}
+
+export function flattenTweetTree (tree:any, flattened:any = []) {
+    for (const leaf of tree) {
+        if (leaf.children) {
+            flattenTweetTree(leaf.children, flattened);
+        }
+        delete leaf.children
+        flattened.push(leaf);
+    }
+    return flattened;
+}
 
 const byId = reduceByField("id");
+
+function makeTweetUpserts (tweet:any, refs:any, ops:any[] = []) {
+    if (!tweet) return ops;
+    const { id, ...update } = tweet;
+    ops.push(db.tweet.upsert({
+        where: {
+            id
+        },
+        create: tweet as Prisma.TweetCreateInput,
+        update: update as Prisma.TweetUpdateInput
+    }));
+    tweet.referencedTweets?.forEach((referencedTweet: any) => {
+        makeTweetUpserts(refs[referencedTweet.id], refs, ops);
+    });
+    return ops;
+}
 
 async function main() {
     const { data, includes: { users, media, tweets }} = await getActivity();
@@ -32,39 +151,11 @@ async function main() {
         })
     }));
 
-    const tweetOperations: any[] = [];
-    data.forEach((tweet: any) => {
-        const { id, ...update } = tweet;
-        tweetOperations.push(db.tweet.upsert({
-            where: {
-                id
-            },
-            create: tweet as Prisma.TweetCreateInput,
-            update: update as Prisma.TweetUpdateInput
-        }));
-        tweet.referencedTweets?.forEach((referencedTweet: any) => {
-            const { id: referencedTweetId, type } = referencedTweet;
-            if (!referencedTweetsById[referencedTweetId]) {
-                return;
-            }
-            const { id, ...referencedTweetUpdate } = referencedTweetsById[referencedTweetId];
-            const upsert = {
-                where: {
-                    id: referencedTweetId
-                },
-                create: {
-                    ...referencedTweetsById[referencedTweetId],
-                    type
-                } as Prisma.TweetCreateInput,
-                update: {
-                    ...referencedTweetUpdate,
-                    type
-                } as Prisma.TweetUpdateInput
-            };
-            tweetOperations.push(db.tweet.upsert(upsert));
-        });
+    const tweetUpserts = data.slice(0, 10).flatMap(tweet => {
+        return makeTweetUpserts(tweet, referencedTweetsById);
     });
-    await Promise.all(tweetOperations);
+
+    await Promise.all(tweetUpserts);
 }
 
 export default function crawl() {
